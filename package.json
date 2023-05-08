@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.29.1",
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  },
+  "name": "vector",
+  "version": "1.0.0",
+  "description": "vector",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp-autoprefixer": "^8.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/KosyrievDenys/Vector.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
