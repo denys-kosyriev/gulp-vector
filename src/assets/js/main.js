@@ -1,20 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
   //Slider section 'banners'
-  new Swiper(".swiper-banners", {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-    },
-    speed: 800,
-    autoplayDelay: 3000,
+  new Swiper(".tariffs-internet", {
     slidesPerView: '1',
-    centeredSlides: true,
     grabCursor: true,
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
     },
+    breakpoints: {
+      567: {
+        slidesPerView: '2',
+      },
+      1024: {
+        spaceBetween: 0,
+      },
+      1440: {
+        slidesPerView: '3',
+      }
+    }
   })
-
 });

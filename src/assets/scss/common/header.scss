@@ -14,11 +14,14 @@
       display:         flex;
       justify-content: space-between;
     }
-    p {
+    h2 {
       font-weight: 700;
       font-size:   26px;
       &:hover {
-        opacity: .6;
+        opacity: .7;
+      }
+      &:active {
+        opacity: 0;
       }
     }
     ul {
@@ -27,7 +30,7 @@
     img {
       width: 24px;
     }
-    button {
+    .btn {
       display: none;
     }
   }
@@ -58,7 +61,10 @@
         white-space: nowrap;
         align-items: start;
         &:hover {
-          color: #324035;
+          opacity: .7;
+        }
+        &:active {
+          opacity: 0;
         }
         img {
           margin-right: 2px;
@@ -70,18 +76,14 @@
           margin-right: 7px;
         }
         .phones {
-          a:hover {
-            color: #324035;
+          a:active {
+            opacity: 0;
           }
         }
         .language {
           margin:      0 27px;
           display:     flex;
           align-items: center;
-          cursor:      pointer;
-          &:hover {
-            color: #324035;
-          }
         }
         .user {
           min-width:       179px;
@@ -94,6 +96,10 @@
           &:hover {
             background: linear-gradient(248.04deg,
                     #03BF6A 24.98%, #6AE37E 101.83%);
+            color:      #fff;
+          }
+          &:active {
+            opacity: 0;
           }
         }
       }
@@ -104,7 +110,7 @@
       .container {
         max-width: 1809px;
       }
-      p {
+      h2 {
         font-size: 50px;
         margin:    0 55px 10px 0;
       }
@@ -121,13 +127,16 @@
           &:hover {
             color: #03BF6A;
           }
+          &:active {
+            color: #fff;
+          }
         }
       }
       img {
         display: none;
       }
-      button {
-        display: block
+      .btn {
+        display: inline-flex;
       }
     }
   }

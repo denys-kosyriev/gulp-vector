@@ -1,12 +1,8 @@
 * {
-  outline:     none;
-  box-sizing:  border-box;
-  margin:      0;
-  padding:     0;
-  font-family: sans-serif;
-  color:       #324035;
-  font-weight: 300;
-  font-size:   16px;
+  outline:    none;
+  box-sizing: border-box;
+  margin:     0;
+  padding:    0;
 }
 
 html,
@@ -18,6 +14,8 @@ body {
   min-height:     100%;
   display:        flex;
   flex-direction: column;
+  font-family:    sans-serif;
+  color:          #324035;
 }
 
 main {
@@ -38,15 +36,15 @@ img, svg, iframe, video {
 a {
   text-decoration: none;
   cursor:          pointer;
+  &:hover {
+    color: #324035;
+  }
+  &:active {
+    color: transparent;
+  }
 }
 
-a,
-input,
-select,
-button,
-img,
-span,
-p {
+a, input, select, button, img, span, p, h2 {
   transition: .2s linear;
 }
 
@@ -72,7 +70,6 @@ h3 {
 p {
   font-weight: 400;
   font-size:   14px;
-  color:       #6f8f81;
   line-height: 1.5;
 }
 
@@ -91,12 +88,33 @@ button, .btn {
   font-weight:     700;
 }
 
+input, select {
+  width:         100%;
+  padding:       14px 27px;
+  overflow:      hidden;
+  text-overflow: ellipsis;
+  cursor:        pointer;
+  border:        1px solid #d2dbdb;
+  border-radius: 40px;
+  color:         #324035;
+  font-size:     14px;
+  font-weight:   500;
+  margin-bottom: 10px;
+  &:hover {
+    border: 1px solid #03BF6A;
+  }
+}
+
 .btn-black {
   background-color: #324035;
   border-color:     #324035;
-  color:            #fff;
+  color:            rgba(#fff, .8);
   &:hover {
-    background-color: #03BF6A;
+    color:            #03BF6A;
+    background-color: #fff;
+  }
+  &:active {
+    color: #fff;
   }
 }
 
@@ -107,6 +125,9 @@ button, .btn {
     color:            #fff;
     background-color: #03BF6A;
   }
+  &:active {
+    background: #fff;
+  }
 }
 
 .btn-full {
@@ -115,6 +136,9 @@ button, .btn {
   &:hover {
     color:            #03BF6A;
     background-color: #fff;
+  }
+  &:active {
+    color: #fff;
   }
 }
 
@@ -139,27 +163,27 @@ button, .btn {
   font-size:     16px;
 }
 
-.c-white {
+.color-white {
   color: #fff;
 }
 
-.c-black {
+.color-black {
   color: #000;
 }
 
-.c-gray {
+.color-gray {
   color: #324035;
 }
 
-.c-green {
+.color-green {
   color: #03BF6A;
 }
 
-.b-green {
+.bg-green {
   background: linear-gradient(114.04deg, #03BF6A 24.98%, #6AE37E 101.83%);
 }
 
-.b-gray {
+.bg-gray {
   background: #F2F8F8;
 }
 
@@ -167,8 +191,8 @@ button, .btn {
   object-fit: cover;
 }
 
-.icon-18 {
-  height: 18px;
+.icon-15 {
+  width: 15px;
 }
 
 .d-none {
@@ -179,26 +203,35 @@ button, .btn {
   cursor: pointer;
 }
 
-input, select {
-  width:         100%;
-  padding:       14px 27px;
-  overflow:      hidden;
-  text-overflow: ellipsis;
-  cursor:        pointer;
-  border:        1px solid #d2dbdb;
-  border-radius: 40px;
-  color:         #324035;
-  font-size:     14px;
-  font-weight:   500;
-  margin-bottom: 10px;
-  &:hover {
-    border: 1px solid #03BF6A;
+.p-relative {
+  position: relative;
+  top:      0;
+  left:     0;
+  z-index:  0;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.swiper {
+  &-slide {
+    position: relative;
+    top:      0;
+    left:     0;
+    z-index:  0;
+  }
+  &-pagination {
+    &.swiper-pagination-bullets {
+      bottom: 0;
+    }
+    span {
+      cursor: pointer;
+    }
   }
 }
 
-
 @media (min-width: 1024px) {
-
   h2 {
     font-size: 60px;
   }
@@ -214,6 +247,22 @@ input, select {
 
   button, .btn {
     border-width: 4px;
+  }
+
+  input, select {
+    padding:       17px 32px;
+    overflow:      hidden;
+    text-overflow: ellipsis;
+    cursor:        pointer;
+    border:        2px solid #d2dbdb;
+    border-radius: 40px;
+    color:         #324035;
+    font-size:     24px;
+    font-weight:   500;
+    margin-bottom: 25px;
+    &:hover {
+      border: 2px solid #03BF6A;
+    }
   }
 
   .btn-small {
@@ -235,20 +284,8 @@ input, select {
     font-size: 24px;
   }
 
-  input, select {
-    padding:       17px 32px;
-    overflow:      hidden;
-    text-overflow: ellipsis;
-    cursor:        pointer;
-    border:        2px solid #d2dbdb;
-    border-radius: 40px;
-    color:         #324035;
-    font-size:     24px;
-    font-weight:   500;
-    margin-bottom: 25px;
-    &:hover {
-      border: 2px solid #03BF6A;
-    }
+  .icon-15 {
+    width: 18px;
   }
 
 }
