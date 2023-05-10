@@ -8,15 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
     pagination: {
       el: ".swiper-pagination",
     },
-    // breakpoints: {
-    //   768: {
-    //     spaceBetween: 24,
-    //     pagination: {
-    //       el: ".swiper-pagination",
-    //       type: 'fraction',
-    //     },
-    //   }
-    // }
   })
 
 });

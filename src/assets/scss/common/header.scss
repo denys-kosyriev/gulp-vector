@@ -56,6 +56,10 @@
       }
       .left {
         white-space: nowrap;
+        align-items: start;
+        &:hover {
+          color: #324035;
+        }
         img {
           margin-right: 2px;
         }
@@ -65,26 +69,31 @@
           width:        18px;
           margin-right: 7px;
         }
-        .phone {
-          a {
-            &:nth-child(1) {
-              margin-right: 7px;
-            }
+        .phones {
+          a:hover {
+            color: #324035;
           }
         }
         .language {
           margin:      0 27px;
           display:     flex;
           align-items: center;
+          cursor:      pointer;
+          &:hover {
+            color: #324035;
+          }
         }
         .user {
           min-width:       179px;
-          padding:         11px 0 5px;
+          padding:         9px 0 7px;
           display:         flex;
           align-items:     center;
           justify-content: center;
-          a {
-            font-size: 18px;
+          font-size:       18px;
+          transition:      .2s linear;
+          &:hover {
+            background: linear-gradient(248.04deg,
+                    #03BF6A 24.98%, #6AE37E 101.83%);
           }
         }
       }
