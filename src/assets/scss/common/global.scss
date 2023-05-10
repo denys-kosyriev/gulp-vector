@@ -80,7 +80,7 @@ li {
   list-style: none;
 }
 
-button {
+button, .btn {
   cursor:          pointer;
   display:         inline-flex;
   justify-content: center;
@@ -91,10 +91,13 @@ button {
   font-weight:     700;
 }
 
-.btn-disabled {
+.btn-black {
   background-color: #324035;
-  border:           #324035;
-  cursor:           none;
+  border-color:     #324035;
+  color:            #fff;
+  &:hover {
+    background-color: #03BF6A;
+  }
 }
 
 .btn-outlined {
@@ -209,7 +212,7 @@ input, select {
     line-height: 1.5;
   }
 
-  button {
+  button, .btn {
     border-width: 4px;
   }
 
