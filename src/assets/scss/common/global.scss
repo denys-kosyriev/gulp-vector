@@ -221,10 +221,8 @@ input, select {
     left:     0;
     z-index:  0;
   }
-  &-pagination {
-    &.swiper-pagination-bullets {
-      bottom: 0;
-    }
+  & &-pagination.swiper-pagination-bullets {
+    bottom: 0;
     span {
       cursor: pointer;
     }

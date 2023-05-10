@@ -45,9 +45,6 @@
           z-index:  1;
         }
       }
-      .swiper-pagination-bullets {
-        bottom: 0;
-      }
       .swiper-pagination {
         span {
           height:           8px;
@@ -67,6 +64,19 @@
       padding-bottom: 21px;
       opacity:        .2;
       text-align:     center;
+    }
+  }
+  .show-all-tariffs {
+    padding:    35px 0 14px;
+    text-align: center;
+    .container {
+      max-width: 835px;
+    }
+    h2 {
+      padding-bottom: 23px;
+    }
+    p {
+      padding-bottom: 35px;
     }
   }
 }
@@ -110,10 +120,24 @@
       }
     }
     .action {
-      padding: 167px 0 93px;
+      padding: 167px 0 0;
       h2 {
         padding-bottom: 50px;
         opacity:        1;
+      }
+    }
+    .show-all-tariffs {
+      padding:    35px 0 14px;
+      text-align: center;
+      .container {
+        max-width: 835px;
+      }
+      h2 {
+        padding-bottom: 23px;
+      }
+      p {
+        padding-bottom: 35px;
+        color:          #6F8F81;
       }
     }
   }
