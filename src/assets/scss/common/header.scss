@@ -21,7 +21,7 @@
         opacity: .7;
       }
       &:active {
-        opacity: 0;
+        opacity: .4;
       }
     }
     ul {
@@ -62,9 +62,10 @@
         align-items: start;
         &:hover {
           opacity: .7;
+          color:   #03BF6A;
         }
         &:active {
-          opacity: 0;
+          opacity: .4;
         }
         img {
           margin-right: 2px;
@@ -75,15 +76,13 @@
           width:        18px;
           margin-right: 7px;
         }
-        .phones {
-          a:active {
-            opacity: 0;
-          }
-        }
         .language {
           margin:      0 27px;
           display:     flex;
           align-items: center;
+          &:hover {
+            opacity: .7;
+          }
         }
         .user {
           min-width:       179px;
@@ -99,7 +98,7 @@
             color:      #fff;
           }
           &:active {
-            opacity: 0;
+            opacity: .8;
           }
         }
       }
@@ -128,7 +127,7 @@
             color: #03BF6A;
           }
           &:active {
-            color: #fff;
+            color: #029c56;
           }
         }
       }

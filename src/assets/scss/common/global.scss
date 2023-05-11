@@ -14,7 +14,7 @@ body {
   min-height:     100%;
   display:        flex;
   flex-direction: column;
-  font-family:    sans-serif;
+  font-family:    'MacPaw Fixel', sans-serif;
   color:          #324035;
 }
 
@@ -36,17 +36,15 @@ img, svg, iframe, video {
 a {
   text-decoration: none;
   cursor:          pointer;
+  transition:      .3s linear;
   &:hover {
-    color: #324035;
+    color: #029c56;
   }
   &:active {
-    color: transparent;
+    color: #006939;
   }
 }
 
-a, input, select, button, img, span, p, h2 {
-  transition: .2s linear;
-}
 
 .container {
   max-width: 1920px;
@@ -86,6 +84,7 @@ button, .btn {
   user-select:     none;
   border:          2px solid #03BF6A;
   font-weight:     700;
+  transition:      .3s linear;
 }
 
 input, select {
@@ -96,10 +95,10 @@ input, select {
   cursor:        pointer;
   border:        1px solid #d2dbdb;
   border-radius: 40px;
-  color:         #324035;
   font-size:     14px;
   font-weight:   500;
   margin-bottom: 10px;
+  transition:    .3s linear;
   &:hover {
     border: 1px solid #03BF6A;
   }
@@ -110,11 +109,12 @@ input, select {
   border-color:     #324035;
   color:            rgba(#fff, .8);
   &:hover {
-    color:            #03BF6A;
+    color:            #324035;
     background-color: #fff;
   }
   &:active {
-    color: #fff;
+    color:        #006939;
+    border-color: #006939;
   }
 }
 
@@ -126,7 +126,7 @@ input, select {
     background-color: #03BF6A;
   }
   &:active {
-    background: #fff;
+    background: #006939;
   }
 }
 
@@ -138,7 +138,8 @@ input, select {
     background-color: #fff;
   }
   &:active {
-    color: #fff;
+    color:        #006939;
+    border-color: #006939;
   }
 }
 
@@ -199,7 +200,7 @@ input, select {
   display: none !important;
 }
 
-.c-pointer {
+.cursor-pointer {
   cursor: pointer;
 }
 
@@ -224,7 +225,14 @@ input, select {
   & &-pagination.swiper-pagination-bullets {
     bottom: 0;
     span {
-      cursor: pointer;
+      cursor:           pointer;
+      height:           8px;
+      width:            8px;
+      background-color: #03BF6A;
+      margin:           0 10px;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }
@@ -249,9 +257,6 @@ input, select {
 
   input, select {
     padding:       17px 32px;
-    overflow:      hidden;
-    text-overflow: ellipsis;
-    cursor:        pointer;
     border:        2px solid #d2dbdb;
     border-radius: 40px;
     color:         #324035;
@@ -286,4 +291,13 @@ input, select {
     width: 18px;
   }
 
+  .swiper {
+    & &-pagination.swiper-pagination-bullets {
+      span {
+        height: 20px;
+        width:  20px;
+        margin: 0 30px;
+      }
+    }
+  }
 }
