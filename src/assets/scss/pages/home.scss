@@ -77,59 +77,10 @@
       margin-top: 35px;
     }
   }
-  .about-company {
-    padding: 14px 0 30px;
-    .container {
-      max-width: 1428px;
-    }
-    .content {
-      display:        flex;
-      flex-direction: column;
-      align-items:    center;
-    }
-    .left {
-      padding: 0 0 18px 0;
-      display: inline-flex;
-      margin:  0 auto 36px;
-      img {
-        max-width: 360px;
-      }
-      div {
-        min-width:       133px;
-        min-height:      133px;
-        text-transform:  uppercase;
-        font-size:       33px;
-        font-weight:     700;
-        position:        absolute;
-        bottom:          0;
-        right:           0;
-        z-index:         1;
-        border-radius:   50%;
-        background:      #6AE37E;
-        display:         flex;
-        align-items:     center;
-        justify-content: center;
-      }
-    }
-    .right {
-      text-align:     center;
-      color:          #6F8F81;
-      font-weight:    400;
-      display:        flex;
-      flex-direction: column;
-      align-items:    center;
-      h2 {
-        padding-bottom: 14px;
-      }
-      a {
-        margin-top: 25px;
-      }
-    }
-  }
   .internet {
     padding: 29px 0 28px;
     .container {
-      max-width: 1559px;
+      max-width: 1613px;
     }
     .content {
       padding: 53px 0 0 0;
@@ -245,38 +196,6 @@
       }
       a {
         margin-top: 50px;
-      }
-    }
-    .about-company {
-      padding: 46px 0 48px;
-      .content {
-        flex-direction:  row;
-        justify-content: space-between;
-      }
-      .left {
-        padding: 0 0 39px 0;
-        margin:  0 105px 0 0;
-        img {
-          max-width: 699px;
-        }
-        div {
-          height:    295px;
-          width:     295px;
-          font-size: 72px;
-        }
-      }
-      .right {
-        width:       50%;
-        text-align:  left;
-        font-size:   24px;
-        align-items: start;
-        h2 {
-          padding-bottom: 14px;
-        }
-        a {
-          min-width:  277px;
-          margin-top: 25px;
-        }
       }
     }
     .internet {
