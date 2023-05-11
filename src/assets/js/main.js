@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       el: ".swiper-pagination",
     },
     breakpoints: {
-      567: {
+      768: {
         slidesPerView: '2',
       },
       1024: {

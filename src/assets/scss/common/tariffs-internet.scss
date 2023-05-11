@@ -106,7 +106,7 @@
       font-size:     20px;
       border-width:  4px;
       transition:    .2s linear;
-      margin:        0 0 137px 0;
+      margin:        0 0 130px 0;
       &:hover {
         background:   #FFFFFF;
         border-color: rgba(#03BF6A, 1);
@@ -172,6 +172,14 @@
     }
     .swiper-pagination {
       display: none;
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+  .tariffs-internet {
+    .tariff {
+      margin: 0 0 137px 0;
     }
   }
 }

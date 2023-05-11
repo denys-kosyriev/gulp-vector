@@ -67,27 +67,84 @@
     }
   }
   .show-all-tariffs {
-    padding:    35px 0 14px;
-    text-align: center;
+    padding:     35px 0 14px;
+    text-align:  center;
+    color:       #6F8F81;
+    font-weight: 400;
     .container {
       max-width: 835px;
+    }
+    .content {
+      display:        flex;
+      flex-direction: column;
+      align-items:    center;
     }
     h2 {
       padding-bottom: 23px;
     }
-    p {
-      padding-bottom: 35px;
+    a {
+      margin-top: 35px;
+    }
+  }
+  .about-company {
+    padding: 14px 0 30px;
+    .container {
+      max-width: 1428px;
+    }
+    .content {
+      display:        flex;
+      flex-direction: column;
+      align-items:    center;
+    }
+    .left {
+      padding: 0 0 18px 0;
+      display: inline-flex;
+      margin:  0 auto 36px;
+      img {
+        max-height: 400px;
+      }
+      div {
+        min-width:       133px;
+        min-height:      133px;
+        text-transform:  uppercase;
+        font-size:       33px;
+        font-weight:     700;
+        color:           #fff;
+        position:        absolute;
+        bottom:          0;
+        right:           0;
+        z-index:         1;
+        border-radius:   50%;
+        background:      #6AE37E;
+        display:         flex;
+        align-items:     center;
+        justify-content: center;
+      }
+    }
+    .right {
+      text-align:     center;
+      color:          #6F8F81;
+      font-weight:    400;
+      display:        flex;
+      flex-direction: column;
+      align-items:    center;
+      h2 {
+        padding-bottom: 14px;
+      }
+      a {
+        margin-top: 25px;
+      }
     }
   }
 }
 
 @media(min-width: 1024px) {
   .home {
-    padding-top: 219px;
+    padding-top: 170px;
     .banners {
       .swiper-banners {
         .swiper-wrapper {
-          margin-bottom: 108px;
+          margin-bottom: 50px;
         }
         .swiper-slide {
           min-height: 521px;
@@ -120,25 +177,76 @@
       }
     }
     .action {
-      padding: 167px 0 0;
+      padding: 60px 0 0;
       h2 {
         padding-bottom: 50px;
         opacity:        1;
       }
     }
     .show-all-tariffs {
-      padding:    35px 0 14px;
-      text-align: center;
-      .container {
-        max-width: 835px;
-      }
+      padding: 0 0 46px;
       h2 {
-        padding-bottom: 23px;
+        padding-bottom: 20px;
       }
-      p {
-        padding-bottom: 35px;
-        color:          #6F8F81;
+      a {
+        margin-top: 50px;
       }
+    }
+    .about-company {
+      padding: 46px 0 48px;
+      .content {
+        flex-direction:  row;
+        justify-content: space-between;
+      }
+      .left {
+        padding: 0 0 39px 0;
+        margin:  0 105px 0 0;
+        img {
+          max-height: 831px;
+        }
+        div {
+          height:    295px;
+          width:     295px;
+          font-size: 72px;
+        }
+      }
+      .right {
+        width:       50%;
+        text-align:  left;
+        font-size:   24px;
+        align-items: start;
+        h2 {
+          padding-bottom: 14px;
+        }
+        a {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+  .home {
+    padding-top: 219px;
+    .banners {
+      .swiper-banners {
+        .swiper-wrapper {
+          margin-bottom: 108px;
+        }
+      }
+    }
+    .action {
+      padding: 167px 0 0;
+    }
+    .show-all-tariffs {
+      padding: 0 0 76px;
+      a {
+        margin-top: 78px;
+      }
+    }
+    .about-company {
+      padding: 76px 0 97px;
     }
   }
 }
