@@ -87,6 +87,7 @@
   .tariffs-internet {
     .swiper-wrapper {
       padding: 0;
+      margin:  0 0 130px 0;
     }
     .swiper-slide {
       padding: 0 20px;
@@ -105,7 +106,6 @@
       padding:       39px 33px;
       border-width:  4px;
       transition:    .2s linear;
-      margin:        0 0 130px 0;
       &:hover {
         background:   #FFFFFF;
         border-color: rgba(#03BF6A, 1);
@@ -181,7 +181,7 @@
 
 @media(min-width: 1440px) {
   .tariffs-internet {
-    .tariff {
+    .swiper-wrapper {
       margin: 0 0 137px 0;
     }
   }

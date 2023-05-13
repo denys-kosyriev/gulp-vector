@@ -17,11 +17,12 @@
     h2 {
       font-weight: 700;
       font-size:   26px;
+      transition:  .2s linear;
       &:hover {
-        opacity: .7;
+        color: #029c56;
       }
       &:active {
-        opacity: .4;
+        color: #006939;
       }
     }
     ul {
@@ -51,6 +52,9 @@
       display:     flex;
       align-items: center;
     }
+    svg, img {
+      margin-right: 7px;
+    }
     .top {
       display:     flex;
       align-items: center;
@@ -61,18 +65,23 @@
         white-space: nowrap;
         align-items: start;
         &:hover {
-          opacity: .7;
-          color:   #03BF6A;
+          color: #029c56;
+          svg {
+            fill: #029c56;
+          }
         }
         &:active {
-          opacity: .4;
+          color: #006939;
+          svg {
+            fill: #006939;
+          }
         }
-        img {
-          margin-right: 2px;
+        svg {
+          width: 19px;
         }
       }
       .right {
-        img {
+        svg {
           width:        18px;
           margin-right: 7px;
         }
@@ -81,7 +90,10 @@
           display:     flex;
           align-items: center;
           &:hover {
-            opacity: .7;
+            color: #006939;
+            svg {
+              fill: #006939;
+            }
           }
         }
         .user {
@@ -99,6 +111,9 @@
           }
           &:active {
             opacity: .8;
+          }
+          img {
+            width: 13px;
           }
         }
       }

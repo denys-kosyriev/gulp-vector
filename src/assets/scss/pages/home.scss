@@ -110,7 +110,7 @@
     }
   }
   .questions {
-    padding: 25px 0 27px;
+    padding: 25px 0 54px;
     .container {
       max-width: 1228px;
     }
@@ -133,8 +133,11 @@
       h3 {
         font-size: 18px;
       }
-      .icon-select.open {
-        transform: rotate(90deg);
+      .icon-select {
+        width: 7px;
+        &.open {
+          transform: rotate(90deg);
+        }
       }
     }
     .questions-answer {
@@ -244,6 +247,7 @@
       }
     }
     .questions {
+      padding: 74px 0 211px;
       .container {
         max-width: 1228px;
       }
@@ -263,6 +267,9 @@
         align-items:     center;
         h3 {
           font-size: 18px;
+        }
+        .icon-select {
+          width: 12px;
         }
       }
       .questions-answer {
