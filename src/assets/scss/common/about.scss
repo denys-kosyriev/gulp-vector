@@ -1,6 +1,6 @@
 .about {
   &.about-company {
-    padding: 14px 0 30px;
+    padding: 3px 0 30px;
     .left {
       padding: 0 0 18px 0;
       display: inline-flex;
@@ -28,7 +28,8 @@
   }
   &.tv {
     img {
-      max-width: 400px;
+      max-width:     400px;
+      margin-bottom: 44px;
     }
   }
   .container {
@@ -39,18 +40,19 @@
     flex-direction: column;
     align-items:    center;
   }
-
   .right {
-    text-align:     center;
     font-weight:    400;
     display:        flex;
     flex-direction: column;
     align-items:    center;
+    font-size:      14px;
+    line-height:    1.5;
     h2 {
-      padding-bottom: 14px;
+      padding-bottom: 22px;
+      text-align:     center;
     }
     a {
-      margin-top: 25px;
+      margin-top: 36px;
     }
   }
 }

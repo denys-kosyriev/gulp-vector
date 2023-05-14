@@ -54,9 +54,10 @@ a {
 }
 
 h2 {
-  font-size:   28px;
+  font-size:   26px;
   font-weight: 700;
   color:       #324035;
+  line-height: 1.1;
 }
 
 h3 {
@@ -225,7 +226,7 @@ input, select {
       height:           8px;
       width:            8px;
       background-color: #03BF6A;
-      margin:           0 10px;
+      margin:           0 5px;
       &:hover {
         opacity: 1;
       }

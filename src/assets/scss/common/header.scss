@@ -1,28 +1,30 @@
 .header {
-  width:      100vw;
-  background: #F2F8F8;
-  position:   fixed;
-  top:        0;
-  left:       0;
-  z-index:    1000;
+  width:    100vw;
+  position: fixed;
+  top:      0;
+  left:     0;
+  z-index:  1000;
   .top {
     display: none;
   }
   .main {
-    padding: 10px 0;
+    padding: 13px 0 10px;
     .content {
       display:         flex;
       justify-content: space-between;
     }
     h2 {
-      font-weight: 700;
-      font-size:   26px;
-      transition:  .2s linear;
-      &:hover {
-        color: #029c56;
-      }
-      &:active {
-        color: #006939;
+      a {
+        font-weight:    700;
+        font-size:      26px;
+        letter-spacing: -2px;
+        transition:     .2s linear;
+        &:hover {
+          opacity: .7;
+        }
+        &:active {
+          opacity: .5;
+        }
       }
     }
     ul {

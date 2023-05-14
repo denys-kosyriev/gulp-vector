@@ -8,7 +8,7 @@
     background:     linear-gradient(181.69deg, #FFFFFF 1.43%, #F3F8F8 98.71%);
     border:         2px solid rgba(#03BF6A, .6);
     border-radius:  20px;
-    padding:        29px 30px;
+    padding:        32px 25px;
     display:        flex;
     flex-direction: column;
     align-items:    center;
@@ -27,31 +27,30 @@
       }
     }
     h3 {
-      padding-bottom: 10px;
+      padding-bottom: 25px;
     }
     .speed {
-      font-size:      23px;
-      font-weight:    700;
-      line-height:    1;
-      padding-bottom: 5px;
+      font-size:   16px;
+      font-weight: 700;
+      line-height: 1;
       span {
         font-size: 34px;
       }
     }
     .no-limited {
-      padding-bottom: 15px;
+      padding-bottom: 16px;
       font-size:      12px;
     }
-    .internet {
+    .network {
       display:     flex;
       align-items: center;
       font-size:   16px;
       font-weight: 400;
       &:nth-of-type(1) {
-        padding: 0 0 6px;
+        padding: 0 0 10px;
       }
       &:nth-of-type(2) {
-        padding: 0 0 15px;
+        padding: 0 0 26px;
       }
       img {
         margin-right: 8px;
@@ -64,7 +63,7 @@
     .price {
       font-weight:    500;
       font-size:      14px;
-      padding-bottom: 15px;
+      padding-bottom: 25px;
       display:        flex;
       align-items:    flex-end;
       p {
@@ -136,7 +135,7 @@
         padding-bottom: 24px;
         font-size:      20px;
       }
-      .internet {
+      .network {
         display:     flex;
         align-items: center;
         font-size:   24px;

@@ -11,15 +11,15 @@
       .swiper-slide {
         background:    linear-gradient(114.04deg, #03BF6A 24.98%, #6AE37E 101.83%);
         border-radius: 20px;
-        padding:       64px 23px 28px;
+        padding:       68px 23px 28px;
         div {
           z-index: 2;
         }
         h2 {
-          padding-bottom: 12px;
+          padding-bottom: 8px;
           color:          #fff;
           text-transform: uppercase;
-          font-size:      36px;
+          font-size:      30px;
           font-weight:    700;
           transition:     .3s linear;
         }
@@ -28,7 +28,7 @@
           font-size:     10px;
           font-weight:   400;
           color:         #fff;
-          margin-bottom: 12px;
+          margin-bottom: 18px;
         }
         a {
           min-width:     124px;
@@ -39,26 +39,26 @@
         img {
           width:    326px;
           position: absolute;
-          left:     40%;
-          bottom:   -40%;
+          left:     39%;
+          bottom:   -42%;
           z-index:  1;
         }
       }
     }
   }
   .action {
-    padding: 30px 0 17px;
+    padding: 34px 0 17px;
     .container {
       max-width: 1482px;
     }
     h2 {
-      padding-bottom: 21px;
+      padding-bottom: 24px;
       opacity:        .2;
       text-align:     center;
     }
   }
   .show-all-tariffs {
-    padding:     35px 0 14px;
+    padding:     18px 0 14px;
     text-align:  center;
     font-weight: 400;
     .container {
@@ -68,49 +68,51 @@
       display:        flex;
       flex-direction: column;
       align-items:    center;
+      font-size:      14px;
+      line-height:    1.5;
     }
     h2 {
-      padding-bottom: 23px;
+      padding-bottom: 24px;
     }
     a {
       margin-top: 35px;
     }
   }
   .internet {
-    padding: 29px 0 28px;
+    padding:    56px 0 28px;
+    margin-top: 23px;
     .container {
       max-width: 1613px;
     }
     .content {
-      padding: 53px 0 0 0;
+      padding:       211px 21px 43px;
+      border-radius: 20px;
       img {
-        max-width: 307px;
+        max-width: 347px;
         position:  absolute;
         top:       0;
-        right:     0;
+        right:     -15px;
         z-index:   1;
       }
-      .back {
-        padding:       205px 27px 43px;
-        border-radius: 20px;
-        div {
-          display:        flex;
-          flex-direction: column;
-          align-items:    center;
-        }
+      div {
+        display:        flex;
+        flex-direction: column;
+        align-items:    center;
+        font-size:      14px;
+        line-height:    1.5;
       }
       h2 {
         color:          #fff;
-        padding-bottom: 17px;
+        padding-bottom: 24px;
         text-align:     center;
       }
       a {
-        margin-top: 21px;
+        margin-top: 27px;
       }
     }
   }
   .questions {
-    padding: 25px 0 54px;
+    padding: 58px 0 44px;
     .container {
       max-width: 1228px;
     }
@@ -121,9 +123,14 @@
       width:         100%;
       background:    #FBFDFC;
       box-shadow:    0 50px 80px rgba(3, 191, 106, 0.07), 0 20px 36.9864px rgba(3, 191, 106, 0.0519173), 0 14px 21.1628px rgba(3, 191, 106, 0.0438747);
-      border-radius: 20px;
-      padding:       20px 19px;
-      margin-bottom: 12px;
+      border-radius: 10px;
+      padding:       23px 19px 16px;
+      margin-bottom: 8px;
+      border:        2px solid transparent;
+      transition:    .3s linear;
+      &:hover {
+        border-color: #03BF6A;
+      }
     }
     .question {
       width:           100%;
@@ -134,7 +141,7 @@
         font-size: 18px;
       }
       .icon-select {
-        width: 7px;
+        width: 10px;
         &.open {
           transform: rotate(90deg);
         }
@@ -142,6 +149,7 @@
     }
     .questions-answer {
       padding-top: 11px;
+      line-height: 1.6;
     }
   }
 }
@@ -259,6 +267,7 @@
         background:    #FBFDFC;
         box-shadow:    0 100px 80px rgba(3, 191, 106, 0.07), 0 46.233px 36.9864px rgba(3, 191, 106, 0.0519173), 0 26.4535px 21.1628px rgba(3, 191, 106, 0.0438747);
         border-radius: 20px;
+        border-width:  4px;
       }
       .question {
         width:           100%;
