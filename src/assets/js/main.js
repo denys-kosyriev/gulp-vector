@@ -20,4 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   })
+
+  //Show languages list 'header'
+  const language = document.getElementsByClassName('language')[0];
+  const languageName = document.getElementsByClassName('language-name')[0];
+  const languagesList = document.getElementsByClassName('languages-list')[0];
+  const languagesListLanguage = document.getElementsByClassName('languages-list-language');
+
+  language.addEventListener('click', () => {
+    languagesList.classList.toggle('d-none');
+  })
+
+  for (let i = 0; i < languagesListLanguage.length; i++) {
+    languagesListLanguage[i].addEventListener('click', () => {
+      language.classList.add('d-none');
+      console.log(languagesListLanguage[i].innerHTML)
+      languageName.innerHTML = languagesListLanguage[i].innerHTML;
+    })
+  }
+
 });

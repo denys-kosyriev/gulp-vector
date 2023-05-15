@@ -91,10 +91,37 @@
           margin:      0 33px;
           display:     flex;
           align-items: center;
+          p {
+            color: #03BF6A;
+          }
           &:hover {
-            color: #006939;
+            p {
+              color: #006939;
+            }
             svg {
               fill: #006939;
+            }
+          }
+          .languages-list {
+            position:         absolute;
+            top:              120%;
+            left:             50%;
+            z-index:          1;
+            transform:        translateX(-50%);
+            border:           2px solid #03BF6A;
+            border-radius:    10px;
+            background-color: #fff;
+            padding:          10px;
+            text-align:       center;
+            li {
+              cursor:     pointer;
+              transition: .2s linear;
+              &:not(&:last-of-type) {
+                padding-bottom: 10px;
+              }
+              &:hover {
+                color: #03BF6A;
+              }
             }
           }
         }
@@ -108,10 +135,7 @@
           transition:      .2s linear;
           background:      #03BF6A;
           &:hover {
-            background: #324035;
-          }
-          &:active {
-            background: #03BF6A;
+            background: #fff;
           }
           img {
             width: 13px;
