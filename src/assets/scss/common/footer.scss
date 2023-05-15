@@ -8,9 +8,6 @@
       top:      0;
       left:     0;
       z-index:  1;
-      .container {
-        max-width: 1500px;
-      }
       .payment-content {
         padding:       126px 27px 41px;
         box-shadow:    0 100px 80px rgba(0, 126, 69, 0.07), 0 46.233px 36.9864px rgba(0, 126, 69, 0.0519173), 0 26.4535px 21.1628px rgba(0, 126, 69, 0.0438747);
@@ -49,7 +46,7 @@
     padding: 25px 0 34px;
   }
   .container {
-    max-width: 1450px;
+    max-width: 1480px;
   }
   .wrapper {
     display:        flex;
@@ -156,7 +153,7 @@
     align-items:    start;
     padding-bottom: 17px;
     li {
-      padding-bottom: 27px;
+      padding-bottom: 22px;
       display:        flex;
       align-items:    start;
       div {
@@ -170,6 +167,9 @@
         svg {
           width: 29px;
         }
+        a {
+          line-height: 1.3;
+        }
       }
     }
     img, svg {
@@ -180,7 +180,7 @@
     a {
       color:       #fff;
       font-size:   14px;
-      line-height: 1.3;
+      line-height: 1;
       &:hover {
         color: #006939;
       }
@@ -246,7 +246,7 @@
       justify-content: space-around;
     }
     .navigation {
-      h2 {
+      li:nth-of-type(1) {
         padding-bottom: 20px;
       }
     }
@@ -271,17 +271,19 @@
       .payment {
         .btn {
           max-width: 272px;
+          font-size: 24px;
         }
       }
       .content {
-        padding: 168px 0 21px;
+        padding: 168px 0 60px;
       }
     }
     .content {
-      padding: 66px 0;
+      padding: 66px 0 60px;
     }
     .wrapper {
       flex-direction: row;
+      padding-bottom: 15px;
     }
     .flex {
       width: 70%;
@@ -301,11 +303,16 @@
         &:nth-of-type(1),
         &:nth-of-type(2) {
           align-items: start;
+          li {
+            &:nth-of-type(1) {
+              padding-bottom: 10px;
+            }
+          }
           h3 {
             font-size: 24px;
           }
           a {
-            min-width: 212px;
+            min-width: 216px;
             font-size: 20px;
             padding:   10px;
           }
@@ -327,7 +334,7 @@
       }
     }
     .copywriting {
-      font-size: 10px;
+      font-size: 20px;
     }
   }
 }
@@ -339,11 +346,11 @@
       .payment {
         padding: 102px 0 0;
         .container {
-          max-width: 1440px;
+          max-width: 1480px;
         }
         .payment-content {
           min-height: 376px;
-          padding:    61px 20px 68px 50%;
+          padding:    61px 20px 68px 51%;
         }
         img {
           width:     508px;
@@ -352,10 +359,11 @@
         h2 {
           font-size:      59px;
           padding-bottom: 42px;
+          line-height:    1.1;
         }
       }
       .content {
-        padding: 323px 0 21px;
+        padding: 309px 0 60px;
       }
     }
     .flex {
@@ -367,21 +375,21 @@
       flex-wrap:      wrap;
       li {
         padding-bottom: 24px;
-        &:first-of-type {
-          width: 100%;
+        &:nth-of-type(1) {
+          width:          100%;
+          padding-bottom: 52px;
         }
         &:not(&:nth-of-type(1)) {
-          width:         47%;
-          padding-right: 15px;
+          width:          47%;
+          padding-right:  15px;
+          padding-bottom: 24px;
         }
-      }
-      h2 {
-        padding-bottom: 47px;
       }
     }
     .phone-numbers {
       flex-direction: row;
       gap:            50px;
+      padding-top:    14px;
       ul {
         &:nth-of-type(1),
         &:nth-of-type(2) {
@@ -398,7 +406,8 @@
     }
     .links {
       max-width: 352px;
-      margin:    0 auto;
+      padding:   0;
+      margin:    71px 0 0 144px;
     }
   }
 }

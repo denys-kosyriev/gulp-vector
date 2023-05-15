@@ -2,7 +2,7 @@
   padding-top: 85px;
   .banners {
     .container {
-      max-width: 1451px;
+      max-width: 1488px;
     }
     .swiper-banners {
       .swiper-wrapper {
@@ -49,7 +49,7 @@
   .action {
     padding: 34px 0 17px;
     .container {
-      max-width: 1482px;
+      max-width: 1540px;
     }
     h2 {
       padding-bottom: 24px;
@@ -82,24 +82,22 @@
     padding:    56px 0 28px;
     margin-top: 23px;
     .container {
-      max-width: 1613px;
+      max-width: 1483px;
     }
     .content {
-      padding:       211px 21px 43px;
-      border-radius: 20px;
+      padding:        211px 21px 43px;
+      border-radius:  20px;
+      display:        flex;
+      flex-direction: column;
+      align-items:    center;
+      font-size:      14px;
+      line-height:    1.5;
       img {
         max-width: 347px;
         position:  absolute;
         top:       0;
         right:     -15px;
         z-index:   1;
-      }
-      div {
-        display:        flex;
-        flex-direction: column;
-        align-items:    center;
-        font-size:      14px;
-        line-height:    1.5;
       }
       h2 {
         color:          #fff;
@@ -114,7 +112,7 @@
   .questions {
     padding: 58px 0 44px;
     .container {
-      max-width: 1228px;
+      max-width: 1271px;
     }
     h2 {
       padding-bottom: 15px;
@@ -172,21 +170,19 @@
   .home {
     .internet {
       .content {
-        padding: 71px 121px 0 0;
+        padding:     40px 50% 40px 40px;
+        align-items: start;
         img {
           max-width: 380px;
           right:     0;
           transform: translateX(0);
         }
-        .back {
-          padding: 43px 27px;
-          div {
-            max-width:   60%;
-            align-items: start;
-          }
-          a {
-            margin-top: 40px;
-          }
+      }
+    }
+    .questions {
+      .question {
+        .icon-select {
+          width: 19px;
         }
       }
     }
@@ -202,7 +198,7 @@
           margin-bottom: 50px;
         }
         .swiper-slide {
-          padding: 112px 127px 87px;
+          padding: 88px 127px 87px;
           h2 {
             padding-bottom: 26px;
             font-size:      64px;
@@ -211,14 +207,16 @@
             padding-bottom: 29px;
             font-size:      24px;
           }
+          img {
+            width: 801px;
+            left:  44%;
+          }
           a {
             min-width:     277px;
+            margin-top:    40px;
             padding:       28px 8px;
             border-radius: 60px;
             font-size:     24px;
-          }
-          img {
-            width: 801px;
           }
         }
       }
@@ -226,41 +224,37 @@
     .action {
       padding: 60px 0 0;
       h2 {
-        padding-bottom: 50px;
+        padding-bottom: 56px;
         opacity:        1;
       }
     }
     .show-all-tariffs {
-      padding:   0 0 46px;
-      font-size: 24px;
+      padding: 70px 0 46px;
+      .content {
+        font-size: 24px;
+      }
       h2 {
+        font-size:      46px;
         padding-bottom: 20px;
       }
       a {
-        margin-top: 50px;
+        margin-top: 28px;
       }
     }
     .internet {
-      padding: 45px 0 40px;
+      padding:    45px 0 40px;
+      margin-top: 105px;
       .content {
         img {
           max-width: 510px;
         }
-        .back {
-          font-size: 24px;
-          div {
-            max-width: 50%;
-          }
-        }
       }
     }
     .questions {
-      padding: 74px 0 211px;
-      .container {
-        max-width: 1228px;
-      }
+      padding: 86px 0 196px;
       h2 {
         padding-bottom: 55px;
+        text-align:     center;
       }
       .questions-select {
         width:         100%;
@@ -268,6 +262,8 @@
         box-shadow:    0 100px 80px rgba(3, 191, 106, 0.07), 0 46.233px 36.9864px rgba(3, 191, 106, 0.0519173), 0 26.4535px 21.1628px rgba(3, 191, 106, 0.0438747);
         border-radius: 20px;
         border-width:  4px;
+        padding:       37px 32px 31px;
+        margin-bottom: 19px;
       }
       .question {
         width:           100%;
@@ -275,14 +271,12 @@
         justify-content: space-between;
         align-items:     center;
         h3 {
-          font-size: 18px;
-        }
-        .icon-select {
-          width: 12px;
+          font-size: 32px;
         }
       }
       .questions-answer {
-        padding-top: 11px;
+        padding-top: 19px;
+        line-height: 1.8;
       }
     }
   }
@@ -290,22 +284,19 @@
 
 @media(min-width: 1440px) {
   .home {
-    padding-top: 219px;
+    padding-top: 227px;
     .banners {
       .swiper-banners {
         .swiper-wrapper {
-          margin-bottom: 108px;
+          margin-bottom: 75px;
         }
       }
     }
     .action {
-      padding: 167px 0 0;
+      padding: 175px 0 0;
     }
     .show-all-tariffs {
-      padding: 0 0 76px;
-      a {
-        margin-top: 78px;
-      }
+      padding: 70px 0 76px;
     }
     .about-company {
       padding: 76px 0 97px;
@@ -313,15 +304,10 @@
     .internet {
       padding: 97px 0 83px;
       .content {
-        padding: 104px 166px 0 0;
+        padding:   88px 55% 71px 121px;
+        font-size: 24px;
         img {
           max-width: 710px;
-        }
-        .back {
-          padding: 71px 121px;
-          div {
-            max-width: 55%;
-          }
         }
       }
     }
@@ -332,17 +318,13 @@
   .home {
     .internet {
       .content {
-        padding: 104px 207px 0 0;
         img {
           max-width: 962px;
+          right:     67px;
         }
-        .back {
-          div {
-            max-width: 44%;
-            a {
-              margin-top: 69px;
-            }
-          }
+        a {
+          min-width:  277px;
+          margin-top: 66px;
         }
       }
     }

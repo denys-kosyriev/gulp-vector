@@ -33,7 +33,7 @@
     }
   }
   .container {
-    max-width: 1428px;
+    max-width: 1698px;
   }
   .content {
     display:        flex;
@@ -61,6 +61,9 @@
   .about {
     &.about-company {
       padding: 46px 0 48px;
+      .container {
+        max-width: 1515px;
+      }
       .left {
         padding: 0 0 39px 0;
         margin:  0 auto;
@@ -68,6 +71,9 @@
           height: 180px;
           width:  180px;
         }
+      }
+      .right {
+        padding: 0 0 45px 100px;
       }
     }
     .content {
@@ -79,12 +85,14 @@
       text-align:  left;
       font-size:   24px;
       align-items: start;
+      padding:     90px 60px 0 0;
+      line-height: 1.6;
       h2 {
-        padding-bottom: 14px;
+        padding-bottom: 27px;
       }
       a {
         min-width:  277px;
-        margin-top: 25px;
+        margin-top: 65px;
       }
     }
     &.tv {
@@ -98,9 +106,8 @@
 @media(min-width: 1440px) {
   .about {
     &.about-company {
-      padding: 76px 0 97px;
+      padding: 83px 0 97px;
       .left {
-        margin: 0 105px 0 0;
         img {
           max-width: 713px;
         }
@@ -112,7 +119,7 @@
       }
     }
     &.tv {
-      padding: 83px 0 74px;
+      padding: 118px 0 74px;
       img {
         max-width: 622px;
         margin:    0 108px 0 0;

@@ -236,7 +236,7 @@ input, select {
 
 @media (min-width: 1024px) {
   h2 {
-    font-size: 60px;
+    font-size: 58px;
   }
 
   h3 {
@@ -282,6 +282,7 @@ input, select {
   .btn-big {
     min-width: 385px;
     font-size: 24px;
+    padding:   19px 10px;
   }
 
   .swiper {
@@ -289,7 +290,7 @@ input, select {
       span {
         height: 20px;
         width:  20px;
-        margin: 0 30px;
+        margin: 0 15px;
       }
     }
   }
