@@ -23,11 +23,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const answer = document.getElementsByClassName('questions-answer');
   const iconSelect = document.getElementsByClassName('icon-select');
 
-  for (let i = 0; i < selects.length; i++) {
-    selects[i].addEventListener('click', () => {
-      answer[i].classList.toggle('d-none');
-      iconSelect[i].classList.toggle('open');
+  Array.from(selects).map((select, index) => {
+    document.addEventListener('click', (e) => {
+      const closeAnswer = e.composedPath().includes(select);
+      if (!closeAnswer) {
+        answer[index].classList.add('d-none');
+        iconSelect[index].classList.remove('open');
+      } else if (closeAnswer) {
+        answer[index].classList.toggle('d-none');
+        iconSelect[index].classList.toggle('open');
+      }
     })
-  }
+  })
 
 })

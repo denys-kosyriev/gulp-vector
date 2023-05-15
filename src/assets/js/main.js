@@ -30,19 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('click', (e) => {
     const closeLanguagesList = e.composedPath().includes(language);
     if (!closeLanguagesList) {
-      console.log('t')
       languagesList.classList.add('d-none');
+    } else if (closeLanguagesList) {
+      languagesList.classList.toggle('d-none');
     }
   })
 
-  language.addEventListener('click', () => {
-    languagesList.classList.toggle('d-none');
-  })
-
-  for (let i = 0; i < languagesListLanguage.length; i++) {
-    languagesListLanguage[i].addEventListener('click', () => {
-      languageName.innerHTML = languagesListLanguage[i].innerHTML;
+  Array.from(languagesListLanguage).map(languageItem => {
+    languageItem.addEventListener('click', () => {
+      languageName.innerHTML = languageItem.innerHTML;
     })
-  }
+  })
 
 });
