@@ -27,14 +27,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const languagesList = document.getElementsByClassName('languages-list')[0];
   const languagesListLanguage = document.getElementsByClassName('languages-list-language');
 
+  document.addEventListener('click', (e) => {
+    const closeLanguagesList = e.composedPath().includes(language);
+    if (!closeLanguagesList) {
+      console.log('t')
+      languagesList.classList.add('d-none');
+    }
+  })
+
   language.addEventListener('click', () => {
     languagesList.classList.toggle('d-none');
   })
 
   for (let i = 0; i < languagesListLanguage.length; i++) {
     languagesListLanguage[i].addEventListener('click', () => {
-      language.classList.add('d-none');
-      console.log(languagesListLanguage[i].innerHTML)
       languageName.innerHTML = languagesListLanguage[i].innerHTML;
     })
   }
