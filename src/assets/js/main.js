@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  //Slider section 'banners'
+  //Slider section 'tariffs'
   new Swiper(".tariffs-internet", {
     slidesPerView: 1,
     grabCursor: true,
@@ -18,6 +18,19 @@ document.addEventListener('DOMContentLoaded', function () {
       1440: {
         slidesPerView: 3,
       }
+    }
+  })
+
+  //Location of tariffs
+  const tariffsWrappers = document.getElementsByClassName('tariffs-wrapper');
+  const screenWidth = window.screen.width;
+
+  Array.from(tariffsWrappers).map((wrapper) => {
+    const swiperSlideTariffs = wrapper.getElementsByClassName('swiper-slide');
+    if (swiperSlideTariffs.length === 2 && screenWidth > 1399) {
+      wrapper.classList.add('center')
+    } else if (swiperSlideTariffs.length === 1 && screenWidth > 767) {
+      wrapper.classList.add('center')
     }
   })
 

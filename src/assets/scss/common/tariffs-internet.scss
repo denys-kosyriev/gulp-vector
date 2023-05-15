@@ -3,6 +3,9 @@
   justify-content: center;
   .swiper-wrapper {
     padding-bottom: 38px;
+    &.center {
+      justify-content: center;
+    }
   }
   .tariff {
     background:     linear-gradient(181.69deg, #FFFFFF 1.43%, #F3F8F8 98.71%);
