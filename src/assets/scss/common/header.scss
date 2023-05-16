@@ -69,13 +69,17 @@
         &:hover {
           color: #029c56;
           svg {
-            fill: #029c56;
+            path {
+              fill: #029c56;
+            }
           }
         }
         &:active {
           color: #006939;
           svg {
-            fill: #006939;
+            path {
+              fill: #006939;
+            }
           }
         }
         svg {
@@ -99,7 +103,9 @@
               color: #006939;
             }
             svg {
-              fill: #006939;
+              path {
+                fill: #006939;
+              }
             }
           }
           .languages-list {
