@@ -43,7 +43,7 @@
     }
   }
   .content {
-    padding: 25px 0 34px;
+    padding: 34px 0 34px;
   }
   .container {
     max-width: 1480px;
@@ -153,14 +153,14 @@
     align-items:    start;
     padding-bottom: 17px;
     li {
-      padding-bottom: 22px;
+      padding-bottom: 27px;
       display:        flex;
       align-items:    start;
       div {
         display:        flex;
         flex-direction: column;
         a:first-of-type {
-          padding-bottom: 12px;
+          padding-bottom: 18px;
         }
       }
       &.footer-location {
@@ -276,7 +276,7 @@
       }
     }
     .content {
-      padding: 66px 0 60px;
+      padding: 44px 0 60px;
     }
     .wrapper {
       flex-direction: row;
@@ -323,6 +323,14 @@
     .addresses {
       a {
         font-size: 20px;
+      }
+      li {
+        padding-bottom: 22px;
+        div {
+          a:first-of-type {
+            padding-bottom: 14px;
+          }
+        }
       }
     }
     .socials {
@@ -402,9 +410,9 @@
       }
     }
     .links {
-      max-width: 352px;
+      max-width: 345px;
       padding:   0;
-      margin:    71px 0 0 144px;
+      margin:    76px 0 0 144px;
     }
   }
 }
