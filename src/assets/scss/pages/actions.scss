@@ -63,8 +63,9 @@
         font-size: 36px;
       }
       img {
-        bottom: -4px;
-        right:  -2px;
+        top:   56px;
+        left:  130px;
+        scale: 1.4;
       }
     }
     &:nth-of-type(5) {
@@ -76,8 +77,9 @@
         }
       }
       img {
-        bottom: 0;
-        right:  0;
+        top:   46px;
+        left:  106px;
+        scale: .9;
       }
     }
     h3 {
@@ -135,8 +137,6 @@
         }
         img {
           width: 472px;
-          top:   0;
-          left:  0;
         }
       }
       &:nth-of-type(3) {
@@ -147,10 +147,6 @@
             font-size: 26px;
           }
         }
-        img {
-          top:  0;
-          left: 0;
-        }
       }
       &:nth-of-type(4) {
         padding-top: 69px;
@@ -158,8 +154,8 @@
           font-size: 48px;
         }
         img {
-          bottom: -4px;
-          right:  -2px;
+          top:  77px;
+          left: 184px;
         }
       }
       &:nth-of-type(5) {
@@ -171,8 +167,8 @@
           }
         }
         img {
-          bottom: 0;
-          right:  0;
+          top:  63px;
+          left: 143px;
         }
       }
       a {
