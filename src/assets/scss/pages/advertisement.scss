@@ -29,7 +29,7 @@
       height:          67vw;
       max-height:      551px;
       scale:           1;
-      object-position: top;
+      object-position: 0 71%;
     }
   }
   .bottom {
@@ -53,6 +53,11 @@
         font-size:      100px;
         line-height:    1;
         padding-bottom: 57px;
+      }
+    }
+    .advertisement-img {
+      img {
+        object-position: 0 50%;
       }
     }
     .bottom {

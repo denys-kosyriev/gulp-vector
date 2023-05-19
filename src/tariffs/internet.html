@@ -10,7 +10,8 @@
   <title>Vector</title>
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/libs/swiper/swiper.css" />
 </head>
 <body>
 <header class="header bg-gray">
@@ -61,7 +62,7 @@
             </ul>
           </div>
           <a href='#' class='user bg-green color-white'>
-            <img src='./assets/images/icons/user.svg' alt='' class='icon-18'>
+            <img src='../assets/images/icons/user.svg' alt='' class='icon-18'>
             Увійти
           </a>
         </div>
@@ -73,71 +74,436 @@
       <div class='content'>
         <div class='left'>
           <h2>
-            <a class='color-green cursor-pointer' href='./index.html'>Logo</a>
+            <a class='color-green cursor-pointer' href='../index.html'>Logo</a>
           </h2>
           <ul>
-            <li><a href='./tariffs/internet.html' class='color-black'>Тарифи</a></li>
+            <li><a href='./internet.html' class='color-green'>Тарифи</a></li>
             <li><a href='#' class='color-black'>Реклама</a></li>
             <li><a href='#' class='color-black'>Підключення</a></li>
-            <li><a href='./news.html' class='color-black'>Новини</a></li>
-            <li><a href='./actions.html' class='color-black'>Акції</a></li>
+            <li><a href='../news.html' class='color-black'>Новини</a></li>
+            <li><a href='../actions.html' class='color-black'>Акції</a></li>
             <li><a href='#' class='color-black'>Підтримка</a></li>
             <li><a href='#' class='color-black'>Контакти</a></li>
             <li><a href='#' class='color-black'>Пульс</a></li>
             <li><a href='#' class='color-black'>Документи</a></li>
           </ul>
         </div>
-        <img src='./assets/images/icons/menu-burger.svg' alt='' class='c-pointer'>
-        <img src='./assets/images/icons/close.svg' alt='' class='d-none c-pointer'>
+        <img src='../assets/images/icons/menu-burger.svg' alt='' class='c-pointer'>
+        <img src='../assets/images/icons/close.svg' alt='' class='d-none c-pointer'>
         <a href='#' class='btn btn-medium btn-outlined'>Оплатити</a>
       </div>
     </div>
   </div>
 </header>
 
-<main class='advertisement'>
+<main class='tariffs internet'>
   <section class='top'>
     <div class='container'>
-      <h1>Шановні абоненти ТРК “Вектор”!</h1>
-      <p>
-        У період оголошеного в Україні карантину, незважаючи на боротьбу із коронавірусом, працівники ТРК “Вектор”
-        створюють для Вас і Вашої родини комфортні умови перебування вдома. Цілодобово Ви маєте змогу користуватися
-        послугами Інтернет і кабельного ТБ, дізнаватися більше новин та дивитися улюблені телеканали.
-      </p>
+      <h2>Тарифи</h2>
+    </div>
+    <div class='buttons'>
+      <div class='container'>
+        <ul>
+          <li>
+            <a href='./internet.html' class='btn btn-switch btn-small bg-green color-white'>
+              Інтернет
+            </a>
+          <li>
+            <a href='#' class='btn btn-switch btn-small btn-tv'>
+              Телебачення
+            </a>
+          </li>
+          <li>
+            <a href='#' class='btn btn-switch btn-small btn-all'>
+              Все разом
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
-  <section class='advertisement-img hidden'>
+  <section class='internet'>
+    <div class='swiper swiper-tariffs'>
+      <div class='swiper-wrapper tariffs-wrapper'>
+        <div class='swiper-slide '>
+          <div class='tariff-internet'>
+            <a href='#' class='info'>
+              <img src='../assets/images/icons/info.svg' alt=''>
+            </a>
+            <h3>Інтернет</h3>
+            <p class='speed'>до <span>50</span> Мбіт</p>
+            <p class='no-limited color-gray'>не обмежена</p>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
+              Безлімітний
+              <span>170</span>
+            </div>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
+              Домашній
+              <span>50</span>
+            </div>
+            <div class='price'>
+              <p>170</p>
+              грн/міс
+            </div>
+            <button class='btn btn-full btn-big'>
+              Підключити
+            </button>
+            <a href='#' class='color-green'>Детальніше</a>
+          </div>
+        </div>
+        <div class='swiper-slide '>
+          <div class='tariff-internet'>
+            <a href='#' class='info'>
+              <img src='../assets/images/icons/info.svg' alt=''>
+            </a>
+            <h3>Інтернет</h3>
+            <p class='speed'>до <span>70</span> Мбіт</p>
+            <p class='no-limited color-gray'>не обмежена</p>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
+              Безлімітний
+              <span>180</span>
+            </div>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
+              Домашній
+              <span>70</span>
+            </div>
+            <div class='price'>
+              <p>180</p>
+              грн/міс
+            </div>
+            <button class='btn btn-full btn-big'>
+              Підключити
+            </button>
+            <a href='#' class='color-green'>Детальніше</a>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <div class='tariff-internet'>
+            <a href='#' class='info'>
+              <img src='../assets/images/icons/info.svg' alt=''>
+            </a>
+            <h3>Інтернет</h3>
+            <p class='speed'>до <span>100</span> Мбіт</p>
+            <p class='no-limited color-gray'>не обмежена</p>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
+              Безлімітний
+              <span>180</span>
+            </div>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
+              Домашній
+              <span>100</span>
+            </div>
+            <div class='price'>
+              <p>185</p>
+              грн/міс
+            </div>
+            <button class='btn btn-full btn-big'>
+              Підключити
+            </button>
+            <a href='#' class='color-green'>Детальніше</a>
+          </div>
+        </div>
+      </div>
+      <div class='swiper-button-prev d-none d-none'></div>
+      <div class='swiper-button-next d-none d-none'></div>
+      <div class='swiper-pagination'></div>
+    </div>
     <div class='container'>
-      <img src='./assets/images/subscribers.jpg' alt='' class='cover'>
+      <h3>Інтернет <span class='color-green uppercase'>(Gpon)</span></h3>
+    </div>
+    <div class='swiper swiper-tariffs'>
+      <div class='swiper-wrapper tariffs-wrapper'>
+        <div class='swiper-slide '>
+          <div class='tariff-internet'>
+            <a href='#' class='info'>
+              <img src='../assets/images/icons/info.svg' alt=''>
+            </a>
+            <h3 class='uppercase'>Gpon</h3>
+            <p class='speed'>до <span>50</span> Мбіт</p>
+            <p class='no-limited color-gray'>не обмежена</p>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
+              Безлімітний
+              <span>170</span>
+            </div>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
+              Домашній
+              <span>50+</span>
+            </div>
+            <div class='price'>
+              <p>170</p>
+              грн/міс
+            </div>
+            <button class='btn btn-full btn-big'>
+              Підключити
+            </button>
+            <a href='#' class='color-green'>Детальніше</a>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <div class='tariff-internet'>
+            <a href='#' class='info'>
+              <img src='../assets/images/icons/info.svg' alt=''>
+            </a>
+            <h3 class='gpon uppercase'>Gpon</h3>
+            <p class='speed'>до <span>100</span> Мбіт</p>
+            <p class='no-limited color-gray'>не обмежена</p>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
+              Безлімітний
+              <span>185</span>
+            </div>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
+              Домашній
+              <span>100+</span>
+            </div>
+            <div class='price'>
+              <p>185</p>
+              грн/міс
+            </div>
+            <button class='btn btn-full btn-big'>
+              Підключити
+            </button>
+            <a href='#' class='color-green'>Детальніше</a>
+          </div>
+        </div>
+      </div>
+      <div class='swiper-button-prev d-none'></div>
+      <div class='swiper-button-next d-none'></div>
+      <div class='swiper-pagination'></div>
+    </div>
+    <div class='container'>
+      <h3>Інтернет <span class='color-green'>(Wi-fi)</span></h3>
+    </div>
+    <div class='swiper swiper-tariffs'>
+      <div class='swiper-wrapper tariffs-wrapper'>
+        <div class='swiper-slide '>
+          <div class='tariff-internet'>
+            <a href='#' class='info'>
+              <img src='../assets/images/icons/info.svg' alt=''>
+            </a>
+            <h3>120 Wi-Fi</h3>
+            <p class='speed'>до <span>2</span> Мбіт</p>
+            <p class='no-limited color-gray'>не обмежена</p>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
+              Безлімітний
+            </div>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
+              Домашній
+              <span>2048170</span>
+            </div>
+            <div class='price'>
+              <p>120</p>
+              грн/міс
+            </div>
+            <button class='btn btn-full btn-big'>
+              Підключити
+            </button>
+            <a href='#' class='color-green'>Детальніше</a>
+          </div>
+        </div>
+        <div class='swiper-slide '>
+          <div class='tariff-internet'>
+            <a href='#' class='info'>
+              <img src='../assets/images/icons/info.svg' alt=''>
+            </a>
+            <h3>150 Wi-Fi</h3>
+            <p class='speed'>до <span>5</span> Мбіт</p>
+            <p class='no-limited color-gray'>не обмежена</p>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
+              Безлімітний
+            </div>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
+              Домашній
+              <span>5120</span>
+            </div>
+            <div class='price'>
+              <p>150</p>
+              грн/міс
+            </div>
+            <button class='btn btn-full btn-big'>
+              Підключити
+            </button>
+            <a href='#' class='color-green'>Детальніше</a>
+          </div>
+        </div>
+        <div class='swiper-slide '>
+          <div class='tariff-internet'>
+            <a href='#' class='info'>
+              <img src='../assets/images/icons/info.svg' alt=''>
+            </a>
+            <h3>220 Wi-Fi</h3>
+            <p class='speed'>до <span>10</span> Мбіт</p>
+            <p class='no-limited color-gray'>не обмежена</p>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
+              Безлімітний
+            </div>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
+              Домашній
+              <span>10</span>
+            </div>
+            <div class='price'>
+              <p>220</p>
+              грн/міс
+            </div>
+            <button class='btn btn-full btn-big'>
+              Підключити
+            </button>
+            <a href='#' class='color-green'>Детальніше</a>
+          </div>
+        </div>
+        <div class='swiper-slide '>
+          <div class='tariff-internet'>
+            <a href='#' class='info'>
+              <img src='../assets/images/icons/info.svg' alt=''>
+            </a>
+            <h3>Wi-Fi</h3>
+            <p class='speed'>до <span>70</span> Мбіт</p>
+            <p class='no-limited color-gray'>не обмежена</p>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
+              Безлімітний
+              <span>180</span>
+            </div>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
+              Домашній
+              <span>70</span>
+            </div>
+            <div class='price'>
+              <p>180</p>
+              грн/міс
+            </div>
+            <button class='btn btn-full btn-big'>
+              Підключити
+            </button>
+            <a href='#' class='color-green'>Детальніше</a>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <div class='tariff-internet'>
+            <a href='#' class='info'>
+              <img src='../assets/images/icons/info.svg' alt=''>
+            </a>
+            <h3>Wi-Fi</h3>
+            <p class='speed'>до <span>100</span> Мбіт</p>
+            <p class='no-limited color-gray'>не обмежена</p>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
+              Безлімітний
+              <span>180</span>
+            </div>
+            <div class='network'>
+              <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
+              Домашній
+              <span>100</span>
+            </div>
+            <div class='price'>
+              <p>185</p>
+              грн/міс
+            </div>
+            <button class='btn btn-full btn-big'>
+              Підключити
+            </button>
+            <a href='#' class='color-green'>Детальніше</a>
+          </div>
+        </div>
+      </div>
+      <div class='swiper-button-prev d-none'></div>
+      <div class='swiper-button-next d-none'></div>
+      <div class='swiper-pagination'></div>
     </div>
   </section>
-  <section class='bottom'>
+  <section class='connection-internet'>
     <div class='container'>
-      <p>
-        Щоб і в подальшому Ви мали змогу користуватися даними послугами, Вам необхідно вчасно сплачувати абонентну
-        плату.
-      </p>
-      <p>
-        ТОВ ТРК “Вектор” є недержавною компанією і на період карантину головні медіа-групи країни не звільняли нас
-        (провайдерів) від сплати коштів за їх ретрансляцію. Це тільки одна із складових тарифу, а ще придбання
-        матеріалів та обладнання, плата за електрику, заробітна плата працівників компанії, тощо. І ці всі витрати
-        держава не буде компенсовувати нашій компанії. Тому відмінити абонплату на період карантину ми не можемо.
-      </p>
-      <p>
-        ТРК “Вектор” просить кожного абонента не допускати накопичення заборгованості, вчасно сплачувати за послуги
-        Інтернет і кабельного ТБ.
-      </p>
-      <p>
-        Ми вдячні кожному, хто своєчасно розраховується за послуги Інтернет і кабельного ТБ і просимо з розумінням
-        ставитися до ситуації, що склалася в країні.
-      </p>
-      <p>
-        ТОВ ТРК “Вектор” просить Вас дотримуватися карантину. В умовах карантину заплатити за послуги Інтернет і
-        кабельного ТБ можна не виходячи з дому і не піддаючи себе ризику захворіти. Це можна зробити через
-        інтернет-банкінг (наприклад, Приват24, Ощад 24/7 та інші). Звертаємося до рідних та близьких людей похилого віку
-        (пенсіонерів). Допоможіть їм розібратися, поясніть, як сплатити послуги Інтернет та кабельного ТБ не виходячи з
-        дому, без відвідування громадських місць. Або зробіть це замість них.
-      </p>
+      <div class='wrapper'>
+        <div class='left hidden'>
+          <div class='content'>
+            <h2>Умови підключення</h2>
+            Можливість підключення до мережі "Вектор" і поповнити ряди користувачів глобальної мережі Інтернет, якщо
+            ви
+            проживаєте на 1-6, 9 м-ні, а також центаральній частини міста, та приватного сектора* Підключення
+            здійснюється
+            протягом 5 робочих днів після подачі заявки.
+            <p>
+              Підключення до кабельної мережі <span class='color-green'>Інтернет безкоштовно!</span>
+            </p>
+            <p>
+              Вартість одного метра кабелю: <span class='color-green'>3,00 грн.</span>
+            </p>
+            <button class='btn btn-full btn-big'>
+              Подати заявку
+            </button>
+          </div>
+        </div>
+        <div class='right p-relative'>
+          <div class='green-circle'></div>
+          <div class='references shadow'>
+            Довідки за тел
+            <ul>
+              <li class='tel-link'>
+                <a href='tel:(057-45) 5-11-30'>
+                  (057-45) 5-11-30
+                  <img src='../assets/images/icons/phone.svg' alt=''>
+                </a>
+              </li>
+              <li class='tel-link'>
+                <a href='tel:099-34-34-593'>
+                  099-34-34-593
+                  <img src='../assets/images/icons/phone.svg' alt=''>
+                </a>
+              </li>
+              <li class='tel-link'>
+                <a href='tel:050-34-34-593'>
+                  050-34-34-593
+                  <img src='../assets/images/icons/phone.svg' alt=''>
+                </a>
+              </li>
+            </ul>
+            Детальніше за тел
+            <ul>
+              <li class='tel-link'>
+                <a href='tel:(057-45) 5-11-30'>
+                  (057-45) 5-11-30
+                  <img src='../assets/images/icons/phone.svg' alt=''>
+                </a>
+              </li>
+              <li class='tel-link'>
+                <a href='tel:(057-45) 5-11-18'>
+                  (057-45) 5-11-18
+                  <img src='../assets/images/icons/phone.svg' alt=''>
+                </a>
+              </li>
+              <li class='tel-link'>
+                <a href='tel:050-34-34-593'>
+                  050-34-34-593
+                  <img src='../assets/images/icons/phone.svg' alt=''>
+                </a>
+              </li>
+              <li class='tel-link'>
+                <a href='tel:099-34-34-593'>
+                  099-34-34-593
+                  <img src='../assets/images/icons/phone.svg' alt=''>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </main>
@@ -148,12 +514,12 @@
       <div class='wrapper'>
         <div class='flex'>
           <ul class='navigation'>
-            <li><h2><a href='./index.html' class='color-white'>Logo</a></h2></li>
-            <li><a href='./tariffs/internet.html' class='color-white'>Тарифи</a></li>
+            <li><h2><a href='../index.html' class='color-white'>Logo</a></h2></li>
+            <li><a href='./internet.html' class='color-white'>Тарифи</a></li>
             <li><a href='#' class='color-white'>Реклама</a></li>
             <li><a href='#' class='color-white'>Підключення</a></li>
-            <li><a href='./news.html' class='color-white'>Новини</a></li>
-            <li><a href='./actions.html' class='color-white'>Акції</a></li>
+            <li><a href='../news.html' class='color-white'>Новини</a></li>
+            <li><a href='../actions.html' class='color-white'>Акції</a></li>
             <li><a href='#' class='color-white'>Пдтримка</a></li>
             <li><a href='#' class='color-white'>Контакти</a></li>
             <li><a href='#' class='color-white'>Пульс</a></li>
@@ -215,7 +581,7 @@
         <div class='links'>
           <ul class='addresses'>
             <li>
-              <img src='./assets/images/icons/email.svg' alt=''>
+              <img src='../assets/images/icons/email.svg' alt=''>
               <a href='mailto:channel@vektor-plus.com' target="_blank" class='color-white'>channel@vektor-plus.com</a>
             </li>
             <li>
@@ -230,7 +596,7 @@
               </div>
             </li>
             <li class='footer-location'>
-              <img src='./assets/images/icons/location-footer.svg' alt=''>
+              <img src='../assets/images/icons/location-footer.svg' alt=''>
               <a
                 target="_blank"
                 class='color-white'
@@ -240,11 +606,11 @@
             </li>
           </ul>
           <ul class='socials'>
-            <li><a href='#' target="_blank"><img src='./assets/images/icons/facebook.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='./assets/images/icons/instagram.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='./assets/images/icons/telegram.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='./assets/images/icons/viber.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='./assets/images/icons/youtobe.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='../assets/images/icons/facebook.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='../assets/images/icons/instagram.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='../assets/images/icons/telegram.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='../assets/images/icons/viber.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='../assets/images/icons/youtobe.svg' alt=''></a></li>
           </ul>
         </div>
       </div>
@@ -252,6 +618,8 @@
     </div>
   </div>
 </footer>
-<script src="./assets/js/main.js"></script>
+<script src="../assets/libs/swiper/swiper.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/swiper-tariffs.js"></script>
 </body>
 </html>

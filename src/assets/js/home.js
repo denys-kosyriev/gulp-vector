@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
     autoplayDelay: 3000,
     slidesPerView: 1,
     centeredSlides: true,
-    grabCursor: true,
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",
@@ -19,19 +18,21 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   //Show answer 'questions'
-  const selects = document.getElementsByClassName('questions-select');
-  const answer = document.getElementsByClassName('questions-answer');
-  const iconSelect = document.getElementsByClassName('icon-select');
+  const questionsList = document.getElementsByClassName('questions-list')[0];
+  const questionsSelects = document.getElementsByClassName('questions-select');
+  const questionsAnswer = document.getElementsByClassName('questions-answer');
+  const questionsIconSelect = document.getElementsByClassName('icon-select');
 
-  Array.from(selects).map((select, index) => {
+  Array.from(questionsSelects).map((select, index) => {
     document.addEventListener('click', (e) => {
-      const closeAnswer = e.composedPath().includes(select);
+      const closeAnswer = e.composedPath().includes(questionsList);
+      const clickSelect = e.composedPath().includes(select);
       if (!closeAnswer) {
-        answer[index].classList.add('d-none');
-        iconSelect[index].classList.remove('open');
-      } else if (closeAnswer) {
-        answer[index].classList.toggle('d-none');
-        iconSelect[index].classList.toggle('open');
+        questionsAnswer[index].classList.add('d-none');
+        questionsIconSelect[index].classList.remove('open');
+      } else if (clickSelect) {
+        questionsAnswer[index].classList.toggle('d-none');
+        questionsIconSelect[index].classList.toggle('open');
       }
     })
   })

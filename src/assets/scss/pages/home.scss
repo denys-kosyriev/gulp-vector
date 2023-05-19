@@ -49,7 +49,7 @@
   .action {
     padding: 34px 0 17px;
     .container {
-      max-width: 1540px;
+      max-width: 1680px;
     }
     h2 {
       padding-bottom: 24px;
@@ -78,7 +78,7 @@
       margin-top: 35px;
     }
   }
-  .internet {
+  .about-internet {
     padding:    56px 0 28px;
     margin-top: 23px;
     .container {
@@ -154,7 +154,7 @@
 
 @media(min-width: 567px) {
   .home {
-    .internet {
+    .about-internet {
       .content {
         img {
           max-width: 350px;
@@ -168,7 +168,7 @@
 
 @media(min-width: 768px) {
   .home {
-    .internet {
+    .about-internet {
       .content {
         padding:     40px 50% 40px 40px;
         align-items: start;
@@ -241,7 +241,7 @@
         margin-top: 28px;
       }
     }
-    .internet {
+    .about-internet {
       padding:    45px 0 40px;
       margin-top: 105px;
       .content {
@@ -294,6 +294,9 @@
     }
     .action {
       padding: 175px 0 0;
+      h2 {
+        padding: 0 99px 56px;
+      }
     }
     .show-all-tariffs {
       padding: 70px 0 76px;
@@ -301,7 +304,7 @@
     .about-company {
       padding: 76px 0 97px;
     }
-    .internet {
+    .about-internet {
       padding: 97px 0 83px;
       .content {
         padding:   88px 55% 71px 121px;
@@ -316,7 +319,7 @@
 
 @media(min-width: 1800px) {
   .home {
-    .internet {
+    .about-internet {
       .content {
         img {
           max-width: 962px;

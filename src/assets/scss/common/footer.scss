@@ -28,7 +28,6 @@
         line-height: 1.2;
         span {
           display: inline;
-          color:   #03BF6A;
         }
       }
       .btn {
@@ -106,16 +105,7 @@
             padding-bottom: 21px;
           }
           &:not(&:nth-of-type(1)) {
-            border:        2px solid transparent;
-            border-radius: 60px;
             margin-bottom: 10px;
-            transition:    .2s linear;
-            &:hover {
-              border-color: #006939;
-            }
-            &:active {
-              border-color: #029c56;
-            }
           }
         }
         h3 {
@@ -128,19 +118,6 @@
           font-weight:     700;
           padding:         9px 15px 9px 9px;
           justify-content: space-between;
-          align-items:     center;
-          display:         flex;
-          &:hover {
-            color: #324035;
-          }
-          &:active {
-            color: #324035;
-          }
-        }
-        svg {
-          width:       14px;
-          margin-left: 10px;
-          fill:        #324035;
         }
       }
     }

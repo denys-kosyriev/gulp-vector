@@ -165,6 +165,20 @@ input, select {
   font-size:     16px;
 }
 
+.btn-switch {
+  min-width:        108px;
+  color:            #324035;
+  background-color: #F2F8F8;
+  font-size:        15px;
+  padding:          11px 21px;
+  display:          inline-flex;
+  border:           0;
+  &:hover {
+    color:            #fff;
+    background-color: #03BF6A;
+  }
+}
+
 .color-white {
   color: #fff;
 }
@@ -193,6 +207,8 @@ input, select {
   object-fit: cover;
 }
 
+.swiper-button-prev.d-none,
+.swiper-button-next.d-none,
 .d-none {
   display: none;
 }
@@ -227,11 +243,61 @@ input, select {
       width:            8px;
       background-color: #03BF6A;
       margin:           0 5px;
+      transition:       .2s linear;
       &:hover {
         opacity: 1;
       }
     }
   }
+  & &-button-prev, & &-button-next {
+    transition: .2s linear;
+    &:hover, &:hover {
+      width: 20px;
+    }
+  }
+}
+
+.tel-link {
+  border:           2px solid transparent;
+  border-radius:    60px;
+  transition:       .2s linear;
+  background-color: #F2F8F8;
+  &:hover {
+    border-color: #006939;
+  }
+  &:active {
+    border-color: #029c56;
+  }
+  a {
+    min-width:       194px;
+    padding:         12px;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    color:           #324035;
+    &:hover {
+      color: #324035;
+    }
+    svg, img {
+      width:       14px;
+      margin-left: 10px;
+      fill:        #324035;
+    }
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.shadow {
+  box-shadow: 0 100px 80px rgba(3, 191, 106, 0.07),
+              0 46.233px 36.9864px rgba(3, 191, 106, 0.0519173),
+              0 26.4535px 21.1628px rgba(3, 191, 106, 0.0438747),
+              0 16.0571px 12.8457px rgba(3, 191, 106, 0.0377964),
+              0 9.67509px 7.74008px rgba(3, 191, 106, 0.0322036),
+              0 5.38772px 4.31018px rgba(3, 191, 106, 0.0261253),
+              0 2.31722px 1.85378px rgba(3, 191, 106, 0.0180827);
 }
 
 @media (min-width: 1024px) {

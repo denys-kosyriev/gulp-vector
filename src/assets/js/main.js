@@ -1,38 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  //Slider section 'tariffs'
-  new Swiper(".tariffs-internet", {
-    slidesPerView: 1,
-    grabCursor: true,
-    spaceBetween: 20,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        spaceBetween: 0,
-      },
-      1440: {
-        slidesPerView: 3,
-      }
-    }
-  })
-
-  //Location of tariffs
-  const tariffsWrappers = document.getElementsByClassName('tariffs-wrapper');
-  const screenWidth = window.screen.width;
-
-  Array.from(tariffsWrappers).map((wrapper) => {
-    const swiperSlideTariffs = wrapper.getElementsByClassName('swiper-slide');
-    if (swiperSlideTariffs.length === 2 && screenWidth > 1399) {
-      wrapper.classList.add('center')
-    } else if (swiperSlideTariffs.length === 1 && screenWidth > 767) {
-      wrapper.classList.add('center')
-    }
-  })
 
   //Show languages list 'header'
   const language = document.getElementsByClassName('language')[0];
@@ -53,6 +19,26 @@ document.addEventListener('DOMContentLoaded', function () {
     languageItem.addEventListener('click', () => {
       languageName.innerHTML = languageItem.innerHTML;
     })
+  })
+
+  //Location of tariffs
+  const swiperTariffs = document.getElementsByClassName('swiper-tariffs');
+  const screenWidth = window.screen.width;
+  Array.from(swiperTariffs).map((swiper) => {
+    const swiperWrapper = swiper.querySelector('.swiper-wrapper');
+    const swiperSlide = swiper.getElementsByClassName('swiper-slide');
+    const swiperButtonPrev = swiper.querySelector('.swiper-button-prev');
+    const swiperButtonNext = swiper.querySelector('.swiper-button-next');
+    if ((swiperSlide.length === 2 && screenWidth > 1439) ||
+      (swiperSlide.length === 1 && screenWidth > 767)) {
+      swiperWrapper.classList.add('center')
+    } else if ((swiperSlide.length === 2 && screenWidth < 1440) ||
+      (screenWidth < 768)) {
+      swiperWrapper.classList.remove('center')
+    } else if (swiperSlide.length > 3 && screenWidth > 1439) {
+      swiperButtonPrev.classList.remove('d-none');
+      swiperButtonNext.classList.remove('d-none');
+    }
   })
 
 });
