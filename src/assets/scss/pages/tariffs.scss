@@ -197,6 +197,11 @@
       transform:   translateX(-50%);
     }
   }
+  &.all {
+    .connection-tv {
+      padding: 0 0 82px;
+    }
+  }
 }
 
 @media(min-width: 567px) {
@@ -388,6 +393,11 @@
         margin:    0;
         transform: translateX(0);
         padding:   23px 10px;
+      }
+    }
+    &.all {
+      .connection-tv {
+        padding: 126px 0 130px;
       }
     }
   }
