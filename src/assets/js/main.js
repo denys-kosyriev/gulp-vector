@@ -24,21 +24,26 @@ document.addEventListener('DOMContentLoaded', function () {
   //Location of tariffs
   const swiperTariffs = document.getElementsByClassName('swiper-tariffs');
   const screenWidth = window.screen.width;
+
   Array.from(swiperTariffs).map((swiper) => {
-    const swiperWrapper = swiper.querySelector('.swiper-wrapper');
-    const swiperSlide = swiper.getElementsByClassName('swiper-slide');
-    const swiperButtonPrev = swiper.querySelector('.swiper-button-prev');
-    const swiperButtonNext = swiper.querySelector('.swiper-button-next');
-    if ((swiperSlide.length === 2 && screenWidth > 1439) ||
-      (swiperSlide.length === 1 && screenWidth > 767)) {
-      swiperWrapper.classList.add('center')
-    } else if ((swiperSlide.length === 2 && screenWidth < 1440) ||
-      (screenWidth < 768)) {
-      swiperWrapper.classList.remove('center')
-    } else if (swiperSlide.length > 3 && screenWidth > 1439) {
-      swiperButtonPrev.classList.remove('d-none');
-      swiperButtonNext.classList.remove('d-none');
+    const wrapper = swiper.querySelector('.swiper-wrapper');
+    const slide = swiper.getElementsByClassName('swiper-slide');
+    const buttonPrev = swiper.querySelector('.swiper-button-prev');
+    const buttonNext = swiper.querySelector('.swiper-button-next');
+    if ((slide.length === 2 && screenWidth > 1439) ||
+      (slide.length === 1 && screenWidth > 767)) {
+      wrapper.classList.add('center');
+    } else if (slide.length > 3 && screenWidth > 1439) {
+      buttonPrev.classList.remove('d-none');
+      buttonNext.classList.remove('d-none');
+    }
+
+    if ((slide.length === 1) ||
+      (slide.length === 2 && screenWidth > 767) ||
+      (slide.length === 3 && screenWidth > 1439)) {
+      wrapper.classList.add('without-pagination');
     }
   })
+
 
 });

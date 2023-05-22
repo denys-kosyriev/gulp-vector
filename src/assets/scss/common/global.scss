@@ -88,9 +88,14 @@ button, .btn {
   transition:      .3s linear;
 }
 
+label {
+  width: 100%;
+}
+
 input, select {
   width:         100%;
   padding:       14px 27px;
+  display:       inline-flex;
   overflow:      hidden;
   text-overflow: ellipsis;
   cursor:        pointer;
@@ -103,6 +108,28 @@ input, select {
   &:hover {
     border: 1px solid #03BF6A;
   }
+  &:active {
+    border-color: #006939;
+  }
+  .error {
+    border-color: #FF2F2F;
+  }
+}
+
+.error-text {
+  color: #FF2F2F;
+}
+
+select {
+  width:                 100%;
+  -webkit-appearance:    none;
+  -moz-appearance:       none;
+  background-image:      url('../images/icons/select.svg');
+  background-repeat:     no-repeat;
+  background-position-x: 94%;
+  background-position-y: 50%;
+  background-size:       9px;
+  padding-right:         7px;
 }
 
 .btn-black {
@@ -177,6 +204,10 @@ input, select {
     color:            #fff;
     background-color: #03BF6A;
   }
+  &.active {
+    background-color: #03BF6A;
+    color:            #fff;
+  }
 }
 
 .color-white {
@@ -229,11 +260,14 @@ input, select {
 }
 
 .swiper {
-  &-slide {
-    position: relative;
-    top:      0;
-    left:     0;
-    z-index:  0;
+  &-wrapper {
+    .swiper-slide {
+      height:   auto;
+      position: relative;
+      top:      0;
+      left:     0;
+      z-index:  0;
+    }
   }
   & &-pagination.swiper-pagination-bullets {
     bottom: 0;
@@ -329,6 +363,12 @@ input, select {
     &:hover {
       border: 2px solid #03BF6A;
     }
+  }
+
+  select {
+    background-position-x: 90%;
+    background-position-y: 54%;
+    background-size:       13px;
   }
 
   .btn-small {
