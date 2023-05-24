@@ -103,7 +103,6 @@ input, select {
   border-radius: 40px;
   font-size:     14px;
   font-weight:   500;
-  margin-bottom: 10px;
   transition:    .3s linear;
   &:hover {
     border: 1px solid #03BF6A;
@@ -130,6 +129,15 @@ select {
   background-position-y: 50%;
   background-size:       9px;
   padding-right:         7px;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .btn-black {
@@ -334,6 +342,19 @@ select {
               0 2.31722px 1.85378px rgba(3, 191, 106, 0.0180827);
 }
 
+.modal {
+  min-height:       100vh;
+  width:            100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position:         fixed;
+  top:              0;
+  left:             0;
+  z-index:          1000;
+  display:          flex;
+  justify-content:  center;
+  align-items:      center;
+}
+
 @media (min-width: 1024px) {
   h2 {
     font-size: 56px;
@@ -353,13 +374,12 @@ select {
   }
 
   input, select {
-    padding:       17px 32px;
+    padding:       21px 32px;
     border:        2px solid #d2dbdb;
     border-radius: 40px;
     color:         #324035;
     font-size:     24px;
     font-weight:   500;
-    margin-bottom: 25px;
     &:hover {
       border: 2px solid #03BF6A;
     }
