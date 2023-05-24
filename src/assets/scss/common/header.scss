@@ -96,9 +96,23 @@
           display:     flex;
           align-items: center;
           p {
-            color: #03BF6A;
+            color:      #03BF6A;
+            transition: .2s linear;
+          }
+          svg {
+            transition: .2s linear;
           }
           &:hover {
+            p {
+              color: #029c56;
+            }
+            svg {
+              path {
+                fill: #029c56;
+              }
+            }
+          }
+          &:active {
             p {
               color: #006939;
             }
@@ -142,7 +156,10 @@
           background:      #03BF6A;
           &:hover {
             background: #324035;
-            color:      #fff;
+            color: #fff;
+          }
+          &:active {
+            background: #029c56;
           }
           img {
             width: 13px;

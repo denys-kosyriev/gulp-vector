@@ -212,6 +212,9 @@ input::-webkit-inner-spin-button {
     color:            #fff;
     background-color: #03BF6A;
   }
+  &:active {
+    background-color: #006939;
+  }
   &.active {
     background-color: #03BF6A;
     color:            #fff;
