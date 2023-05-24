@@ -49,6 +49,27 @@
         color: #6F8F81;
       }
     }
+    &.error {
+      input {
+        border-color:  #FF2F2F;
+        margin-bottom: 8px;
+      }
+      .error-message {
+        display:        flex;
+        align-items:    center;
+        color:          #FF2F2F;
+        font-size:      24px;
+        padding-bottom: 6px;
+        span {
+          padding:          3px 11px;
+          background-color: #FF2F2F;
+          color:            #fff;
+          border-radius:    50%;
+          margin:           0 15px 0 30px;
+          font-size:        16px;
+        }
+      }
+    }
     &.download-receipt {
       display: inline-flex;
     }

@@ -107,8 +107,8 @@ input, select {
   &:hover {
     border: 1px solid #03BF6A;
   }
-  &:active {
-    border-color: #006939;
+  &:focus {
+    border-color: #03BF6A;
   }
   .error {
     border-color: #FF2F2F;
