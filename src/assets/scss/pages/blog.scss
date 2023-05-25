@@ -1,4 +1,4 @@
-.advertisement {
+.blog {
   padding: 75px 0 48px;
   p {
     color:          #7A8781;
@@ -17,7 +17,8 @@
       padding-bottom: 22px;
     }
   }
-  .advertisement-img {
+  .blog-img {
+    overflow: hidden;
     .container {
       max-width: 1920px;
       padding:   0;
@@ -28,8 +29,7 @@
     img {
       height:          67vw;
       max-height:      551px;
-      scale:           1;
-      object-position: 0 71%;
+      object-fit:      cover;
     }
   }
   .bottom {
@@ -41,7 +41,7 @@
 }
 
 @media(min-width: 1024px) {
-  .advertisement {
+  .blog {
     padding: 215px 0 47px;
     p {
       font-size:      24px;
@@ -55,7 +55,7 @@
         padding-bottom: 57px;
       }
     }
-    .advertisement-img {
+    .blog-img {
       img {
         object-position: 0 50%;
       }

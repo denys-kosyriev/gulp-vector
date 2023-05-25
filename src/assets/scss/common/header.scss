@@ -1,37 +1,35 @@
 .header {
-  width:    100vw;
-  position: fixed;
-  top:      0;
-  left:     0;
-  z-index:  1000;
+  width:            100vw;
+  position:         fixed;
+  top:              0;
+  left:             0;
+  z-index:          1000;
+  background-color: #F2F8F8;
   .top {
     display: none;
   }
   .main {
-    padding: 13px 0 10px;
     .content {
+      min-height:      52px;
       display:         flex;
       justify-content: space-between;
+      align-items:     center;
     }
-    h2 {
-      a {
-        font-weight:    700;
-        font-size:      26px;
-        letter-spacing: -2px;
-        transition:     .2s linear;
-        &:hover {
-          opacity: .7;
-        }
-        &:active {
-          opacity: .5;
-        }
+    .logo {
+      width: 58px;
+      &:hover {
+        opacity: .7;
+      }
+      &:active {
+        opacity: .5;
       }
     }
     ul {
       display: none;
     }
     img {
-      width: 24px;
+      width:  24px;
+      cursor: pointer;
     }
     .btn {
       display: none;
@@ -39,7 +37,7 @@
   }
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1200px) {
   .header {
     border-bottom: 1px solid #324035;
     a {
@@ -61,11 +59,13 @@
       display:     flex;
       align-items: center;
       .container {
-        padding: 0 0 0 62px;
+        max-width: 2500px;
+        padding:   0 0 0 62px;
       }
       .left {
         white-space: nowrap;
         align-items: start;
+        color:       #03BF6A;
         &:hover {
           color: #029c56;
           svg {
@@ -95,6 +95,7 @@
           margin:      0 33px;
           display:     flex;
           align-items: center;
+          cursor:      pointer;
           p {
             color:      #03BF6A;
             transition: .2s linear;
@@ -123,19 +124,22 @@
             }
           }
           .languages-list {
+            width:            76px;
             position:         absolute;
             top:              120%;
             left:             50%;
             z-index:          1;
             transform:        translateX(-50%);
             border:           2px solid #03BF6A;
-            border-radius:    10px;
+            border-radius:    7px;
             background-color: #fff;
             padding:          10px;
             text-align:       center;
             li {
-              cursor:     pointer;
-              transition: .2s linear;
+              cursor:        pointer;
+              overflow:      hidden;
+              text-overflow: ellipsis;
+              transition:    .2s linear;
               &:not(&:last-of-type) {
                 padding-bottom: 10px;
               }
@@ -154,9 +158,11 @@
           font-size:       18px;
           transition:      .2s linear;
           background:      #03BF6A;
+          color:           #fff;
+
           &:hover {
             background: #324035;
-            color: #fff;
+            color:      #fff;
           }
           &:active {
             background: #029c56;
@@ -168,39 +174,45 @@
       }
     }
     .main {
-      padding:    23px 0 0;
       background: #fff;
       .container {
         max-width: 1861px;
       }
-      .left {
-        padding-left: 10px;
+      .content {
+        min-height: 98px;
       }
-      h2 {
-        padding: 0 64px 10px 0;
-        a {
-          font-size: 50px;
-        }
+      .left {
+        width:     100%;
+        max-width: 1455px;
+        padding:   0 20px;
+      }
+      .logo {
+        width:        112px;
+        margin-right: 30px;
       }
       ul {
-        display:       flex;
-        flex-wrap:     wrap;
-        padding-right: 40px;
+        width:           100%;
+        display:         flex;
+        justify-content: space-between;
+        align-items:     center;
       }
       li {
-        padding: 0 20px 10px 0;
         a {
-          font-size:   20px;
+          font-size:   16px;
           font-weight: 600;
+          color:       #324035;
           &:hover {
             color: #03BF6A;
           }
           &:active {
             color: #029c56;
           }
+          &.active {
+            color: #03BF6A;
+          }
         }
       }
-      img {
+      .burger {
         display: none;
       }
       .btn {
@@ -215,8 +227,13 @@
 @media(min-width: 1440px) {
   .header {
     .main {
+      .logo {
+        margin-right: 64px;
+      }
       li {
-        padding: 0 58px 10px 0;
+        a {
+          font-size: 20px;
+        }
       }
     }
   }

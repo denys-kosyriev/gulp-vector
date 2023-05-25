@@ -115,10 +115,6 @@ input, select {
   }
 }
 
-.error-text {
-  color: #FF2F2F;
-}
-
 select {
   width:                 100%;
   -webkit-appearance:    none;
@@ -149,8 +145,8 @@ input::-webkit-inner-spin-button {
     background-color: #fff;
   }
   &:active {
-    color:        #006939;
-    border-color: #006939;
+    color:        #029c56;
+    border-color: #029c56;
   }
 }
 
@@ -221,18 +217,6 @@ input::-webkit-inner-spin-button {
   }
 }
 
-.color-white {
-  color: #fff;
-}
-
-.color-black {
-  color: #324035;
-}
-
-.color-gray {
-  color: #7A8781;
-}
-
 .color-green {
   color: #03BF6A;
 }
@@ -241,11 +225,12 @@ input::-webkit-inner-spin-button {
   background: linear-gradient(114.04deg, #03BF6A 24.98%, #6AE37E 101.83%);
 }
 
-.bg-gray {
-  background: #F2F8F8;
-}
-
-.cover {
+.bg-cover {
+  height:     100%;
+  position:   absolute;
+  top:        0;
+  left:       0;
+  z-index:    1;
   object-fit: cover;
 }
 
@@ -255,19 +240,11 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .p-relative {
   position: relative;
   top:      0;
   left:     0;
   z-index:  0;
-}
-
-.hidden {
-  overflow: hidden;
 }
 
 .swiper {
@@ -320,6 +297,7 @@ input::-webkit-inner-spin-button {
     align-items:     center;
     justify-content: center;
     color:           #324035;
+    overflow:        hidden;
     &:hover {
       color: #324035;
     }
@@ -329,10 +307,6 @@ input::-webkit-inner-spin-button {
       fill:        #324035;
     }
   }
-}
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 .shadow {

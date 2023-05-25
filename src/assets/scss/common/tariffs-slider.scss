@@ -1,8 +1,11 @@
-.swiper.swiper-tariffs {
+.swiper.tariffs-slider {
   max-width:     1573px;
   margin-bottom: 30px;
+  &.action-section {
+    margin-bottom: 7px;
+  }
   .swiper-wrapper {
-    padding-bottom: 38px;
+    padding-bottom: 34px;
     &.without-pagination {
       margin-bottom: 13px;
     }
@@ -41,6 +44,7 @@
     .no-limited {
       padding-bottom: 16px;
       font-size:      12px;
+      color:          #6F8F81;
     }
     .network {
       display:     flex;
@@ -65,17 +69,19 @@
       display:        flex;
       align-items:    flex-end;
       p {
-        font-weight: 700;
-        font-size:   32px;
-        line-height: .8;
+        font-weight:   700;
+        font-size:     32px;
+        line-height:   .8;
+        padding-right: 5px;
       }
     }
     button {
       margin-bottom: 15px;
     }
-    a {
+    .detail {
       font-weight: 500;
       font-size:   14px;
+      color:       #03BF6A;
     }
   }
   .tariff-internet {
@@ -110,6 +116,7 @@
     }
     .desc {
       padding-bottom: 15px;
+      color:          #03BF6A;
     }
     .company {
       font-size:      25px;
@@ -142,7 +149,7 @@
 }
 
 @media(min-width: 1024px) {
-  .swiper.swiper-tariffs {
+  .swiper.tariffs-slider {
     margin-bottom: 23px;
     .swiper-wrapper {
       padding: 0;
@@ -213,6 +220,9 @@
       }
       button {
         margin-bottom: 23px;
+        min-width:     272px;
+        padding:       17px;
+        font-size:     16px;
       }
       a {
         font-weight: 500;
@@ -240,8 +250,15 @@
 }
 
 @media(min-width: 1440px) {
-  .swiper.swiper-tariffs {
+  .swiper.tariffs-slider {
     padding: 0 37px;
+    .tariff {
+      button {
+        min-width: 385px;
+        font-size: 24px;
+        padding:   19px 10px;
+      }
+    }
     .swiper-wrapper {
       margin: 0 0 120px 0;
     }

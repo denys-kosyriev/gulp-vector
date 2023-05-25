@@ -8,40 +8,39 @@
     text-align:     center;
   }
   .carts {
-    display:         flex;
-    justify-content: center;
-    flex-wrap:       wrap;
-    gap:             20px;
+    display:   flex;
+    flex-wrap: wrap;
+    gap:       20px;
   }
   .cart {
-    max-width:     455px;
-    border-radius: 20px;
-    .main-img {
+    width:          100%;
+    border-radius:  20px;
+    overflow:       hidden;
+    display:        flex;
+    flex-direction: column;
+    align-items:    start;
+    &:hover {
+      img {
+        scale: 1.1;
+      }
+    }
+    .img {
+      width:         100%;
       height:        47vw;
-      max-height:    270px;
-      margin-bottom: 13px;
+      overflow:      hidden;
+      margin-bottom: 10px;
     }
-    .hd {
-      scale: 2.1;
-      top:   59px;
-      left:  55px;
-    }
-    .new-channels {
-      scale: 1.2;
-      top:   -10px;
-    }
-    .banking {
-      top: -20px;
-    }
-    .media-player {
-      top: -10px;
+    img {
+      height:     100%;
+      object-fit: cover;
+      transition: .2s linear;
     }
     .content {
-      padding:     0 19px 72px;
-      color:       #6F8F81;
+      padding:     0 19px 16px;
       font-size:   12px;
       font-weight: 400;
       line-height: 1.5;
+      color:       #6F8F81;
     }
     h3 {
       font-weight:    700;
@@ -49,26 +48,19 @@
       padding-bottom: 10px;
       line-height:    1.1;
     }
-    .bottom {
-      width:           100%;
-      padding:         0 20px 0;
-      display:         flex;
-      justify-content: space-between;
-      align-items:     center;
-      position:        absolute;
-      bottom:          18px;
-      left:            0;
-      z-index:         0;
-      div {
-        display:       flex;
-        align-items:   center;
-        font-size:     14px;
-        padding:       8px 19px;
-        border-radius: 42.8463px;
-        img {
-          width:        13px;
-          margin-right: 7px;
-        }
+    a {
+      margin:  auto 19px 14px;
+      padding: 12px;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .news {
+    .cart {
+      width: 48%;
+      .img {
+        height: 270px;
       }
     }
   }
@@ -81,36 +73,29 @@
       padding-bottom: 76px;
       text-align:     start;
     }
-    .carts {
-      gap: 36px;
-    }
     .cart {
-      .main-img {
-        margin-bottom: 28px;
-      }
-      .hd {
-        top: 119px;
-      }
-      .new-channels {
-        scale: 1;
+      width: 31%;
+      .img {
+        margin-bottom: 27px;
       }
       .content {
-        padding:   0 26px 110px;
+        padding:   0 26px 23px;
         font-size: 18px;
       }
       h3 {
         font-size: 28px;
       }
-      .bottom {
-        padding: 0 26px;
-        bottom:  39px;
-        div {
-          font-size: 16px;
-          img {
-            width: 18px;
-          }
-        }
+      a {
+        margin: auto 19px 37px;
       }
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+  .news {
+    .carts {
+      gap: 48px;
     }
   }
 }

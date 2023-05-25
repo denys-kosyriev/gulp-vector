@@ -5,15 +5,12 @@
       padding: 0 0 18px 0;
       display: inline-flex;
       margin:  0 auto 36px;
-      img {
+      .main-img {
         max-width: 360px;
       }
       div {
         min-width:       133px;
         min-height:      133px;
-        text-transform:  uppercase;
-        font-size:       33px;
-        font-weight:     700;
         position:        absolute;
         bottom:          0;
         right:           0;
@@ -23,6 +20,9 @@
         display:         flex;
         align-items:     center;
         justify-content: center;
+        img {
+          width: 90px;
+        }
       }
     }
   }
@@ -70,6 +70,9 @@
         div {
           height: 180px;
           width:  180px;
+          img {
+            width: 120px;
+          }
         }
       }
       .right {
@@ -108,13 +111,16 @@
     &.about-company {
       padding: 83px 0 97px;
       .left {
-        img {
+        .main-img {
           max-width: 713px;
         }
         div {
           height:    295px;
           width:     295px;
           font-size: 72px;
+          img {
+            width: 198px;
+          }
         }
       }
     }

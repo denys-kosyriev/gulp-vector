@@ -72,6 +72,10 @@
     }
     &.download-receipt {
       display: inline-flex;
+      label {
+        color:  #03BF6A;
+        cursor: pointer;
+      }
     }
   }
   &.form-tv {
@@ -139,12 +143,14 @@
     }
 
     .price-router {
-      padding:       14px;
-      font-size:     14px;
-      border-radius: 60px;
-      display:       flex;
-      align-items:   center;
-      margin-bottom: 18px;
+      padding:          14px;
+      font-size:        14px;
+      border-radius:    60px;
+      display:          flex;
+      align-items:      center;
+      margin-bottom:    18px;
+      color:            #03BF6A;
+      background-color: #F2F8F8;
       img {
         width:        20px;
         margin-right: 8px;

@@ -1,12 +1,13 @@
 @import "common/global";
 @import "common/header";
-@import "common/swiper-tariffs";
+@import "common/tariffs-slider";
 @import "common/about";
 @import "common/footer";
 @import "common/modal-form";
+@import "common/accordion";
 
 @import "pages/home";
-@import "pages/actions";
+@import "pages/shares";
 @import "pages/news";
-@import "pages/advertisement";
+@import "pages/blog";
 @import "pages/tariffs";

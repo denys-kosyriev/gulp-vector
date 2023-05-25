@@ -1,4 +1,4 @@
-.tariffs {
+.tariffs-page {
   padding: 81px 0 0;
   .top, div {
     .container {
@@ -52,9 +52,6 @@
       &:last-child {
         margin-right: 20px;
       }
-      a{
-
-      }
     }
   }
   h3 {
@@ -63,21 +60,37 @@
     font-weight:    700;
     font-size:      19px;
   }
+  &.internet {
+    h3 {
+      span {
+        color:          #03BF6A;
+        text-transform: uppercase;
+      }
+    }
+  }
   .description {
     margin-bottom: 42px;
     .container {
-      max-width: 1024px;
+      max-width: 996px;
       padding:   0;
     }
     .description-content {
-      padding:       27px 24px 38px;
-      display:       flex;
-      align-items:   start;
-      gap:           8px;
-      border-radius: 15px;
-    }
-    img {
-      width: 24px;
+      padding:          27px 24px 38px;
+      display:          flex;
+      align-items:      start;
+      gap:              8px;
+      border-radius:    15px;
+      background-color: #F2F8F8;
+      div {
+        border-radius:    50%;
+        color:            #fff;
+        background-color: #03BF6A;
+        display:          flex;
+        justify-content:  center;
+        align-items:      center;
+        padding:          3px 10px;
+        font-size:        16px;
+      }
     }
     ul {
       font-size:   14px;
@@ -87,10 +100,12 @@
     li {
       padding-bottom: 15px;
       line-height:    1.3;
+      color:          #7A8781;
     }
   }
   .connection-internet {
-    padding: 14px 0 0;
+    padding:  14px 0 0;
+    overflow: hidden;
     .container {
       max-width: 1752px;
     }
@@ -172,7 +187,8 @@
     }
   }
   .connection-tv {
-    padding: 8px 0 82px;
+    padding:  8px 0 82px;
+    overflow: hidden;
     .container {
       max-width: 1670px;
     }
@@ -188,9 +204,16 @@
     h2 {
       line-height:    1.4;
       padding-bottom: 27px;
+      color:          #03BF6A;
+      span {
+        color: #03BF6A;
+      }
     }
     p {
       padding-bottom: 20px;
+      span {
+        color: #7A8781;
+      }
       &:last-of-type {
         padding-bottom: 46px;
       }
@@ -208,7 +231,7 @@
 }
 
 @media(min-width: 567px) {
-  .tariffs {
+  .tariffs-page {
     .connection-internet {
       .right {
         .references {
@@ -224,7 +247,7 @@
 }
 
 @media(min-width: 1024px) {
-  .tariffs {
+  .tariffs-page {
     padding: 184px 0 0;
     &.internet {
       .top {
@@ -285,9 +308,13 @@
       .description-content {
         padding: 42px 24px 23px;
         gap:     22px;
-      }
-      img {
-        width: 31px;
+        div {
+          background-color: transparent;
+          border:           2px solid #03BF6A;
+          color:            #03BF6A;
+          padding:          3px 11px;
+          font-size:        18px;
+        }
       }
       ul {
         font-size: 20px;
@@ -408,7 +435,7 @@
 
 
 @media(min-width: 1440px) {
-  .tariffs {
+  .tariffs-page {
     .top {
       .selected {
         padding: 0;

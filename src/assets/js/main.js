@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  //Show languages list 'header'
+  // Show languages list 'header'
   const language = document.getElementsByClassName('language')[0];
   const languageName = document.getElementsByClassName('language-name')[0];
   const languagesList = document.getElementsByClassName('languages-list')[0];
@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   })
 
-  //Location of tariffs
-  const swiperTariffs = document.getElementsByClassName('swiper-tariffs');
+  // Position of tariffs and position of pagination tariffs
+  const tariffsSlider = document.getElementsByClassName('tariffs-slider');
   const screenWidth = window.screen.width;
 
-  Array.from(swiperTariffs).map((swiper) => {
+  Array.from(tariffsSlider).map((swiper) => {
     const wrapper = swiper.querySelector('.swiper-wrapper');
     const slide = swiper.getElementsByClassName('swiper-slide');
     const buttonPrev = swiper.querySelector('.swiper-button-prev');
@@ -45,5 +45,35 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 
+  // Show the current year
+  const currentYear = new Date;
+  document.getElementsByClassName('currentYear')[0].textContent = `${currentYear.getFullYear()}`;
+
+  // Slider 'tariffs-slider'
+  if (document.getElementsByClassName('tariffs-slider')[0]) {
+    new Swiper(".tariffs-slider", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          // spaceBetween: 0,
+        },
+        1440: {
+          slidesPerView: 3,
+        }
+      }
+    })
+  }
 
 });
