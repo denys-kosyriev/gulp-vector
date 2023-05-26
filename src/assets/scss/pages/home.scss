@@ -161,7 +161,6 @@
 
 @media(min-width: 1024px) {
   .home {
-    padding-top: 170px;
     .banners {
       .swiper-banners {
         .swiper-wrapper {
@@ -217,6 +216,12 @@
         }
       }
     }
+  }
+}
+
+@media(min-width: 1200px) {
+  .home {
+    padding-top: 170px;
   }
 }
 

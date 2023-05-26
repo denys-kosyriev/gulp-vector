@@ -95,7 +95,6 @@
 
 @media(min-width: 1024px) {
   .shares {
-    padding: 220px 0 224px;
     h2 {
       text-align:     start;
       padding-bottom: 75px;
@@ -152,6 +151,12 @@
         left:   36px;
       }
     }
+  }
+}
+
+@media(min-width: 1200px) {
+  .shares {
+    padding: 220px 0 224px;
   }
 }
 

@@ -16,7 +16,8 @@
       align-items:     center;
     }
     .logo {
-      width: 58px;
+      width:      58px;
+      transition: .3s linear;
       &:hover {
         opacity: .7;
       }

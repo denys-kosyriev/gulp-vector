@@ -7,11 +7,10 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
   />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Інтернет | Вектор</title>
+  <title>Реклама | Вектор</title>
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/libs/swiper/swiper.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
 <header class="header">
@@ -62,7 +61,7 @@
             </ul>
           </div>
           <a href='#' class='user bg-green'>
-            <img src='../assets/images/icons/user.svg' alt=''>
+            <img src='./assets/images/icons/user.svg' alt=''>
             Увійти
           </a>
         </div>
@@ -73,23 +72,23 @@
     <div class='container'>
       <div class='content'>
         <div class='left'>
-          <a href='../index.html'>
-            <img src='../assets/images/logo.png' alt='' class='logo'>
+          <a href='./index.html'>
+            <img src='./assets/images/logo.png' alt='' class='logo'>
           </a>
           <ul>
-            <li><a href='./internet.html' class='active'>Тарифи</a></li>
-            <li><a href='../advertising.html'>Реклама</a></li>
+            <li><a href='./tariffs/internet.html'>Тарифи</a></li>
+            <li><a href='./advertising.html' class='active'>Реклама</a></li>
             <li><a href='#'>Підключення</a></li>
-            <li><a href='../news.html'>Новини</a></li>
-            <li><a href='../shares.html'>Акції</a></li>
+            <li><a href='./news.html'>Новини</a></li>
+            <li><a href='shares.html'>Акції</a></li>
             <li><a href='#'>Підтримка</a></li>
             <li><a href='#'>Контакти</a></li>
             <li><a target='_blank' href='https://lozovaya.net.ua/'>Пульс</a></li>
             <li><a href='#'>Документи</a></li>
           </ul>
         </div>
-        <img src='../assets/images/icons/menu-burger.svg' alt='' class='burger'>
-        <img src='../assets/images/icons/close.svg' alt='' class='d-none'>
+        <img src='./assets/images/icons/menu-burger.svg' alt='' class='burger'>
+        <img src='./assets/images/icons/close.svg' alt='' class='d-none'>
         <a target="_blank"
            href='https://next.privat24.ua/payments/form/%7B%22token%22:%225230f2a2-1a99-45cf-a7b0-2693dbe8%22%7D?lang'
            class='btn btn-medium btn-outlined'>Оплатити</a>
@@ -98,465 +97,134 @@
   </div>
 </header>
 
-<main class='tariffs-page internet'>
-  <!--    <section class='modal modal-form form-net'>-->
-  <!--      <div class='form p-relative'>-->
-  <!--        <div class='close'>-->
-  <!--          <img src='../assets/images/icons/close.svg' alt=''>-->
-  <!--        </div>-->
-  <!--        <h2>Назва пакету</h2>-->
-  <!--        <form class='form-order'>-->
-  <!--          <label class='initials'>-->
-  <!--            <input type='text' placeholder="ПІБ*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--              <span>!</span>-->
-  <!--              Введіть ініціали-->
-  <!--            </span>-->
-  <!--          </label>-->
-  <!--          <label class='address'>-->
-  <!--            <input type='text' placeholder="Адреса*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--              <span>!</span>-->
-  <!--              Введіть адресу-->
-  <!--            </span>-->
-  <!--          </label>-->
-  <!--          <label class='phone'>-->
-  <!--            <input type='number' placeholder="Телефон*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--              <span>!</span>-->
-  <!--              Введіть телефон-->
-  <!--            </span>-->
-  <!--          </label>-->
-  <!--          <label class='email'>-->
-  <!--            <input type='email' placeholder="Email*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--              <span>!</span>-->
-  <!--              Введіть імейл-->
-  <!--            </span>-->
-  <!--          </label>-->
-  <!--          <button type='submit' class='btn btn-full btn-big shadow'>-->
-  <!--            Відправити-->
-  <!--          </button>-->
-  <!--          <div class='download-receipt'>-->
-  <!--            <label for='download-receipt'>-->
-  <!--              <input type='file' id='download-receipt'>-->
-  <!--              Завантажити Квитанцію-->
-  <!--            </label>-->
-  <!--          </div>-->
-  <!--        </form>-->
-  <!--      </div>-->
-  <!--    </section>-->
-  <section class='top'>
+<main class='advertising'>
+  <section class='advertising-services'>
     <div class='container'>
-      <h2>Тарифи</h2>
-    </div>
-    <div class='buttons'>
-      <div class='container'>
-        <ul>
-          <li>
-            <a href='internet.html' class='btn btn-switch btn-small active'>
-              Інтернет
-            </a>
-          <li>
-            <a href='./tv.html' class='btn btn-switch btn-small'>
-              Телебачення
-            </a>
-          </li>
-          <li>
-            <a href='./all.html' class='btn btn-switch btn-small btn-all'>
-              Все разом
-            </a>
-          </li>
-        </ul>
+      <h2>Рекламні послуги</h2>
+      <div class='table'>
+        <div class='table-header'>
+          <div class='table-row'>
+            <div><span>Найменування послуги</span></div>
+            <div><span>Кількість</span></div>
+            <div><span>Вартість</span></div>
+          </div>
+        </div>
+        <div class='table-body'>
+          <div class='table-row'>
+            <div>
+              <span>Трансляція рекламного ролика та слайду</span>
+            </div>
+            <div><span>1 раз на добу</span></div>
+            <div><span>0,30 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Трансляція рекламного ролика та слайду в прайм-тайм</span>
+              <span>6:00-8:00; 12:00-14:00; 18:00-21:00</span>
+            </div>
+            <div><span>1 раз на добу</span></div>
+            <div><span>0,50 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Текстове оголошення приватного характеру</span>
+              <span>(коротка інформація, до 15 слів. Продам, куплю, здам, різне )</span>
+            </div>
+            <div><span>7 днів</span></div>
+            <div><span>50 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Звукове текстове оголошення приватного характеру</span>
+              <span>(коротка інформація, до 15 слів. Продам, куплю, здам, різне)</span>
+            </div>
+            <div>
+              <span>7 нів</span>
+              <span>+ 30 грн фото</span>
+            </div>
+            <div><span>60 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Текстове оголошення приватного характеру</span>
+              <span>(коротка інформація, до 15 слів. Послуги)</span>
+            </div>
+            <div><span>7 днів</span></div>
+            <div><span>65 грн</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section class='internet'>
+  <section class='price-list'>
     <div class='container'>
-      <div class='swiper tariffs-slider'>
-        <div class='swiper-wrapper tariffs-wrapper'>
-          <div class='swiper-slide '>
-            <div class='tariff tariff-internet'>
-              <a href='#' class='info'>
-                <img src='../assets/images/icons/info.svg' alt=''>
-              </a>
-              <h4>Інтернет</h4>
-              <p class='speed'>до <span>50</span> Мбіт</p>
-              <p class='no-limited color-gray'>не обмежена</p>
-              <div class='network network1'>
-                <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
-                Безлімітний
-                <span>170</span>
-              </div>
-              <div class='network network2'>
-                <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
-                Домашній
-                <span>50</span>
-              </div>
-              <div class='price'>
-                <p>170</p>
-                грн/міс
-              </div>
-              <button class='btn btn-full btn-big'>
-                Підключити
-              </button>
-              <a href='#' class='color-green'>Детальніше</a>
-            </div>
-          </div>
-          <div class='swiper-slide '>
-            <div class='tariff tariff-internet'>
-              <a href='#' class='info'>
-                <img src='../assets/images/icons/info.svg' alt=''>
-              </a>
-              <h4>Інтернет</h4>
-              <p class='speed'>до <span>70</span> Мбіт</p>
-              <p class='no-limited color-gray'>не обмежена</p>
-              <div class='network network1'>
-                <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
-                Безлімітний
-                <span>180</span>
-              </div>
-              <div class='network network2'>
-                <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
-                Домашній
-                <span>70</span>
-              </div>
-              <div class='price'>
-                <p>180</p>
-                грн/міс
-              </div>
-              <button class='btn btn-full btn-big'>
-                Підключити
-              </button>
-              <a href='#' class='color-green'>Детальніше</a>
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <div class='tariff tariff-internet'>
-              <a href='#' class='info'>
-                <img src='../assets/images/icons/info.svg' alt=''>
-              </a>
-              <h4>Інтернет</h4>
-              <p class='speed'>до <span>100</span> Мбіт</p>
-              <p class='no-limited color-gray'>не обмежена</p>
-              <div class='network network1'>
-                <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
-                Безлімітний
-                <span>180</span>
-              </div>
-              <div class='network network2'>
-                <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
-                Домашній
-                <span>100</span>
-              </div>
-              <div class='price'>
-                <p>185</p>
-                грн/міс
-              </div>
-              <button class='btn btn-full btn-big'>
-                Підключити
-              </button>
-              <a href='#' class='color-green'>Детальніше</a>
-            </div>
+      <h2 class='price-list-title'>Прайс-лист на виготовлення рекламної продукції</h2>
+      <div class='table'>
+        <div class='table-header'>
+          <div class='table-row'>
+            <div><span>Найменування послуги</span></div>
+            <div><span>Кількість</span></div>
+            <div><span>Вартість</span></div>
           </div>
         </div>
-        <div class='swiper-button-prev d-none d-none'></div>
-        <div class='swiper-button-next d-none d-none'></div>
-        <div class='swiper-pagination'></div>
-      </div>
-      <div>
-        <div class='container'>
-          <h3>Інтернет <span>(Gpon)</span></h3>
-        </div>
-      </div>
-      <div class='swiper tariffs-slider'>
-        <div class='swiper-wrapper tariffs-wrapper'>
-          <div class='swiper-slide '>
-            <div class='tariff tariff-internet'>
-              <a href='#' class='info'>
-                <img src='../assets/images/icons/info.svg' alt=''>
-              </a>
-              <h4 class='uppercase'>Gpon</h4>
-              <p class='speed'>до <span>50</span> Мбіт</p>
-              <p class='no-limited color-gray'>не обмежена</p>
-              <div class='network network1'>
-                <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
-                Безлімітний
-                <span>170</span>
-              </div>
-              <div class='network network2'>
-                <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
-                Домашній
-                <span>50+</span>
-              </div>
-              <div class='price'>
-                <p>170</p>
-                грн/міс
-              </div>
-              <button class='btn btn-full btn-big'>
-                Підключити
-              </button>
-              <a href='#' class='color-green'>Детальніше</a>
+        <div class='table-body'>
+          <div class='table-row'>
+            <div>
+              <span>Виготовлення рекламного слайду</span>
             </div>
+            <div></div>
+            <div><span>200 грн</span></div>
           </div>
-          <div class='swiper-slide'>
-            <div class='tariff tariff-internet'>
-              <a href='#' class='info'>
-                <img src='../assets/images/icons/info.svg' alt=''>
-              </a>
-              <h4 class='gpon uppercase'>Gpon</h4>
-              <p class='speed'>до <span>100</span> Мбіт</p>
-              <p class='no-limited color-gray'>не обмежена</p>
-              <div class='network network1'>
-                <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
-                Безлімітний
-                <span>185</span>
-              </div>
-              <div class='network network2'>
-                <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
-                Домашній
-                <span>100+</span>
-              </div>
-              <div class='price'>
-                <p>185</p>
-                грн/міс
-              </div>
-              <button class='btn btn-full btn-big'>
-                Підключити
-              </button>
-              <a href='#' class='color-green'>Детальніше</a>
+          <div class='table-row'>
+            <div>
+              <span>Виготовлення рекламного ролика</span>
             </div>
+            <div></div>
+            <div><span>300 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Розміщення логотипу та короткої інформаціїв передачах та фільмах</span>
+              <span>(до 3-х показів)</span>
+            </div>
+            <div><span>1 міс</span></div>
+            <div><span>400 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <p>Розміщення реклами на форматній картинці рекламного блоку</p>
+              <p>(слоган, назва, адреса) 15 сек.</p>
+            </div>
+            <div><span>1 міс</span></div>
+            <div><span>400 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Розміщення реклами на форматній картинці рекламного блоку</span>
+              <span>(слоган, назва, адреса) 25 сек.</span>
+            </div>
+            <div><span>1 міс</span></div>
+            <div><span>650 грн</span></div>
           </div>
         </div>
-        <div class='swiper-button-prev d-none'></div>
-        <div class='swiper-button-next d-none'></div>
-        <div class='swiper-pagination'></div>
-      </div>
-      <div>
-        <div class='container'>
-          <h3>Інтернет <span>(Wi-fi)</span></h3>
-        </div>
-      </div>
-      <div class='swiper tariffs-slider'>
-        <div class='swiper-wrapper tariffs-wrapper'>
-          <div class='swiper-slide'>
-            <div class='tariff tariff-internet'>
-              <a href='#' class='info'>
-                <img src='../assets/images/icons/info.svg' alt=''>
-              </a>
-              <h4>120 Wi-Fi</h4>
-              <p class='speed'>до <span>2</span> Мбіт</p>
-              <p class='no-limited'>не обмежена</p>
-              <div class='network network1'>
-                <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
-                Безлімітний
-              </div>
-              <div class='network'>
-                <img class='icon- network215' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
-                Домашній
-                <span>2048170</span>
-              </div>
-              <div class='price'>
-                <p>120</p>
-                грн/міс
-              </div>
-              <button class='btn btn-full btn-big'>
-                Підключити
-              </button>
-              <a href='#'>Детальніше</a>
-            </div>
-          </div>
-          <div class='swiper-slide '>
-            <div class='tariff tariff-internet'>
-              <a href='#' class='info'>
-                <img src='../assets/images/icons/info.svg' alt=''>
-              </a>
-              <h4>150 Wi-Fi</h4>
-              <p class='speed'>до <span>5</span> Мбіт</p>
-              <p class='no-limited'>не обмежена</p>
-              <div class='network network1'>
-                <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
-                Безлімітний
-              </div>
-              <div class='network'>
-                <img class='icon- network215' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
-                Домашній
-                <span>5120</span>
-              </div>
-              <div class='price'>
-                <p>150</p>
-                грн/міс
-              </div>
-              <button class='btn btn-full btn-big'>
-                Підключити
-              </button>
-              <a href='#' class='detail'>Детальніше</a>
-            </div>
-          </div>
-          <div class='swiper-slide '>
-            <div class='tariff tariff-internet'>
-              <a href='#' class='info'>
-                <img src='../assets/images/icons/info.svg' alt=''>
-              </a>
-              <h4>220 Wi-Fi</h4>
-              <p class='speed'>до <span>10</span> Мбіт</p>
-              <p class='no-limited'>не обмежена</p>
-              <div class='network network1'>
-                <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
-                Безлімітний
-              </div>
-              <div class='network'>
-                <img class='icon- network215' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
-                Домашній
-                <span>10</span>
-              </div>
-              <div class='price'>
-                <p>220</p>
-                грн/міс
-              </div>
-              <button class='btn btn-full btn-big'>
-                Підключити
-              </button>
-              <a href='#' class='detail'>Детальніше</a>
-            </div>
-          </div>
-          <div class='swiper-slide '>
-            <div class='tariff tariff-internet'>
-              <a href='#' class='info'>
-                <img src='../assets/images/icons/info.svg' alt=''>
-              </a>
-              <h4>Wi-Fi</h4>
-              <p class='speed'>до <span>70</span> Мбіт</p>
-              <p class='no-limited'>не обмежена</p>
-              <div class='network network1'>
-                <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
-                Безлімітний
-                <span>180</span>
-              </div>
-              <div class='network network2'>
-                <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
-                Домашній
-                <span>70</span>
-              </div>
-              <div class='price'>
-                <p>180</p>
-                грн/міс
-              </div>
-              <button class='btn btn-full btn-big'>
-                Підключити
-              </button>
-              <a href='#' class='detail'>Детальніше</a>
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <div class='tariff tariff-internet'>
-              <a href='#' class='info'>
-                <img src='../assets/images/icons/info.svg' alt=''>
-              </a>
-              <h4>Wi-Fi</h4>
-              <p class='speed'>до <span>100</span> Мбіт</p>
-              <p class='no-limited'>не обмежена</p>
-              <div class='network network1'>
-                <img class='icon-15' src='../assets/images/icons/language.svg' alt=''>
-                Безлімітний
-                <span>180</span>
-              </div>
-              <div class='network network2'>
-                <img class='icon-15' src='../assets/images/icons/house-chimney-crack.svg' alt=''>
-                Домашній
-                <span>100</span>
-              </div>
-              <div class='price'>
-                <p>185</p>
-                грн/міс
-              </div>
-              <button class='btn btn-full btn-big'>
-                Підключити
-              </button>
-              <a href='#' class='detail'>Детальніше</a>
-            </div>
-          </div>
-        </div>
-        <div class='swiper-button-prev d-none'></div>
-        <div class='swiper-button-next d-none'></div>
-        <div class='swiper-pagination'></div>
       </div>
     </div>
   </section>
-  <section class='connection-internet'>
+  <section class='billboard'>
     <div class='container'>
-      <div class='wrapper'>
-        <div class='left'>
-          <div class='content'>
-            <h2>Умови підключення</h2>
-            Можливість підключення до мережі "Вектор" і поповнити ряди користувачів глобальної мережі Інтернет, якщо
-            ви
-            проживаєте на 1-6, 9 м-ні, а також центаральній частини міста, та приватного сектора* Підключення
-            здійснюється
-            протягом 5 робочих днів після подачі заявки.
-            <p>
-              Підключення до кабельної мережі <span>Інтернет безкоштовно!</span>
-            </p>
-            <p>
-              Вартість одного метра кабелю: <span>3,00 грн.</span>
-            </p>
-            <button class='btn btn-full btn-big'>
-              Подати заявку
+      <div class='wrapper p-relative'>
+        <div class='content'>
+          <div class='left'>
+            <h2>Ваша <span>реклама</span></h2>
+            <p class='subtitle'>на відстані до 70 км від Лозової</p>
+            <p class='subtitle'>Лозівський, Сахновщинський, Близнюківський, Барвінківський, Первомайський,
+              Павлоградський
+              р-ни.</p>
+            <button class='btn btn-big'>
+              Зв'язатись
             </button>
           </div>
-        </div>
-        <div class='right p-relative'>
-          <div class='green-circle'></div>
-          <div class='references shadow'>
-            Довідки за тел
-            <ul>
-              <li class='tel-link'>
-                <a href='tel:(057-45) 5-11-30'>
-                  (057-45) 5-11-30
-                  <img src='../assets/images/icons/phone.svg' alt=''>
-                </a>
-              </li>
-              <li class='tel-link'>
-                <a href='tel:099-34-34-593'>
-                  099-34-34-593
-                  <img src='../assets/images/icons/phone.svg' alt=''>
-                </a>
-              </li>
-              <li class='tel-link'>
-                <a href='tel:050-34-34-593'>
-                  050-34-34-593
-                  <img src='../assets/images/icons/phone.svg' alt=''>
-                </a>
-              </li>
-            </ul>
-            Детальніше за тел
-            <ul>
-              <li class='tel-link'>
-                <a href='tel:(057-45) 5-11-30'>
-                  (057-45) 5-11-30
-                  <img src='../assets/images/icons/phone.svg' alt=''>
-                </a>
-              </li>
-              <li class='tel-link'>
-                <a href='tel:(057-45) 5-11-18'>
-                  (057-45) 5-11-18
-                  <img src='../assets/images/icons/phone.svg' alt=''>
-                </a>
-              </li>
-              <li class='tel-link'>
-                <a href='tel:050-34-34-593'>
-                  050-34-34-593
-                  <img src='../assets/images/icons/phone.svg' alt=''>
-                </a>
-              </li>
-              <li class='tel-link'>
-                <a href='tel:099-34-34-593'>
-                  099-34-34-593
-                  <img src='../assets/images/icons/phone.svg' alt=''>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <img src='./assets/images/billboard.png' alt=''>
         </div>
       </div>
     </div>
@@ -569,14 +237,14 @@
       <div class='wrapper'>
         <div class='flex'>
           <ul class='navigation'>
-            <li><a href='../index.html'>
-              <img src='../assets/images/logo-white.png' alt=''>
+            <li><a href='./index.html'>
+              <img src='./assets/images/logo-white.png' alt=''>
             </a></li>
-            <li><a href='./internet.html'>Тарифи</a></li>
-            <li><a href='../advertising.html'>Реклама</a></li>
+            <li><a href='tariffs/internet.html'>Тарифи</a></li>
+            <li><a href='./advertising.html'>Реклама</a></li>
             <li><a href='#'>Підключення</a></li>
-            <li><a href='../news.html'>Новини</a></li>
-            <li><a href='../shares.html'>Акції</a></li>
+            <li><a href='./news.html'>Новини</a></li>
+            <li><a href='shares.html'>Акції</a></li>
             <li><a href='#'>Пдтримка</a></li>
             <li><a href='#'>Контакти</a></li>
             <li><a target='_blank' href='https://lozovaya.net.ua/'>Пульс</a></li>
@@ -682,11 +350,11 @@
             </li>
           </ul>
           <ul class='socials'>
-            <li><a href='#' target="_blank"><img src='../assets/images/icons/facebook.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='../assets/images/icons/instagram.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='../assets/images/icons/telegram.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='../assets/images/icons/viber.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='../assets/images/icons/youtube.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='./assets/images/icons/facebook.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='./assets/images/icons/instagram.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='./assets/images/icons/telegram.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='./assets/images/icons/viber.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='./assets/images/icons/youtube.svg' alt=''></a></li>
           </ul>
         </div>
       </div>
@@ -697,7 +365,6 @@
   </div>
 </footer>
 
-<script src="../assets/libs/swiper/swiper.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>

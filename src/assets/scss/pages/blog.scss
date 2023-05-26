@@ -27,9 +27,9 @@
       padding-bottom: 29px;
     }
     img {
-      height:          67vw;
-      max-height:      551px;
-      object-fit:      cover;
+      height:     67vw;
+      max-height: 551px;
+      object-fit: cover;
     }
   }
   .bottom {
@@ -42,7 +42,6 @@
 
 @media(min-width: 1024px) {
   .blog {
-    padding: 215px 0 47px;
     p {
       font-size:      24px;
       padding-bottom: 39px;
@@ -63,5 +62,11 @@
     .bottom {
       padding: 93px 0;
     }
+  }
+}
+
+@media(min-width: 1200px) {
+  .blog {
+    padding: 215px 0 47px;
   }
 }

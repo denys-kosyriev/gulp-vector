@@ -68,7 +68,6 @@
 
 @media(min-width: 1024px) {
   .news {
-    padding: 219px 0 200px;
     h2 {
       padding-bottom: 76px;
       text-align:     start;
@@ -89,6 +88,12 @@
         margin: auto 19px 37px;
       }
     }
+  }
+}
+
+@media(min-width: 1200px) {
+  .news {
+    padding: 219px 0 200px;
   }
 }
 
