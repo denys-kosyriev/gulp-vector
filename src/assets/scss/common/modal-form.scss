@@ -1,0 +1,264 @@
+.modal-form {
+  display:         flex;
+  justify-content: center;
+  align-items:     flex-end;
+  .form {
+    max-width:        566px;
+    width:            100%;
+    padding:          26px 21px 24px;
+    background-color: #fff;
+    border-radius:    20px 20px 0 0;
+  }
+  .close {
+    padding:       10px 10px 6px;
+    position:      absolute;
+    top:           21px;
+    right:         16px;
+    z-index:       0;
+    cursor:        pointer;
+    border-radius: 10px;
+    transition:    .2s linear;
+    &:hover {
+      background-color: #d2dbdb;
+    }
+    &:active {
+      margin: 2px;
+      img {
+        width: 15px;
+      }
+    }
+  }
+  img {
+    width:      18px;
+    transition: .2s linear;
+  }
+  h2 {
+    padding-bottom: 25px;
+    text-align:     center;
+  }
+  label {
+    white-space: nowrap;
+    &:nth-of-type(4) {
+      input {
+        margin-bottom: 19px;
+      }
+    }
+    input {
+      margin-bottom: 10px;
+      &::placeholder {
+        color: #6F8F81;
+      }
+    }
+    &.error {
+      input {
+        border-color:  #FF2F2F;
+        margin-bottom: 8px;
+      }
+      .error-message {
+        display:        flex;
+        align-items:    center;
+        color:          #FF2F2F;
+        font-size:      24px;
+        padding-bottom: 6px;
+        span {
+          padding:          3px 11px;
+          background-color: #FF2F2F;
+          color:            #fff;
+          border-radius:    50%;
+          margin:           0 15px 0 30px;
+          font-size:        16px;
+        }
+      }
+    }
+    &.download-receipt {
+      display: inline-flex;
+      label {
+        color:  #03BF6A;
+        cursor: pointer;
+      }
+    }
+  }
+  &.form-tv {
+    label:nth-of-type(4) {
+      input {
+        margin-bottom: 11px;
+      }
+    }
+    .block-checkbox {
+      display:        inline-flex;
+      padding-bottom: 15px;
+    }
+    .checkbox {
+      user-select: none;
+      display:     flex;
+      align-items: center;
+      white-space: nowrap;
+      cursor:      pointer;
+      padding:     0;
+      &:hover {
+        span::before {
+          box-shadow: 1px 1px 5px #03BF6A, -1px -1px 5px #03BF6A, 1px -1px 5px #03BF6A, -1px 1px 5px #03BF6A;
+        }
+      }
+      & span::before {
+        content:          '';
+        display:          block;
+        position:         absolute;
+        left:             13px;
+        top:              3px;
+        width:            12px;
+        height:           12px;
+        background-color: #fff;
+        border:           1px solid #03BF6A;
+        border-radius:    2px;
+        transition:       .1s linear;
+      }
+      & span::after {
+        content:             '';
+        display:             none;
+        position:            absolute;
+        left:                13px;
+        top:                 3px;
+        width:               12px;
+        height:              12px;
+        background-color:    #6BC2BB;
+        border:              1px solid #03BF6A;
+        border-radius:       2px;
+        background-image:    url("../images/icons/ready.svg");
+        background-size:     12px;
+        background-repeat:   no-repeat;
+        background-position: center;
+      }
+      & input:checked + span::after {
+        display: block;
+      }
+      input {
+        width:   14px;
+        opacity: 0;
+        margin:  0 13px;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+
+    .price-router {
+      padding:          14px;
+      font-size:        14px;
+      border-radius:    60px;
+      display:          flex;
+      align-items:      center;
+      margin-bottom:    18px;
+      color:            #03BF6A;
+      background-color: #F2F8F8;
+      img {
+        width:        20px;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  button {
+    width:         100%;
+    margin-bottom: 15px;
+  }
+
+  .download-receipt {
+    display:     inline-flex;
+    margin-left: 50%;
+    transform:   translateX(-50%);
+    label {
+      transition: .2s linear;
+      font-size:  14px;
+      &:hover {
+        color: #029c56;
+      }
+      &:active {
+        color: #006939;
+      }
+    }
+  }
+}
+
+@media(min-width: 567px) {
+  .modal-form {
+    align-items: center;
+    .form {
+      border-radius: 40px;
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  .modal-form {
+    .form {
+      max-width: 803px;
+      padding:   75px 120px 90px;
+    }
+    .close {
+      top:   82px;
+      right: 44px;
+      img {
+        width: 35px;
+      }
+    }
+    h2 {
+      padding-bottom: 64px;
+      font-size:      45px;
+    }
+    &.form-tv {
+      label:nth-of-type(4) {
+        input {
+          margin-bottom: 30px;
+        }
+      }
+      .block-checkbox {
+        padding-bottom: 30px;
+      }
+      .checkbox {
+        input {
+          margin: 0 26px;
+        }
+        span {
+          font-size: 24px;
+          &::before {
+            left:   28px;
+            width:  24px;
+            height: 24px;
+          }
+          &::after {
+            left:   28px;
+            width:  24px;
+            height: 24px;
+          }
+        }
+      }
+      .price-router {
+        font-size:     24px;
+        padding:       21px 31px;
+        margin-bottom: 26px;
+        img {
+          width:        30px;
+          margin-right: 21px;
+        }
+      }
+    }
+    label {
+      &:nth-of-type(4) {
+        input {
+          margin-bottom: 46px;
+        }
+      }
+      input {
+        margin-bottom: 21px;
+      }
+      &:last-of-type {
+        font-size: 20px;
+      }
+    }
+    button {
+      padding:       26px 20px;
+      margin-bottom: 30px;
+    }
+  }
+}

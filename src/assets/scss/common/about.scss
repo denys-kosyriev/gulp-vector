@@ -1,0 +1,145 @@
+.about {
+  &.about-company {
+    padding: 3px 0 30px;
+    .left {
+      padding: 0 0 18px 0;
+      display: inline-flex;
+      margin:  0 auto 36px;
+      .main-img {
+        max-width: 360px;
+      }
+      div {
+        min-width:       133px;
+        min-height:      133px;
+        position:        absolute;
+        bottom:          0;
+        right:           0;
+        z-index:         1;
+        border-radius:   50%;
+        background:      #6AE37E;
+        display:         flex;
+        align-items:     center;
+        justify-content: center;
+        img {
+          width: 90px;
+        }
+      }
+    }
+  }
+  &.about-tv {
+    img {
+      max-width:     400px;
+      margin-bottom: 44px;
+    }
+  }
+  .container {
+    max-width: 1698px;
+  }
+  .content {
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
+  }
+  .right {
+    font-weight:    400;
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
+    font-size:      14px;
+    line-height:    1.5;
+    h2 {
+      padding-bottom: 22px;
+      text-align:     center;
+    }
+    a {
+      margin-top: 36px;
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  .about {
+    &.about-company {
+      padding: 46px 0 48px;
+      .container {
+        max-width: 1515px;
+      }
+      .left {
+        padding: 0 0 39px 0;
+        margin:  0 auto;
+        div {
+          height: 180px;
+          width:  180px;
+          img {
+            width: 120px;
+          }
+        }
+      }
+      .right {
+        padding: 0 0 45px 100px;
+      }
+    }
+    .content {
+      flex-direction:  row;
+      justify-content: space-between;
+    }
+    .right {
+      width:       50%;
+      text-align:  left;
+      font-size:   24px;
+      align-items: start;
+      padding:     90px 60px 0 0;
+      line-height: 1.6;
+      h2 {
+        padding-bottom: 27px;
+      }
+      a {
+        min-width:  277px;
+        margin-top: 65px;
+      }
+    }
+    &.about-tv {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+  .about {
+    &.about-company {
+      padding: 83px 0 97px;
+      .left {
+        .main-img {
+          max-width: 713px;
+        }
+        div {
+          height:    295px;
+          width:     295px;
+          font-size: 72px;
+          img {
+            width: 198px;
+          }
+        }
+      }
+    }
+    &.about-tv {
+      padding: 118px 0 74px;
+      img {
+        max-width: 622px;
+        margin:    0 108px 0 0;
+      }
+    }
+  }
+}
+
+@media(min-width: 1800px) {
+  .about {
+    &.about-tv {
+      img {
+        max-width: 822px;
+      }
+    }
+  }
+}
