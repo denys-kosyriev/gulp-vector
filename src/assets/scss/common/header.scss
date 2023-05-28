@@ -28,9 +28,21 @@
     ul {
       display: none;
     }
-    img {
-      width:  24px;
-      cursor: pointer;
+    svg {
+      width:      24px;
+      cursor:     pointer;
+      transition: .2s linear;
+      path {
+        transition: .2s linear;
+      }
+      &:hover {
+        path {
+          fill: #006939;
+        }
+      }
+      &:active {
+        opacity: .5;
+      }
     }
     .btn {
       display: none;
@@ -67,6 +79,11 @@
         white-space: nowrap;
         align-items: start;
         color:       #03BF6A;
+        svg {
+          path {
+            transition: .3s linear;
+          }
+        }
         &:hover {
           color: #029c56;
           svg {
@@ -92,6 +109,33 @@
           width:        18px;
           margin-right: 7px;
         }
+        .phones {
+          svg {
+            path {
+              transition: .2s linear;
+            }
+          }
+          &:hover {
+            svg {
+              path {
+                fill: #006939;
+              }
+            }
+          }
+          a {
+            color:      #03BF6A;
+            transition: .2s linear;
+            &:first-of-type {
+              padding-right: 7px;
+            }
+            &:hover {
+              color: #006939;
+            }
+            &:active {
+              color: #029c56;
+            }
+          }
+        }
         .language {
           margin:      0 33px;
           display:     flex;
@@ -102,7 +146,9 @@
             transition: .2s linear;
           }
           svg {
-            transition: .2s linear;
+            path {
+              transition: .2s linear;
+            }
           }
           &:hover {
             p {
@@ -217,9 +263,9 @@
         display: none;
       }
       .btn {
-        min-width: 180px;
+        min-width: 0;
         display:   inline-flex;
-        padding:   12px;
+        padding:   12px 44px;
       }
     }
   }

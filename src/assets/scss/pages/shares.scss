@@ -13,17 +13,20 @@
     flex-wrap: wrap;
   }
   .cart {
-    height:        57vw;
-    width:         100%;
-    padding:       0 24px;
-    border-radius: 20px;
-    overflow:      hidden;
+    min-height:       59vw;
+    width:            100%;
+    padding:          0 24px;
+    border-radius:    20px;
+    overflow:         hidden;
+    display:          flex;
+    flex-direction:   column;
+    align-items:      start;
+    background-color: #03BF6A;
     img {
       transition: .2s linear;
     }
     &:nth-of-type(1) {
-      padding-top:      55px;
-      background-color: #03BF6A;
+      padding-top: 55px;
       h3 {
         font-size: 38px;
         span {
@@ -47,8 +50,7 @@
       }
     }
     &:nth-of-type(4) {
-      padding-top:      45px;
-      background-color: #000;
+      padding-top: 45px;
       h3 {
         font-size: 36px;
       }
@@ -64,16 +66,15 @@
     }
     h3 {
       color:          #fff;
+      line-height:    0.8;
       display:        flex;
       flex-direction: column;
-      line-height:    0.9;
-      z-index:        2;
     }
     a {
-      position: absolute;
-      bottom:   32px;
-      left:     25px;
-      z-index:  2;
+      min-width: 0;
+      font-size: 11px;
+      padding:   12px 29px;
+      margin:    auto 0 29px;
     }
   }
 }
@@ -81,14 +82,20 @@
 @media(min-width: 567px) {
   .shares {
     .cart {
-      width:  48%;
-      height: 300px;
       a {
-        min-width:     141px;
-        padding:       14px;
+        padding:       14px 32px;
         border-radius: 25px;
         font-size:     12px;
       }
+    }
+  }
+}
+
+@media(min-width: 650px) {
+  .shares {
+    .cart {
+      width:      48%;
+      min-height: 250px;
     }
   }
 }
@@ -100,8 +107,9 @@
       padding-bottom: 75px;
     }
     .cart {
-      width:   31%;
-      padding: 0 40px;
+      width:      31%;
+      min-height: 300px;
+      padding:    0 40px;
       &:hover {
         img {
           scale: 1.2;
@@ -147,8 +155,7 @@
         }
       }
       a {
-        bottom: 41px;
-        left:   36px;
+        margin: auto 0 49px;
       }
     }
   }

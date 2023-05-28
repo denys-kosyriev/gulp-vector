@@ -19,9 +19,7 @@
       text-align:  center;
       font-size:   14px;
       font-weight: 400;
-      .container {
-        padding: 0 20px;
-      }
+      padding:     0 20px;
       .select {
         display:        flex;
         flex-direction: column;
@@ -199,7 +197,7 @@
     }
     img {
       max-width:     400px;
-      margin-bottom: 48px;
+      margin-bottom: 16px;
     }
     h2 {
       line-height:    1.4;
@@ -232,6 +230,9 @@
 
 @media(min-width: 567px) {
   .tariffs-page {
+    h3 {
+      font-size: 28px;
+    }
     .connection-internet {
       .right {
         .references {
@@ -241,6 +242,29 @@
             flex-wrap:      wrap;
           }
         }
+      }
+    }
+    .description {
+      ul {
+        font-size: 17px;
+      }
+    }
+    .connection-internet {
+      .content {
+        font-size: 17px;
+      }
+      button {
+        min-width: 0;
+      }
+      .right {
+        .references {
+          font-size: 21px;
+        }
+      }
+    }
+    .connection-tv {
+      a {
+        min-width: 0;
       }
     }
   }
@@ -260,16 +284,8 @@
         padding-bottom: 41px;
         text-align:     start;
       }
-      .flex {
-        .container {
-          padding: 0 20px;
-        }
-      }
       .selected {
-        padding: 13px 0 25px;
-        .container {
-          padding: 0;
-        }
+        padding: 13px 20px 25px;
         p {
           padding-right: 24px;
           white-space:   nowrap;
@@ -288,14 +304,6 @@
       ul {
         gap: 20px;
       }
-      li {
-        &:first-child {
-          margin-left: 30px;
-        }
-        &:last-child {
-          margin-right: 30px;
-        }
-      }
       a {
         min-width: 195px;
         font-size: 24px;
@@ -308,11 +316,8 @@
         padding: 42px 24px 23px;
         gap:     22px;
         div {
-          background-color: transparent;
-          border:           2px solid #03BF6A;
-          color:            #03BF6A;
-          padding:          3px 11px;
-          font-size:        18px;
+          padding:   4px 12px;
+          font-size: 18px;
         }
       }
       ul {
@@ -323,7 +328,7 @@
       }
     }
     h3 {
-      padding:    73px 0 89px;
+      padding:    35px 0 40px;
       font-size:  40px;
       text-align: start;
     }
@@ -353,7 +358,7 @@
         button {
           margin:    60px 0 0;
           transform: translateX(0);
-          padding:   26px;
+          padding:   26px 102px;
         }
       }
       .right {
@@ -395,18 +400,20 @@
       }
     }
     .connection-tv {
-      padding: 123px 0 112px;
+      padding: 50px 0 80px;
       .content {
+        padding:         0 0 0 42px;
         flex-direction:  row;
         align-items:     start;
         justify-content: space-between;
         div {
-          width:   46%;
-          padding: 55px 126px 0 0;
+          width:   48%;
+          padding: 79px 0 0 0;
         }
       }
       img {
-        max-width: 776px;
+        max-width:     50%;
+        padding-right: 20px;
       }
       h2 {
         padding-bottom: 26px;
@@ -424,11 +431,6 @@
         padding:   23px 10px;
       }
     }
-    &.all {
-      .connection-tv {
-        padding: 126px 0 130px;
-      }
-    }
   }
 }
 
@@ -440,6 +442,9 @@
 
 @media(min-width: 1440px) {
   .tariffs-page {
+    h3 {
+      padding: 73px 0 89px;
+    }
     .top {
       .selected {
         padding: 0;
@@ -462,6 +467,22 @@
       .left {
         width:   54%;
         padding: 24px 0 0 30px;
+      }
+    }
+    .connection-tv {
+      padding: 104px 0 169px;
+      img {
+        max-width: 700px;
+      }
+      .content {
+        div {
+          padding: 79px 126px 0 0;
+        }
+      }
+    }
+    &.all {
+      .connection-tv {
+        padding: 126px 0 130px;
       }
     }
   }
