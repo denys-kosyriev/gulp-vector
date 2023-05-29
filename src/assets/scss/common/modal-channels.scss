@@ -1,30 +1,58 @@
 .modal-channels {
   padding: 107px 0 0;
   .channels {
-    max-width:     1416px;
-    width:         100%;
-    background:    #FFFFFF;
-    border-radius: 20px 20px 0 0;
-    padding:       28px 22px;
+    height:             100%;
+    max-width:          1416px;
+    width:              100%;
+    background:         #FFFFFF;
+    border-radius:      20px 20px 0 0;
+    overflow:           auto;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width:    none; /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .modal-channels-header {
+    position:         sticky;
+    top:              0;
+    left:             0;
+    z-index:          0;
+    padding:          28px 0 0;
+    background-color: #fff;
   }
   h2 {
-    padding-bottom: 16px;
+    padding: 0 30px 16px;
   }
   .buttons {
     display:        flex;
     overflow:       auto;
     gap:            9px;
     padding-bottom: 28px;
+    li {
+      &:first-of-type {
+        margin-left: 30px;
+      }
+      &:last-of-type {
+        margin-right: 30px;
+      }
+    }
   }
   button {
-    min-width: 153px;
-    padding:   10px 25px;
+    min-width: 0;
+    padding:   11px 25px;
+    font-size: 12px;
+  }
+  .scroll {
+    padding: 1px 21px 0 25px;
   }
   .title-channels {
-    font-size:      16px;
-    font-weight:    700;
-    padding-bottom: 17px;
-    text-align:     start;
+    font-size:   16px;
+    font-weight: 700;
+    padding:     0 0 17px 8px;
+    text-align:  start;
   }
   .table-row {
     display:     flex;
@@ -33,8 +61,9 @@
       display:     flex;
       align-items: center;
       &:first-of-type {
-        width:           20px;
-        justify-content: center;
+        span {
+          min-width: 20px;
+        }
       }
       &:nth-of-type(2) {
         padding-left: 13px;
@@ -61,7 +90,7 @@
     }
   }
   .table-body {
-    padding: 0 0 17px 6px;
+    padding: 0 0 21px 6px;
     .table-row {
       &:first-of-type {
         div {
@@ -85,14 +114,19 @@
       }
       div {
         &:first-of-type {
-          width:       37px;
-          font-size:   13px;
-          font-weight: 500;
+          span {
+            min-width:    33px;
+            font-size:    13px;
+            font-weight:  500;
+            text-align:   center;
+            border-right: 1px solid rgba(#03BF9D, .2);
+            margin-right: 14px;
+          }
         }
         &:nth-of-type(2) {
           font-size:   13px;
           font-weight: 400;
-          border-left: 1px solid rgba(#03BF9D, .2);
+          padding:     5px 0;
         }
         &:last-of-type {
           width:            35px;
@@ -101,9 +135,150 @@
           font-weight:      500;
           color:            #fff;
           background-color: #03BF6A;
-          padding:          8px 0;
+          padding:          8px 0 7px;
         }
       }
     }
+  }
+}
+
+@media(min-width: 567px) {
+  .modal-channels {
+    button {
+      font-size: 18px;
+    }
+    .title-channels {
+      font-size: 32px;
+    }
+    .table-header {
+      .table-row {
+        div {
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .table-body {
+      .table-row {
+        div {
+          &:first-of-type {
+            span {
+              font-size: 18px;
+            }
+          }
+          &:nth-of-type(2) {
+            font-size: 16px;
+          }
+          &:last-of-type {
+            font-size: 18px;
+            padding:   15px 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  .modal-channels {
+    padding: 107px 80px 0;
+    .close-modal {
+      top:   90px;
+      right: 22px;
+      img {
+        width: 51px;
+      }
+      &:active {
+        margin: 2px;
+        img {
+          width: 48px;
+        }
+      }
+    }
+    .channels {
+      border-radius: 60px 60px 0 0;
+      padding:       0 50px 0;
+    }
+    .modal-channels-header {
+      padding: 97px 0 0;
+    }
+    .buttons {
+      gap: 44px;
+    }
+    button {
+      font-size: 25px;
+      padding:   15px 39px;
+    }
+    h2 {
+      padding: 0 30px 48px;
+    }
+    .scroll {
+      padding: 51px 21px 0 22px;
+    }
+    .table {
+      padding: 0 79px 0 59px;
+    }
+    .title-channels {
+      font-size: 40px;
+      padding:   0 0 69px 8px;
+    }
+    .table-header {
+      padding-bottom: 10px;
+      margin-bottom:  30px;
+      .table-row {
+        div {
+          span {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .table-row {
+      div {
+        &:nth-of-type(2) {
+          padding-left: 56px;
+        }
+      }
+    }
+    .table-body {
+      padding: 0 0 63px;
+      .table-row {
+        &:first-of-type {
+          div {
+            &:last-of-type {
+              border-radius: 20px 20px 0 0;
+            }
+          }
+        }
+        &:last-of-type {
+          div {
+            &:last-of-type {
+              border-radius: 0 0 20px 20px;
+            }
+          }
+        }
+        div {
+          &:first-of-type {
+            span {
+              font-size: 24px;
+            }
+          }
+          &:nth-of-type(2) {
+            font-size: 24px;
+          }
+          &:last-of-type {
+            font-size: 24px;
+            padding:   23px 51px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+  .modal-channels {
+    padding: 160px 233px 0;
   }
 }

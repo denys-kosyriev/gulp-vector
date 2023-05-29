@@ -1,7 +1,4 @@
 .modal-form {
-  display:         flex;
-  justify-content: center;
-  align-items:     flex-end;
   .form {
     max-width:        566px;
     width:            100%;
@@ -84,6 +81,9 @@
         margin-bottom: 11px;
       }
     }
+    .router {
+      display: block;
+    }
     .block-checkbox {
       display:        inline-flex;
       padding-bottom: 15px;
@@ -141,7 +141,6 @@
         font-size: 14px;
       }
     }
-
     .price-router {
       padding:          14px;
       font-size:        14px;
@@ -167,15 +166,17 @@
     display:     inline-flex;
     margin-left: 50%;
     transform:   translateX(-50%);
+
     label {
+      cursor:     pointer;
       transition: .2s linear;
       font-size:  14px;
       color:      #03BF6A;
       &:hover {
-        color: #029c56;
+        color: #006939;
       }
       &:active {
-        color: #006939;
+        color: #029c56;
       }
     }
   }
@@ -220,13 +221,6 @@
     .form {
       max-width: 803px;
       padding:   75px 120px 90px;
-    }
-    .close {
-      top:   82px;
-      right: 44px;
-      img {
-        width: 35px;
-      }
     }
     h2 {
       padding-bottom: 64px;
