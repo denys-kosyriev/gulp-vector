@@ -15,8 +15,14 @@
     padding:     0 0 3px;
     line-height: 1.4;
     color:       #7A8781;
-    span {
+    a {
       color: #03BF6A;
+      &:hover {
+        color: #029c56;
+      }
+      &:active {
+        color: #006939;
+      }
     }
     img:nth-of-type(2) {
       margin: 0;

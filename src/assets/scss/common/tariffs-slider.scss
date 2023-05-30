@@ -82,6 +82,15 @@
     }
     button {
       margin-bottom: 15px;
+      &:hover {
+        background-color: #324035;
+        color:            #fff;
+        border-color:     #324035;
+      }
+      &:active {
+        background-color: #fff;
+        color:            #324035;
+      }
     }
     .detail {
       font-weight: 500;
