@@ -1,0 +1,129 @@
+.documents {
+  padding: 70px 0 80px;
+  .container {
+    max-width: 1546px;
+  }
+  h2 {
+    padding-bottom: 34px;
+    text-align:     center;
+  }
+  .content {
+    gap:       20px;
+    display:   flex;
+    flex-wrap: wrap;
+  }
+  a {
+    width:            100%;
+    padding:          38px 23px 23px 29px;
+    color:            #7A8781;
+    border:           1px solid #03BF6A;
+    border-radius:    20px;
+    background-color: #fff;
+    font-size:        14px;
+    transition:       .3s linear;
+    line-height:      1.5;
+    div {
+      display:         flex;
+      justify-content: flex-end;
+    }
+    &:hover {
+      background-color: #03BF6A;
+      color:            #F2F8F8;
+      h3 {
+        color: #fff;
+      }
+      .button {
+        color: #F2F8F8;
+      }
+      svg {
+        path {
+          fill: #F2F8F8;
+        }
+      }
+    }
+    &:active {
+      background-color: #029c56;
+    }
+  }
+  h3 {
+    padding-bottom: 15px;
+    font-size:      18px;
+    transition:     .3s linear;
+    line-height:    1.2;
+  }
+  .button {
+    margin:      44px 0 0 auto;
+    display:     inline-flex;
+    align-items: center;
+    color:       #03BF6A;
+    font-size:   14px;
+    transition:  .3s linear;
+  }
+  svg {
+    width:       15px;
+    margin-left: 6px;
+    path {
+      transition: .3s linear;
+    }
+  }
+}
+
+@media(min-width: 567px) {
+  .documents {
+    a {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    .button {
+      font-size: 18px;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+  .documents {
+    h2 {
+      text-align: start;
+    }
+    a {
+      width:          48%;
+      display:        flex;
+      flex-direction: column;
+      div {
+        margin-top: auto;
+      }
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  .documents {
+    padding: 206px 0 298px;
+    h2 {
+      padding-bottom: 79px;
+    }
+    .content {
+      gap: 64px;
+    }
+    a {
+      width:         29%;
+      font-size:     24px;
+      border-radius: 40px;
+      padding:       48px 33px 38px 31px;
+    }
+    h3 {
+      font-size:      32px;
+      padding-bottom: 24px;
+    }
+    .button {
+      margin:    39px 0 0 auto;
+      font-size: 24px;
+    }
+    svg {
+      width:       26px;
+      margin-left: 12px;
+    }
+  }
+}
