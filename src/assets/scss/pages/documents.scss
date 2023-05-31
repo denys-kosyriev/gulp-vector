@@ -104,26 +104,45 @@
     h2 {
       padding-bottom: 79px;
     }
-    .content {
-      gap: 64px;
-    }
     a {
-      width:         29%;
-      font-size:     24px;
       border-radius: 40px;
       padding:       48px 33px 38px 31px;
     }
     h3 {
-      font-size:      32px;
       padding-bottom: 24px;
     }
     .button {
-      margin:    39px 0 0 auto;
-      font-size: 24px;
+      margin: 39px 0 0 auto;
     }
     svg {
       width:       26px;
       margin-left: 12px;
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+  .documents {
+    .content {
+      gap: 30px;
+    }
+    a {
+      width:     29%;
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 32px;
+    }
+    .button {
+      font-size: 24px;
+    }
+  }
+}
+
+@media(min-width: 1800px) {
+  .documents {
+    .content {
+      gap: 64px;
     }
   }
 }

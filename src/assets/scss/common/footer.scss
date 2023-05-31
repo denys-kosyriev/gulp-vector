@@ -134,6 +134,9 @@
       margin-bottom: 27px;
       display:       flex;
       align-items:   start;
+      &:first-of-type {
+        align-items: center;
+      }
       svg {
         transition: .2s linear;
         path {
