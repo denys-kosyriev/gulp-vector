@@ -1,4 +1,5 @@
 .footer {
+  overflow: hidden;
   &.with-payment {
     padding: 248px 0 0;
     .payment {
@@ -28,13 +29,15 @@
         line-height: 1.2;
         span {
           display: inline;
+          color:   #03BF6A;
         }
       }
-      .btn {
-        max-width: 272px;
-        width:     100%;
-        padding:   19px;
-        font-size: 15px;
+      a {
+        max-width:   272px;
+        width:       100%;
+        font-size:   15px;
+        margin-left: 50%;
+        transform:   translateX(-50%);
       }
     }
     .content {
@@ -42,7 +45,8 @@
     }
   }
   .content {
-    padding: 34px 0 34px;
+    padding:          34px 0 34px;
+    background-color: #03BF6A;
   }
   .container {
     max-width: 1480px;
@@ -69,7 +73,8 @@
         padding-bottom: 21px;
       }
       img {
-        width: 101px;
+        width:      101px;
+        transition: .3s linear;
         &:hover {
           opacity: .7;
         }
@@ -119,7 +124,7 @@
     }
   }
   .links {
-    max-width: 440px;
+    max-width: 352px;
     padding:   0 20px;
   }
   .addresses {
@@ -129,6 +134,12 @@
       margin-bottom: 27px;
       display:       flex;
       align-items:   start;
+      svg {
+        transition: .2s linear;
+        path {
+          transition: .2s linear;
+        }
+      }
       &:hover {
         svg, path {
           fill: #324035;
@@ -162,7 +173,7 @@
       color:       #fff;
       font-size:   14px;
       line-height: 1;
-      transition:  .1s linear;
+      transition:  .2s linear;
       &:hover {
         color: #006939;
       }
@@ -208,6 +219,9 @@
   .footer {
     &.with-payment {
       padding: 188px 0 0;
+      .content {
+        padding: 165px 0 21px;
+      }
       .payment {
         padding: 63px 0 0;
         .container {
@@ -220,6 +234,10 @@
         img {
           width:     300px;
           transform: translateX(-340px);
+        }
+        a {
+          margin-left: 0;
+          transform:   translateX(0);
         }
       }
     }
@@ -237,9 +255,6 @@
       display:         flex;
       flex-direction:  column;
       justify-content: center;
-    }
-    .links {
-      max-width: 352px;
     }
     .socials {
       justify-content: start;

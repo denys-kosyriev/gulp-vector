@@ -7,11 +7,10 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
   />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Все разом | Вектор</title>
+  <title>Реклама | Вектор</title>
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <link rel="stylesheet" href="../assets/libs/swiper/swiper.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
 <header class="header">
@@ -62,7 +61,7 @@
             </ul>
           </div>
           <a href='https://user.vektor-plus.com/account/' class='user'>
-            <img src='../assets/images/icons/user.svg' alt=''>
+            <img src='./assets/images/icons/user.svg' alt=''>
             Увійти
           </a>
         </div>
@@ -73,19 +72,19 @@
     <div class='container'>
       <div class='content'>
         <div class='left'>
-          <a href='../index.html' class='logo'>
-            <img src='../assets/images/logo.png' alt=''>
+          <a href='./index.html' class='logo'>
+            <img src='./assets/images/logo.png' alt=''>
           </a>
           <ul>
-            <li><a href='./internet.html' class='active'>Тарифи</a></li>
-            <li><a href='../advertising.html'>Реклама</a></li>
+            <li><a href='./tariffs/internet.html'>Тарифи</a></li>
+            <li><a href='./advertising.html' class='active'>Реклама</a></li>
             <li><a href='#'>Підключення</a></li>
-            <li><a href='../news.html'>Новини</a></li>
-            <li><a href='../shares.html'>Акції</a></li>
-            <li><a href='../support.html'>Підтримка</a></li>
+            <li><a href='./news.html'>Новини</a></li>
+            <li><a href='./shares.html'>Акції</a></li>
+            <li><a href='./support.html'>Підтримка</a></li>
             <li><a href='#'>Контакти</a></li>
             <li><a target='_blank' href='https://lozovaya.net.ua/'>Пульс</a></li>
-            <li><a href='../documents.html'>Документи</a></li>
+            <li><a href='./documents.html'>Документи</a></li>
           </ul>
         </div>
         <svg class='burger' width="24" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,417 +125,134 @@
   </div>
 </header>
 
-<main class='tariffs-page all'>
-  <!--    <div class='modal modal-form form-net'>-->
-  <!--      <div class='form p-relative'>-->
-  <!--        <div class='close-modal'>-->
-  <!--          <img src='../assets/images/icons/close.svg' alt=''>-->
-  <!--        </div>-->
-  <!--        <h2>Назва пакету</h2>-->
-  <!--        <form class='form-order'>-->
-  <!--          <label class='initials'>-->
-  <!--            <input type='text' placeholder="ПІБ*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--              <span>!</span>-->
-  <!--              Введіть ініціали-->
-  <!--            </span>-->
-  <!--          </label>-->
-  <!--          <label class='address'>-->
-  <!--            <input type='text' placeholder="Адреса*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--              <span>!</span>-->
-  <!--              Введіть адресу-->
-  <!--            </span>-->
-  <!--          </label>-->
-  <!--          <label class='phone'>-->
-  <!--            <input type='number' placeholder="Телефон*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--              <span>!</span>-->
-  <!--              Введіть телефон-->
-  <!--            </span>-->
-  <!--          </label>-->
-  <!--          <label class='email'>-->
-  <!--            <input type='email' placeholder="Email*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--              <span>!</span>-->
-  <!--              Введіть імейл-->
-  <!--            </span>-->
-  <!--          </label>-->
-  <!--          <button type='submit' class='btn btn-full btn-big shadow'>-->
-  <!--            Відправити-->
-  <!--          </button>-->
-  <!--          <div class='download-receipt'>-->
-  <!--            <label for='download-receipt'>-->
-  <!--              <input type='file' id='download-receipt'>-->
-  <!--              Завантажити Квитанцію-->
-  <!--            </label>-->
-  <!--          </div>-->
-  <!--        </form>-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--    <div class='modal modal-form form-tv'>-->
-  <!--      <div class='form p-relative'>-->
-  <!--        <div class='close-modal'>-->
-  <!--          <img src='../assets/images/icons/close.svg' alt=''>-->
-  <!--        </div>-->
-  <!--        <h2>Назва пакету</h2>-->
-  <!--        <form>-->
-  <!--          <label class='initials'>-->
-  <!--            <input type='text' placeholder="ПІБ*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--                      <span>!</span>-->
-  <!--                      Введіть ініціали-->
-  <!--                    </span>-->
-  <!--          </label>-->
-  <!--          <label class='address'>-->
-  <!--            <input type='text' placeholder="Адреса*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--                      <span>!</span>-->
-  <!--                      Введіть адресу-->
-  <!--                    </span>-->
-  <!--          </label>-->
-  <!--          <label class='phone'>-->
-  <!--            <input type='number' placeholder="Телефон*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--                      <span>!</span>-->
-  <!--                      Введіть телефон-->
-  <!--                    </span>-->
-  <!--          </label>-->
-  <!--          <label class='email'>-->
-  <!--            <input type='email' placeholder="Email*">-->
-  <!--            <span class='error-message d-none'>-->
-  <!--                      <span>!</span>-->
-  <!--                      Введіть імейл-->
-  <!--                    </span>-->
-  <!--          </label>-->
-  <!--          <div class='router d-none'>-->
-  <!--            <div class='block-checkbox'>-->
-  <!--              <label class='checkbox p-relative'>-->
-  <!--                <input type='checkbox'>-->
-  <!--                <span>з Роутером</span>-->
-  <!--              </label>-->
-  <!--            </div>-->
-  <!--            <div class='price-router'>-->
-  <!--              <img src='../assets/images/icons/info.svg' alt=''>-->
-  <!--              Вартість Роутера 750 грн.-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--          <button type='submit' class='btn btn-full shadow'>-->
-  <!--            Відправити-->
-  <!--          </button>-->
-  <!--          <div class='download-receipt'>-->
-  <!--            <label for='download-receipt'>-->
-  <!--              <input type='file' id='download-receipt'>-->
-  <!--              Завантажити Квитанцію-->
-  <!--            </label>-->
-  <!--          </div>-->
-  <!--        </form>-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--  <div class='modal modal-channels'>-->
-  <!--    <div class='channels p-relative'>-->
-  <!--      <div class='modal-channels-header'>-->
-  <!--        <div class='close-modal'>-->
-  <!--          <img src='../assets/images/icons/close.svg' alt=''>-->
-  <!--        </div>-->
-  <!--        <h2>Вектор ТБ</h2>-->
-  <!--        <ul class='buttons'>-->
-  <!--          <li>-->
-  <!--            <button class='btn btn-switch btn-big active'>-->
-  <!--              Аналогові канали-->
-  <!--            </button>-->
-  <!--          </li>-->
-  <!--          <li>-->
-  <!--            <button class='btn btn-switch btn-big'>-->
-  <!--              Цифрові канали-->
-  <!--            </button>-->
-  <!--          </li>-->
-  <!--        </ul>-->
-  <!--      </div>-->
-  <!--      <div class='scroll'>-->
-  <!--        <h3 class='title-channels'>Загальнонаціональні</h3>-->
-  <!--        <div class='table'>-->
-  <!--          <div class='table-header'>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>№</span></div>-->
-  <!--              <div><span>Назва</span></div>-->
-  <!--              <div><span>канал</span></div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--          <div class='table-body'>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Крим</span></div>-->
-  <!--              <div><span>1</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>2.</span></div>-->
-  <!--              <div><span>UA Перший</span></div>-->
-  <!--              <div><span>2</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>3.</span></div>-->
-  <!--              <div><span>UA Культура</span></div>-->
-  <!--              <div><span>3</span></div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--        </div>-->
-  <!--        <h3 class='title-channels'>Інформаційні</h3>-->
-  <!--        <div class='table'>-->
-  <!--          <div class='table-body'>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>547.</span></div>-->
-  <!--              <div><span>Парламентський телеканал РАДА</span></div>-->
-  <!--              <div><span>678</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Перший</span></div>-->
-  <!--              <div><span>2</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Культура</span></div>-->
-  <!--              <div><span>3</span></div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--        </div>-->
-  <!--        <h3 class='title-channels'>Розважальні</h3>-->
-  <!--        <div class='table'>-->
-  <!--          <div class='table-body'>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Крим</span></div>-->
-  <!--              <div><span>1</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Перший</span></div>-->
-  <!--              <div><span>2</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Культура</span></div>-->
-  <!--              <div><span>3</span></div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--        </div>-->
-  <!--        <h3 class='title-channels'>Дитячі</h3>-->
-  <!--        <div class='table'>-->
-  <!--          <div class='table-body'>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Крим</span></div>-->
-  <!--              <div><span>1</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Перший</span></div>-->
-  <!--              <div><span>2</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Культура</span></div>-->
-  <!--              <div><span>3</span></div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--        </div>-->
-  <!--        <h3 class='title-channels'>Фірмові</h3>-->
-  <!--        <div class='table'>-->
-  <!--          <div class='table-body'>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Крим</span></div>-->
-  <!--              <div><span>1</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Перший</span></div>-->
-  <!--              <div><span>2</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Культура</span></div>-->
-  <!--              <div><span>3</span></div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--        </div>-->
-  <!--        <h3 class='title-channels'>Познавальні</h3>-->
-  <!--        <div class='table'>-->
-  <!--          <div class='table-body'>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Крим</span></div>-->
-  <!--              <div><span>1</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Перший</span></div>-->
-  <!--              <div><span>2</span></div>-->
-  <!--            </div>-->
-  <!--            <div class='table-row'>-->
-  <!--              <div><span>1.</span></div>-->
-  <!--              <div><span>UA Культура</span></div>-->
-  <!--              <div><span>3</span></div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--        </div>-->
-  <!--      </div>-->
-  <!--    </div>-->
-  <!--  </div>-->
-  <section class='top'>
+<main class='advertising'>
+  <section class='advertising-services'>
     <div class='container'>
-      <h2>Тарифи</h2>
-    </div>
-    <div class='flex'>
-      <div class='container'>
-        <div class='wrapper'>
-          <div class='buttons'>
-            <ul>
-              <li>
-                <a href='./internet.html' class='btn btn-switch'>
-                  Інтернет
-                </a>
-              <li>
-                <a href='tv.html' class='btn btn-switch'>
-                  Телебачення
-                </a>
-              </li>
-              <li>
-                <a href='./all.html' class='btn btn-switch active'>
-                  Все разом
-                </a>
-              </li>
-            </ul>
+      <h2>Рекламні послуги</h2>
+      <div class='table'>
+        <div class='table-header'>
+          <div class='table-row'>
+            <div><span>Найменування послуги</span></div>
+            <div><span>Кількість</span></div>
+            <div><span>Вартість</span></div>
           </div>
-          <div class='selected'>
-            <div class='select'>
-              <p>Для мешканців</p>
-              <label>
-                <select name='address' id='address'>
-                  <option>смт. Краснопавлівка</option>
-                  <option>м. Лозова, смт. Панютине</option>
-                </select>
-              </label>
+        </div>
+        <div class='table-body'>
+          <div class='table-row'>
+            <div>
+              <span>Трансляція рекламного ролика та слайду</span>
             </div>
+            <div><span>1 раз на добу</span></div>
+            <div><span>0,30 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Трансляція рекламного ролика та слайду в прайм-тайм</span>
+              <span>6:00-8:00; 12:00-14:00; 18:00-21:00</span>
+            </div>
+            <div><span>1 раз на добу</span></div>
+            <div><span>0,50 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Текстове оголошення приватного характеру</span>
+              <span>(коротка інформація, до 15 слів. Продам, куплю, здам, різне )</span>
+            </div>
+            <div><span>7 днів</span></div>
+            <div><span>50 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Звукове текстове оголошення приватного характеру</span>
+              <span>(коротка інформація, до 15 слів. Продам, куплю, здам, різне)</span>
+            </div>
+            <div>
+              <span>7 нів</span>
+              <span>+ 30 грн фото</span>
+            </div>
+            <div><span>60 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Текстове оголошення приватного характеру</span>
+              <span>(коротка інформація, до 15 слів. Послуги)</span>
+            </div>
+            <div><span>7 днів</span></div>
+            <div><span>65 грн</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class='all'>
+  <section class='price-list'>
     <div class='container'>
-      <div>
-        <div class='container'>
-          <h3>Загальний пакет</h3>
-        </div>
-      </div>
-      <div class='swiper tariffs-slider'>
-        <div class='swiper-wrapper tariffs-wrapper'>
-          <div class='swiper-slide '>
-            <div class='tariff tariff-tv'>
-              <h4>Загальний пакет</h4>
-              <p class='desc'>200 Iнтернет + Цифра + HD</p>
-              <div class='bottom'>
-                <p class='speed'>до <span>50</span> Мбіт</p>
-                <p class='no-limited'>не обмежена</p>
-                <div class='header-network'>
-                  <p>Телебачення</p>
-                  <p>Каналів</p>
-                </div>
-                <div class='network network1'>
-                  Аналогове
-                  <span>59</span>
-                </div>
-                <div class='network network2'>
-                  Цифрове
-                  <span>120</span>
-                </div>
-                <p class='price'>
-                  <span>250</span>
-                  грн/міс
-                </p>
-                <button class='btn btn-full'>
-                  Підключити
-                </button>
-                <a href='#' class='detail'>Детальніше</a>
-              </div>
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <div class='tariff tariff-tv'>
-              <h4>Загальний пакет</h4>
-              <p class='desc'>225 Iнтернет (100 +АТВ + Ц + HD)</p>
-              <div class='bottom'>
-                <p class='speed'>до <span>100</span> Мбіт</p>
-                <p class='no-limited'>не обмежена</p>
-                <div class='header-network'>
-                  <p>Телебачення</p>
-                  <p>Каналів</p>
-                </div>
-                <div class='network network1'>
-                  Аналогове
-                  <span>66</span>
-                </div>
-                <div class='network network2'>
-                  Цифрове
-                  <span>120</span>
-                </div>
-                <p class='price'>
-                  <span>265</span>
-                  грн/міс
-                </p>
-                <button class='btn btn-full'>
-                  Підключити
-                </button>
-                <a href='#' class='detail'>Детальніше</a>
-              </div>
-            </div>
+      <h2 class='price-list-title'>Прайс-лист на виготовлення рекламної продукції</h2>
+      <div class='table'>
+        <div class='table-header'>
+          <div class='table-row'>
+            <div><span>Найменування послуги</span></div>
+            <div><span>Кількість</span></div>
+            <div><span>Вартість</span></div>
           </div>
         </div>
-        <div class='swiper-button-prev d-none'></div>
-        <div class='swiper-button-next d-none'></div>
-        <div class='swiper-pagination'></div>
-      </div>
-      <div class='description'>
-        <div class='container'>
-          <div class='description-content'>
-            <div>!</div>
-            <ul>
-              <li>
-                1. За умови розкодування каналів для дорослих, до звичайної абон. плати додається 10,00грн/міс (1САМ
-                модуль
-                +10,00грн; 2САМ модуля + 20,00грн);
-              </li>
-              <li>
-                2. Якщо канали для дорослих залишаються закодованими, абон. плата не змінюється.
-              </li>
-            </ul>
+        <div class='table-body'>
+          <div class='table-row'>
+            <div>
+              <span>Виготовлення рекламного слайду</span>
+            </div>
+            <div></div>
+            <div><span>200 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Виготовлення рекламного ролика</span>
+            </div>
+            <div></div>
+            <div><span>300 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Розміщення логотипу та короткої інформаціїв передачах та фільмах</span>
+              <span>(до 3-х показів)</span>
+            </div>
+            <div><span>1 міс</span></div>
+            <div><span>400 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <p>Розміщення реклами на форматній картинці рекламного блоку</p>
+              <p>(слоган, назва, адреса) 15 сек.</p>
+            </div>
+            <div><span>1 міс</span></div>
+            <div><span>400 грн</span></div>
+          </div>
+          <div class='table-row'>
+            <div>
+              <span>Розміщення реклами на форматній картинці рекламного блоку</span>
+              <span>(слоган, назва, адреса) 25 сек.</span>
+            </div>
+            <div><span>1 міс</span></div>
+            <div><span>650 грн</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class='connection-tv'>
+  <section class='billboard'>
     <div class='container'>
-      <div class='content'>
-        <img src='../assets/images/tv-2.png' alt=''>
-        <div>
-          <h2>
-            Підключення <span>2х чи більше телевізорів</span>
-          </h2>
-          <p>
-            Надаємо послуги по підключенню декількох телевізора.
-            <span>Вартість підключення - 30 грн</span>
-            , та вартість кабелю для кожного окремого телевізора.
-          </p>
-          <p>
-            Телевізійний кабель підключається безпосередньо до розподільної телевізійної коробки.
-            <span>Абонентська плата при підключенні додаткових телевізорів не змінюється.</span>
-          </p>
-          <a href='#' class='btn btn-full'>
-            Підключити
-          </a>
+      <div class='wrapper p-relative'>
+        <div class='content'>
+          <div class='left'>
+            <h2>Ваша <span>реклама</span></h2>
+            <p class='subtitle'>на відстані до 70 км від Лозової</p>
+            <p class='subtitle'>Лозівський, Сахновщинський, Близнюківський, Барвінківський, Первомайський,
+              Павлоградський
+              р-ни.</p>
+            <button class='btn'>
+              Зв'язатись
+            </button>
+          </div>
+          <img src='./assets/images/billboard.png' alt=''>
         </div>
       </div>
     </div>
@@ -549,15 +265,15 @@
       <div class='wrapper'>
         <div class='flex'>
           <ul class='navigation'>
-            <li><a href='../index.html'>
-              <img src='../assets/images/logo-white.png' alt=''>
+            <li><a href='./index.html'>
+              <img src='./assets/images/logo-white.png' alt=''>
             </a></li>
-            <li><a href='./internet.html'>Тарифи</a></li>
-            <li><a href='../advertising.html'>Реклама</a></li>
+            <li><a href='tariffs/internet.html'>Тарифи</a></li>
+            <li><a href='./advertising.html'>Реклама</a></li>
             <li><a href='#'>Підключення</a></li>
-            <li><a href='../news.html'>Новини</a></li>
-            <li><a href='../shares.html'>Акції</a></li>
-            <li><a href='../support.html'>Пдтримка</a></li>
+            <li><a href='./news.html'>Новини</a></li>
+            <li><a href='./shares.html'>Акції</a></li>
+            <li><a href='./support.html'>Пдтримка</a></li>
             <li><a href='#'>Контакти</a></li>
             <li><a target='_blank' href='https://lozovaya.net.ua/'>Пульс</a></li>
           </ul>
@@ -662,11 +378,11 @@
             </li>
           </ul>
           <ul class='socials'>
-            <li><a href='#' target="_blank"><img src='../assets/images/icons/facebook.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='../assets/images/icons/instagram.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='../assets/images/icons/telegram.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='../assets/images/icons/viber.svg' alt=''></a></li>
-            <li><a href='#' target="_blank"><img src='../assets/images/icons/youtube.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='./assets/images/icons/facebook.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='./assets/images/icons/instagram.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='./assets/images/icons/telegram.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='./assets/images/icons/viber.svg' alt=''></a></li>
+            <li><a href='#' target="_blank"><img src='./assets/images/icons/youtube.svg' alt=''></a></li>
           </ul>
         </div>
       </div>
@@ -677,7 +393,6 @@
   </div>
 </footer>
 
-<script src="../assets/libs/swiper/swiper.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>

@@ -38,10 +38,10 @@ a {
   cursor:          pointer;
   transition:      .3s linear;
   &:hover {
-    color: #029c56;
+    color: #006939;
   }
   &:active {
-    color: #006939;
+    color: #029c56;
   }
 }
 
@@ -74,18 +74,6 @@ p {
 
 li {
   list-style: none;
-}
-
-button, .btn {
-  cursor:          pointer;
-  display:         inline-flex;
-  justify-content: center;
-  align-items:     center;
-  white-space:     nowrap;
-  user-select:     none;
-  border:          2px solid #03BF6A;
-  font-weight:     700;
-  transition:      .3s linear;
 }
 
 label {
@@ -136,6 +124,22 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+button, .btn {
+  min-width:       100%;
+  cursor:          pointer;
+  display:         inline-flex;
+  justify-content: center;
+  align-items:     center;
+  white-space:     nowrap;
+  user-select:     none;
+  border:          2px solid #03BF6A;
+  font-weight:     700;
+  transition:      .3s linear;
+  padding:         17px 20px;
+  border-radius:   100px;
+  font-size:       16px;
+}
+
 .btn-black {
   background-color: #324035;
   border-color:     #324035;
@@ -175,33 +179,11 @@ input::-webkit-inner-spin-button {
   }
 }
 
-.btn-small {
-  min-width:     101px;
-  padding:       10px;
-  border-radius: 18px;
-  font-size:     9px;
-}
-
-.btn-medium {
-  min-width:     145px;
-  padding:       7px;
-  border-radius: 50px;
-  font-size:     12px;
-}
-
-.btn-big {
-  min-width:     272px;
-  padding:       17px;
-  border-radius: 100px;
-  font-size:     16px;
-}
-
 .btn-switch {
-  min-width:        108px;
   color:            #324035;
   background-color: #F2F8F8;
   font-size:        15px;
-  padding:          11px 21px;
+  padding:          11px 22px;
   display:          inline-flex;
   border:           0;
   &:hover {
@@ -217,10 +199,6 @@ input::-webkit-inner-spin-button {
   }
 }
 
-.color-green {
-  color: #03BF6A;
-}
-
 .bg-green {
   background: linear-gradient(114.04deg, #03BF6A 24.98%, #6AE37E 101.83%);
 }
@@ -230,7 +208,7 @@ input::-webkit-inner-spin-button {
   position:   absolute;
   top:        0;
   left:       0;
-  z-index:    1;
+  z-index:    -1;
   object-fit: cover;
 }
 
@@ -320,7 +298,7 @@ input::-webkit-inner-spin-button {
 }
 
 .modal {
-  min-height:       100vh;
+  height:           100vh;
   width:            100vw;
   background-color: rgba(0, 0, 0, 0.6);
   position:         fixed;
@@ -329,7 +307,62 @@ input::-webkit-inner-spin-button {
   z-index:          1000;
   display:          flex;
   justify-content:  center;
-  align-items:      center;
+  align-items:      flex-end;
+}
+
+.close-modal {
+  padding:       10px 10px 6px;
+  position:      absolute;
+  top:           21px;
+  right:         16px;
+  z-index:       0;
+  cursor:        pointer;
+  border-radius: 10px;
+  transition:    .2s linear;
+  &:hover {
+    background-color: #d2dbdb;
+  }
+  &:active {
+    margin: 1px;
+    img {
+      width: 16px;
+    }
+  }
+  img {
+    width:      18px;
+    transition: .2s linear;
+  }
+}
+
+@media(min-width: 567px) {
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+  input, select {
+    font-size: 18px;
+  }
+  .btn, button {
+    padding:   19px 50px;
+    font-size: 20px;
+  }
+  .btn-switch {
+    font-size: 18px;
+  }
+  .tel-link {
+    a {
+      img, svg {
+        width: 18px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -342,12 +375,18 @@ input::-webkit-inner-spin-button {
   }
 
   p {
-    font-size:   20px;
+    font-size:   24px;
     line-height: 1.5;
   }
 
   button, .btn {
     border-width: 4px;
+    font-size:    24px;
+    padding:      19px 66px;
+  }
+
+  .btn-switch {
+    font-size: 24px;
   }
 
   input, select {
@@ -368,26 +407,6 @@ input::-webkit-inner-spin-button {
     background-size:       13px;
   }
 
-  .btn-small {
-    min-width:     141px;
-    padding:       14px;
-    border-radius: 25px;
-    font-size:     12px;
-  }
-
-  .btn-medium {
-    min-width:     167px;
-    padding:       8px;
-    border-radius: 100px;
-    font-size:     16px;
-  }
-
-  .btn-big {
-    min-width: 385px;
-    font-size: 24px;
-    padding:   19px 10px;
-  }
-
   .swiper {
     & &-pagination.swiper-pagination-bullets {
       span {
@@ -397,4 +416,19 @@ input::-webkit-inner-spin-button {
       }
     }
   }
+
+  .close-modal {
+    top:   82px;
+    right: 44px;
+    &:active {
+      margin: 2px;
+      img {
+        width: 32px;
+      }
+    }
+    img {
+      width: 35px;
+    }
+  }
+
 }

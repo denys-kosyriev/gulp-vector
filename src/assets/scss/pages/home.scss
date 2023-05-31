@@ -33,10 +33,9 @@
           margin-bottom: 18px;
         }
         a {
-          min-width:     124px;
-          padding:       12px;
-          border-radius: 50px;
-          font-size:     12px;
+          min-width: 0;
+          padding:   12px 25px;
+          font-size: 12px;
         }
         img {
           height:     100%;
@@ -81,27 +80,29 @@
     }
   }
   .about-internet {
-    padding:    56px 0 28px;
     margin-top: 23px;
-    overflow:   hidden;
     .container {
-      max-width: 1483px;
+      max-width: 1825px;
+    }
+    .wrapper {
+      overflow: hidden;
+      padding:  56px 0 28px;
     }
     .content {
-      padding:        211px 21px 43px;
-      border-radius:  20px;
-      display:        flex;
-      flex-direction: column;
-      align-items:    center;
-      font-size:      14px;
-      line-height:    1.5;
-      color:          #fff;
+      padding:          211px 21px 43px;
+      border-radius:    20px;
+      display:          flex;
+      flex-direction:   column;
+      align-items:      center;
+      line-height:      1.5;
+      color:            #fff;
+      background-color: #03BF6A;
       img {
-        height:     225px;
-        max-width:  333px;
+        height:     245px;
+        max-width:  357px;
         position:   absolute;
         top:        0;
-        right:      -15px;
+        right:      -22px;
         z-index:    1;
         object-fit: cover;
       }
@@ -131,10 +132,25 @@
 
 @media(min-width: 567px) {
   .home {
+    .banners {
+      .swiper-banners {
+        .swiper-slide {
+          h2 {
+            font-size: 42px;
+          }
+          p {
+            font-size: 16px;
+          }
+          a {
+            font-size: 16px;
+            padding:   18px 35px;
+          }
+        }
+      }
+    }
     .about-internet {
       .content {
         img {
-          max-width: 350px;
           right:     50%;
           transform: translateX(50%);
         }
@@ -146,11 +162,15 @@
 @media(min-width: 768px) {
   .home {
     .about-internet {
+      .wrapper {
+        padding: 56px 10% 28px 0;
+      }
       .content {
         padding:     40px 50% 40px 40px;
         align-items: start;
         img {
-          max-width: 346px;
+          max-width: 46%;
+          height:    31vw;
           right:     0;
           transform: translateX(0);
         }
@@ -161,7 +181,6 @@
 
 @media(min-width: 1024px) {
   .home {
-    padding-top: 170px;
     .banners {
       .swiper-banners {
         .swiper-wrapper {
@@ -179,11 +198,9 @@
             font-size:      24px;
           }
           a {
-            min-width:     277px;
-            margin-top:    40px;
-            padding:       28px 8px;
-            border-radius: 60px;
-            font-size:     24px;
+            margin-top: 40px;
+            padding:    28px 78px;
+            font-size:  24px;
           }
         }
       }
@@ -208,12 +225,32 @@
       }
     }
     .about-internet {
-      padding:    45px 0 40px;
       margin-top: 105px;
+      .wrapper {
+        padding: 45px 11% 40px 0;
+      }
       .content {
+        border-radius: 40px;
         img {
           max-width: 510px;
-          height:    355px;
+          height:    30vh;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  .home {
+    padding-top: 170px;
+    .about-internet {
+      .wrapper {
+        padding: 45px 10% 40px 0;
+      }
+      .content {
+        img {
+          max-width: 625px;
+          height:    36vh;
         }
       }
     }
@@ -243,13 +280,15 @@
       padding: 76px 0 97px;
     }
     .about-internet {
-      padding: 97px 0 83px;
+      .wrapper {
+        padding: 97px 12% 83px 0;
+      }
       .content {
         padding:   88px 55% 71px 121px;
         font-size: 24px;
         img {
-          max-width: 710px;
-          height:    494px;
+          max-width: 778px;
+          height:    46vh;
         }
       }
     }
@@ -259,6 +298,9 @@
 @media(min-width: 1800px) {
   .home {
     .about-internet {
+      .wrapper {
+        padding: 97px 12% 83px 173px;
+      }
       .content {
         img {
           max-width: 962px;
