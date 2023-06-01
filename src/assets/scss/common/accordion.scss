@@ -1,4 +1,4 @@
-.accordion.questions {
+.accordion {
   padding: 58px 0 44px;
   .container {
     max-width: 1271px;
@@ -45,7 +45,7 @@
 }
 
 @media(min-width: 768px) {
-  .accordion.questions {
+  .accordion {
     .question {
       .icon-select {
         width: 19px;
@@ -56,7 +56,7 @@
 }
 
 @media(min-width: 1024px) {
-  .accordion.questions {
+  .accordion{
     padding: 86px 0 196px;
     h2 {
       padding-bottom: 55px;

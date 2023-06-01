@@ -11,7 +11,6 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="./assets/libs/swiper/swiper.css" />
 </head>
 <body>
 <header class="header">
@@ -82,7 +81,7 @@
             <li><a href='./connection.html'>Підключення</a></li>
             <li><a href='./news.html'>Новини</a></li>
             <li><a href='./shares.html'>Акції</a></li>
-            <li><a href='./support.html' class='active'>Підтримка</a></li>
+            <li><a href='./support.html'>Підтримка</a></li>
             <li><a href='./contacts.html'>Контакти</a></li>
             <li><a target='_blank' href='https://lozovaya.net.ua/'>Пульс</a></li>
             <li><a href='./documents.html'>Документи</a></li>
@@ -126,62 +125,81 @@
   </div>
 </header>
 
-<main class='support'>
-  <section class='possibilities'>
+<main class='connection-problems'>
+  <section class='error'>
     <div class='container'>
-      <h2>Підтримка</h2>
-      <div class='swiper swiper-support'>
-        <div class='swiper-wrapper'>
-          <div class='swiper-slide'>
-            <div class='possibility'>
-              <div class='circle'>
-                <img src='./assets/images/tv-wifi.png' alt=''>
-              </div>
-              <h3>Lorem ipsum dolor </h3>
-              Lorem ipsum dolor sit amet consectetur. Lacinia tortor facilisi ut
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <div class='possibility'>
-              <div class='circle'>
-                <img src='./assets/images/wifi.png' alt=''>
-              </div>
-              <h3>Lorem ipsum dolor </h3>
-              Lorem ipsum dolor sit amet consectetur. Lacinia tortor facilisi ut
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <div class='possibility'>
-              <div class='circle'>
-                <img src='./assets/images/cable.png' alt=''>
-              </div>
-              <h3>Lorem ipsum dolor </h3>
-              Lorem ipsum dolor sit amet consectetur. Lacinia tortor facilisi ut
-            </div>
-          </div>
-          <div class='swiper-slide'>
-            <div class='possibility'>
-              <div class='circle'>
-                <img src='./assets/images/modem.png' alt=''>
-              </div>
-              <h3>Lorem ipsum dolor </h3>
-              Lorem ipsum dolor sit amet consectetur. Lacinia tortor facilisi ut
-            </div>
-          </div>
+      <div class='flex'>
+        <div>
+          <h2>
+            Помилки при підключенні PPPoE-з'єднання
+          </h2>
+          При встановленні з'єднання можуть виникати помилки. Це буває пов'язано з неправильним налаштування мережевих
+          параметрів, самого з'єднання. Нижче наводяться найбільш часто виникаючі за статистикою техпідтримки помилки
+          з
+          коментарями та рекомендаціями щодо усунення.
         </div>
-        <div class='swiper-pagination'></div>
+        <img src='./assets/images/errors.png' alt=''>
       </div>
     </div>
   </section>
-  <section class='help'>
+  <section class='accordion p-relative'>
     <div class='container'>
-      <h2>Що хотіли б дізнатись?</h2>
-      <div class='content'>
-        <a href='./payment-description.html'>Як оплатити?</a>
-        <a href='./connection-problems.html'>Проблеми при підключенні</a>
-        <a href='./settings.html'>Налаштування</a>
-        <a href='./settings-iptv.html'>Налаштування IPTV телебачення</a>
+      <div class='search bg-green'>
+        Введіть код помилки
+        <label>
+          <input type='number'>
+        </label>
       </div>
+      <ul class='questions-list'>
+        <li class='questions-select'>
+          <div class='question'>
+            <h3>Помилка: 633</h3>
+            <img class='icon-select' src='./assets/images/icons/angle-right.svg' alt=''>
+          </div>
+          <div class='questions-answer d-none'>
+            <h3>Рішення:</h3>
+            <p>
+              1.Перезавантажити комп'ютер. Повторити спробу підключення.
+            </p>
+            <p>
+              2.Відновити підключення.
+            </p>
+          </div>
+        </li>
+        <li class='questions-select'>
+          <div class='question'>
+            <h3>Помилка: 633</h3>
+            <img class='icon-select' src='./assets/images/icons/angle-right.svg' alt=''>
+          </div>
+          <div class='questions-answer d-none'>
+            <h3>Рішення:</h3>
+            1. Перезавантажити комп'ютер. Повторити спробу підключення.
+            2. Відновити підключення.
+          </div>
+        </li>
+        <li class='questions-select'>
+          <div class='question'>
+            <h3>Помилка: 633</h3>
+            <img class='icon-select' src='./assets/images/icons/angle-right.svg' alt=''>
+          </div>
+          <div class='questions-answer d-none'>
+            <h3>Рішення:</h3>
+            1. Перезавантажити комп'ютер. Повторити спробу підключення.
+            2. Відновити підключення.
+          </div>
+        </li>
+        <li class='questions-select'>
+          <div class='question'>
+            <h3>Помилка: 633</h3>
+            <img class='icon-select' src='./assets/images/icons/angle-right.svg' alt=''>
+          </div>
+          <div class='questions-answer d-none'>
+            <h3>Рішення:</h3>
+            1. Перезавантажити комп'ютер. Повторити спробу підключення.
+            2. Відновити підключення.
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 </main>
@@ -320,8 +338,6 @@
   </div>
 </footer>
 
-<script src="./assets/libs/swiper/swiper.js"></script>
 <script src="./assets/js/main.js"></script>
-<script src="./assets/js/support.js"></script>
 </body>
 </html>
