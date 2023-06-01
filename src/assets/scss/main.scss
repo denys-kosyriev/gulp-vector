@@ -4,8 +4,11 @@
 @import "common/about";
 @import "common/footer";
 @import "common/accordion";
-@import "common/modal-form";
+@import "common/section-form";
 @import "common/modal-channels";
+@import "common/top-radio-buttons";
+@import "common/connection-internet";
+@import "common/connection-tv";
 
 @import "pages/home";
 @import "pages/shares";
@@ -18,3 +21,4 @@
 @import "pages/settings-iptv";
 @import "pages/documents";
 @import "pages/settings";
+@import "pages/connection";

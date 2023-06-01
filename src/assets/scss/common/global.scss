@@ -363,6 +363,16 @@ button, .btn {
       }
     }
   }
+  .close-modal {
+    &:active {
+      img {
+        width: 23px;
+      }
+    }
+    img {
+      width: 26px;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
