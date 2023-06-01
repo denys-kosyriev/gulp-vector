@@ -1,15 +1,15 @@
 .tariffs-page {
-  padding: 81px 0 0;
+  padding: 41px 0 0;
   .top, div {
     .container {
       max-width: 1504px;
     }
   }
   h3 {
-    padding-bottom: 25px;
-    text-align:     center;
-    font-weight:    700;
-    font-size:      19px;
+    margin-bottom: 25px;
+    text-align:    center;
+    font-weight:   700;
+    font-size:     19px;
   }
   &.internet {
     h3 {
@@ -49,14 +49,14 @@
       color:       #7A8781;
     }
     li {
-      padding-bottom: 15px;
-      line-height:    1.3;
-      color:          #7A8781;
+      margin-bottom: 15px;
+      line-height:   1.3;
+      color:         #7A8781;
     }
   }
   &.all {
     .connection-tv {
-      padding: 0 0 82px;
+      padding: 0 0 52px;
     }
   }
 }
@@ -101,7 +101,7 @@
       }
     }
     h3 {
-      padding:    35px 0 40px;
+      margin:     35px 0 40px;
       font-size:  40px;
       text-align: start;
     }
@@ -110,14 +110,14 @@
 
 @media(min-width: 1200px) {
   .tariffs-page {
-    padding: 184px 0 0;
+    padding: 100px 0 0;
   }
 }
 
 @media(min-width: 1440px) {
   .tariffs-page {
     h3 {
-      padding: 73px 0 89px;
+      margin: 40px 0 89px;
     }
     .top {
       .selected {
@@ -136,7 +136,7 @@
     }
     &.all {
       .connection-tv {
-        padding: 126px 0 130px;
+        padding: 40px 0 130px;
       }
     }
   }

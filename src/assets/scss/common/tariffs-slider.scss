@@ -42,9 +42,9 @@
       }
     }
     .no-limited {
-      padding-bottom: 16px;
-      font-size:      12px;
-      color:          #6F8F81;
+      margin-bottom: 16px;
+      font-size:     12px;
+      color:         #6F8F81;
     }
     .network {
       display:         flex;
@@ -69,7 +69,7 @@
     .price {
       font-weight:     500;
       font-size:       14px;
-      padding-bottom:  25px;
+      margin-bottom:   25px;
       display:         flex;
       align-items:     flex-end;
       justify-content: center;
@@ -106,7 +106,7 @@
   }
   .tariff-internet {
     h4 {
-      padding-bottom: 25px;
+      margin-bottom: 25px;
     }
     .info {
       position:   absolute;
@@ -132,11 +132,12 @@
   }
   .tariff-tv {
     h4 {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
     .desc {
-      padding-bottom: 15px;
-      color:          #03BF6A;
+      margin-bottom: 15px;
+      color:         #03BF6A;
+      font-size:     12px;
     }
     .company {
       font-size:      25px;
@@ -144,7 +145,7 @@
       padding-bottom: 10px;
     }
     .no-limited {
-      padding-bottom: 23px;
+      margin-bottom: 23px;
     }
     .header-network, .network {
       width:           100%;
@@ -211,7 +212,7 @@
     margin-bottom: 23px;
     .swiper-wrapper {
       padding: 0;
-      margin:  0 0 130px 0;
+      margin:  0 0 70px 0;
     }
     .swiper-slide {
       padding: 0 20px;
@@ -237,6 +238,9 @@
       h4 {
         font-size: 40px;
       }
+      .desc {
+        font-size: 20px;
+      }
       .speed {
         font-size:   24px;
         font-weight: 400;
@@ -247,8 +251,8 @@
         }
       }
       .no-limited {
-        padding-bottom: 28px;
-        font-size:      20px;
+        margin-bottom: 28px;
+        font-size:     20px;
       }
       .network {
         display:     flex;
@@ -267,10 +271,10 @@
         }
       }
       .price {
-        font-size:      24px;
-        padding-bottom: 48px;
-        display:        flex;
-        align-items:    flex-end;
+        font-size:     24px;
+        margin-bottom: 48px;
+        display:       flex;
+        align-items:   flex-end;
         span {
           font-size:   50px;
           line-height: .8;
@@ -293,7 +297,7 @@
         }
       }
       h4 {
-        padding-bottom: 24px;
+        margin-bottom: 24px;
       }
       .network {
         img {
@@ -320,7 +324,7 @@
       }
     }
     .swiper-wrapper {
-      margin: 0 0 120px 0;
+      margin: 0 0 80px 0;
     }
     .swiper-button-prev,
     .swiper-button-next {

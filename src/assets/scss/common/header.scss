@@ -128,7 +128,7 @@
             color:      #03BF6A;
             transition: .2s linear;
             &:first-of-type {
-              padding-right: 7px;
+              margin-right: 7px;
             }
             &:hover {
               color: #006939;
@@ -146,6 +146,7 @@
           p {
             color:      #03BF6A;
             transition: .2s linear;
+            font-size:  18px;
           }
           svg {
             path {

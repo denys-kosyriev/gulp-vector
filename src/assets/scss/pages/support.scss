@@ -1,13 +1,13 @@
 .support {
-  padding: 81px 0 0;
+  padding: 41px 0 0;
   .possibilities {
     .container {
       max-width: 1478px;
       padding:   0;
     }
     h2 {
-      text-align:     center;
-      padding-bottom: 26px;
+      text-align:    center;
+      margin-bottom: 26px;
     }
     .swiper {
       padding-bottom: 79px;
@@ -18,6 +18,7 @@
     .swiper-slide {
       padding: 0 20px;
       .possibility {
+        height:           100%;
         padding:          26px 27px 35px;
         color:            #fff;
         background-color: #03BF6A;
@@ -50,20 +51,20 @@
         margin: 8px;
       }
       h3 {
-        font-size:      18px;
-        color:          #fff;
-        padding-bottom: 10px;
-        transition:     .3s linear;
+        font-size:     18px;
+        color:         #fff;
+        margin-bottom: 10px;
+        transition:    .3s linear;
       }
     }
   }
   .help {
-    padding: 0 0 82px;
+    padding: 0 0 42px;
     .container {
       max-width: 1502px;
     }
     h2 {
-      padding: 0 0 37px;
+      margin: 0 0 37px;
     }
     .content {
       gap:       15px;
@@ -111,11 +112,11 @@
 
 @media(min-width: 1024px) {
   .support {
-    padding: 225px 0 123px;
+    padding: 85px 0 43px;
     .possibilities {
       h2 {
         text-align: start;
-        padding:    0 28px 91px;
+        margin:     0 28px 91px;
       }
       .swiper-pagination {
         bottom: 0;
@@ -131,15 +132,15 @@
           margin-bottom: 24px;
         }
         h3 {
-          font-size:      24px;
-          padding-bottom: 2px;
+          font-size:     24px;
+          margin-bottom: 2px;
         }
       }
     }
     .help {
-      padding: 69px 0 82px;
+      padding: 49px 0 82px;
       h2 {
-        padding: 0 14px 53px;
+        margin: 0 14px 53px;
       }
       .content {
         gap: 26px;
