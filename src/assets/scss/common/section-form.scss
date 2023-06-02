@@ -94,7 +94,7 @@
       }
     }
   }
-  &.form-tv {
+  &.form-tv, &.form-all {
     label:nth-of-type(4) {
       input {
         margin-bottom: 11px;
@@ -289,7 +289,7 @@
       padding-bottom: 64px;
       font-size:      45px;
     }
-    &.form-tv {
+    &.form-tv, &.form-all {
       label:nth-of-type(4) {
         input {
           margin-bottom: 30px;
