@@ -103,79 +103,79 @@
     .router {
       display: block;
     }
-    .block-checkbox {
-      display:        inline-flex;
-      padding-bottom: 15px;
-    }
-    .checkbox {
-      user-select: none;
-      display:     flex;
-      align-items: center;
-      white-space: nowrap;
-      cursor:      pointer;
-      padding:     0;
-      &:hover {
-        span::before {
-          box-shadow: 1px 1px 5px #03BF6A, -1px -1px 5px #03BF6A, 1px -1px 5px #03BF6A, -1px 1px 5px #03BF6A;
-        }
-      }
-      & span::before {
-        content:          '';
-        display:          block;
-        position:         absolute;
-        left:             13px;
-        top:              3px;
-        width:            12px;
-        height:           12px;
-        background-color: #fff;
-        border:           1px solid #03BF6A;
-        border-radius:    2px;
-        transition:       .1s linear;
-      }
-      & span::after {
-        content:             '';
-        display:             none;
-        position:            absolute;
-        left:                13px;
-        top:                 3px;
-        width:               12px;
-        height:              12px;
-        background-color:    #6BC2BB;
-        border:              1px solid #03BF6A;
-        border-radius:       2px;
-        background-image:    url("../images/icons/ready.svg");
-        background-size:     12px;
-        background-repeat:   no-repeat;
-        background-position: center;
-      }
-      & input:checked + span::after {
-        display: block;
-      }
-      input {
-        width:   14px;
-        opacity: 0;
-        margin:  0 13px;
-      }
-      span {
-        font-size: 14px;
+  }
+  .block-checkbox {
+    display:        inline-flex;
+    padding-bottom: 15px;
+  }
+  .checkbox {
+    user-select: none;
+    display:     flex;
+    align-items: center;
+    white-space: nowrap;
+    cursor:      pointer;
+    padding:     0;
+    &:hover {
+      span::before {
+        box-shadow: 1px 1px 5px #03BF6A, -1px -1px 5px #03BF6A, 1px -1px 5px #03BF6A, -1px 1px 5px #03BF6A;
       }
     }
-    .price-router {
-      padding:          14px;
-      font-size:        14px;
-      border-radius:    60px;
-      display:          flex;
-      align-items:      center;
-      margin-bottom:    18px;
-      color:            #03BF6A;
-      background-color: #F2F8F8;
-      div {
-        padding:       0 6px;
-        line-height:   1;
-        margin-right:  8px;
-        border:        1px solid #03BF6A;
-        border-radius: 50%;
-      }
+    & span::before {
+      content:          '';
+      display:          block;
+      position:         absolute;
+      left:             13px;
+      top:              3px;
+      width:            12px;
+      height:           12px;
+      background-color: #fff;
+      border:           1px solid #03BF6A;
+      border-radius:    2px;
+      transition:       .1s linear;
+    }
+    & span::after {
+      content:             '';
+      display:             none;
+      position:            absolute;
+      left:                13px;
+      top:                 3px;
+      width:               12px;
+      height:              12px;
+      background-color:    #6BC2BB;
+      border:              1px solid #03BF6A;
+      border-radius:       2px;
+      background-image:    url("../images/icons/ready.svg");
+      background-size:     12px;
+      background-repeat:   no-repeat;
+      background-position: center;
+    }
+    & input:checked + span::after {
+      display: block;
+    }
+    input {
+      width:   14px;
+      opacity: 0;
+      margin:  0 13px;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+  .price-router {
+    padding:          14px;
+    font-size:        14px;
+    border-radius:    60px;
+    display:          flex;
+    align-items:      center;
+    margin-bottom:    18px;
+    color:            #03BF6A;
+    background-color: #F2F8F8;
+    div {
+      padding:       0 6px;
+      line-height:   1;
+      margin-right:  8px;
+      border:        1px solid #03BF6A;
+      border-radius: 50%;
     }
   }
 
@@ -217,17 +217,15 @@
         font-size: 16px;
       }
     }
-    &.form-tv {
-      .checkbox {
-        span {
-          font-size: 18px;
-        }
-      }
-      .price-router {
+    .checkbox {
+      span {
         font-size: 18px;
-        div {
-          padding: 1px 8px;
-        }
+      }
+    }
+    .price-router {
+      font-size: 18px;
+      div {
+        padding: 1px 8px;
       }
     }
   }
@@ -297,35 +295,35 @@
           margin-bottom: 30px;
         }
       }
-      .block-checkbox {
-        padding-bottom: 30px;
+    }
+    .block-checkbox {
+      padding-bottom: 30px;
+    }
+    .checkbox {
+      input {
+        margin: 0 26px;
       }
-      .checkbox {
-        input {
-          margin: 0 26px;
+      span {
+        font-size: 24px;
+        &::before {
+          left:   28px;
+          width:  24px;
+          height: 24px;
         }
-        span {
-          font-size: 24px;
-          &::before {
-            left:   28px;
-            width:  24px;
-            height: 24px;
-          }
-          &::after {
-            left:   28px;
-            width:  24px;
-            height: 24px;
-          }
+        &::after {
+          left:   28px;
+          width:  24px;
+          height: 24px;
         }
       }
-      .price-router {
-        font-size:     24px;
-        padding:       21px 31px;
-        margin-bottom: 26px;
-        div {
-          padding:      1px 10px;
-          margin-right: 21px;
-        }
+    }
+    .price-router {
+      font-size:     24px;
+      padding:       21px 31px;
+      margin-bottom: 26px;
+      div {
+        padding:      1px 10px;
+        margin-right: 21px;
       }
     }
     label {
