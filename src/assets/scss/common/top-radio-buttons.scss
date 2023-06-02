@@ -52,6 +52,9 @@
       margin-bottom: 41px;
       text-align:    start;
     }
+    .buttons {
+      padding-bottom: 0;
+    }
     .selected {
       padding: 13px 20px 25px;
       p {
@@ -76,6 +79,14 @@
       min-width: 195px;
       font-size: 24px;
       padding:   16px 42px;
+    }
+  }
+}
+
+@media(min-width: 1440px) {
+  .top-radio-buttons {
+    .selected {
+      padding: 0 20px 0 0;
     }
   }
 }

@@ -73,8 +73,9 @@
         margin-bottom: 21px;
       }
       img {
-        width:      101px;
-        transition: .3s linear;
+        width:          101px;
+        mix-blend-mode: lighten;
+        transition:     .3s linear;
         &:hover {
           opacity: .7;
         }

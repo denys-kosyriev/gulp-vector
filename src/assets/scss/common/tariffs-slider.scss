@@ -81,7 +81,6 @@
       }
     }
     button {
-      margin-bottom: 15px;
       &:hover {
         background-color: #324035;
         color:            #fff;
@@ -93,9 +92,11 @@
       }
     }
     .detail {
+      margin-top:  15px;
       font-weight: 500;
       font-size:   14px;
       color:       #03BF6A;
+      display:     block;
       &:hover {
         color: #006939;
       }
@@ -280,10 +281,8 @@
           line-height: .8;
         }
       }
-      button {
-        margin-bottom: 23px;
-      }
       .detail {
+        margin-top:  23px;
         font-weight: 500;
         font-size:   20px;
       }
