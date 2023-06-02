@@ -32,6 +32,9 @@
       object-fit: cover;
     }
   }
+  h2 {
+    margin-bottom: 20px;
+  }
   .bottom {
     .container {
       max-width: 1270px;
@@ -67,6 +70,9 @@
       img {
         object-position: 0 50%;
       }
+    }
+    h2 {
+      margin-bottom: 30px;
     }
   }
 }

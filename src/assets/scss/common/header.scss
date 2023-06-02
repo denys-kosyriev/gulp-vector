@@ -18,7 +18,8 @@
     .logo {
       transition: .3s linear;
       img {
-        width: 40px;
+        width:   40px;
+        display: flex;
       }
       &:hover {
         opacity: .7;
@@ -75,7 +76,7 @@
       align-items: center;
       .container {
         max-width: 2500px;
-        padding:   0 0 0 62px;
+        padding:   0 0 0 38px;
       }
       .left {
         white-space: nowrap;
