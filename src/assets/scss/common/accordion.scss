@@ -58,7 +58,7 @@
 
 @media(min-width: 1024px) {
   .accordion {
-    padding: 66px 0 120px;
+    padding: 66px 0 100px;
     h2 {
       margin-bottom: 55px;
       text-align:    center;
@@ -86,5 +86,11 @@
       padding:     0 32px 12px;
       line-height: 1.8;
     }
+  }
+}
+
+@media(min-width: 1440px) {
+  .accordion {
+    padding: 66px 0 120px;
   }
 }

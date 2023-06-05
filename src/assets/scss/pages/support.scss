@@ -32,11 +32,23 @@
                           0 2.31722px 1.85378px rgba(3, 191, 106, 0.0180827);
         transition:       .3s linear;
         font-size:        14px;
+        display:          flex;
+        flex-direction:   column;
+        align-items:      center;
         &:hover {
           background-color: #fff;
           color:            #7A8781;
           h3 {
             color: #324035;
+          }
+        }
+        a {
+          color: #324035;
+          &:hover {
+            color: #006939;
+          }
+          &:active {
+            color: #d2dbdb;
           }
         }
       }
