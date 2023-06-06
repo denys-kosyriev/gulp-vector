@@ -1,7 +1,6 @@
 .home {
-  padding-top: 45px;
   .banners {
-    padding: 0 0 34px;
+    padding: 45px 0 34px;
     .container {
       max-width: 1488px;
     }
@@ -14,6 +13,7 @@
         background:    linear-gradient(114.04deg, #03BF6A 24.98%, #6AE37E 101.83%);
         border-radius: 20px;
         padding:       68px 23px 28px;
+        overflow:      hidden;
         div {
           z-index: 2;
         }
@@ -253,7 +253,9 @@
 
 @media(min-width: 1200px) {
   .home {
-    padding-top: 70px;
+    .banners {
+      padding: 70px 0 34px;
+    }
     .about-internet {
       .wrapper {
         padding: 45px 10% 40px 0;
@@ -270,7 +272,9 @@
 
 @media(min-width: 1440px) {
   .home {
-    padding-top: 107px;
+    .banners {
+      padding: 107px 0 34px;
+    }
     .action {
       padding: 80px 0 0;
       h2 {

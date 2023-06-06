@@ -1,6 +1,6 @@
 .connection-problems {
-  padding: 22px 0 0;
   .error {
+    padding: 22px 0 0;
     .container {
       max-width: 1320px;
     }
@@ -57,6 +57,10 @@
       color:         #fff;
       &:hover, &:focus {
         border-color: #006939;
+      }
+      &::placeholder {
+        font-size: 20px;
+        color:     #fff;
       }
     }
     li {
@@ -146,6 +150,9 @@
       input {
         font-size: 24px;
         padding:   23px;
+        &::placeholder {
+          font-size: 26px;
+        }
       }
     }
   }
@@ -153,7 +160,9 @@
 
 @media(min-width: 1200px) {
   .connection-problems {
-    padding: 77px 0 0;
+    .error {
+      padding: 77px 0 81px;
+    }
   }
 }
 

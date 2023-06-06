@@ -1,5 +1,7 @@
 .shares {
-  padding: 41px 0 80px;
+  section {
+    padding: 41px 0 80px;
+  }
   .container {
     max-width: 1480px;
   }
@@ -93,7 +95,9 @@
 
 @media(min-width: 1200px) {
   .shares {
-    padding: 80px 0 84px;
+    section {
+      padding: 80px 0 84px;
+    }
     .cart {
       width:      31%;
       min-height: 300px;

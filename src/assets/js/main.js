@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Show languages list 'header'
+  // Languages list 'header'
   const language = document.getElementsByClassName('language')[0];
   const languageName = document.getElementsByClassName('language-name')[0];
   const languagesList = document.getElementsByClassName('languages-list')[0];
@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
   Array.from(languagesListLanguage).map(languageItem => {
     languageItem.addEventListener('click', () => {
       languageName.innerHTML = languageItem.innerHTML;
+      Array.from(languagesListLanguage).map(item => {
+        item.classList.remove('active');
+      });
+      if (languageName.innerHTML === languageItem.innerHTML) {
+        languageItem.classList.add('active');
+      }
     })
   })
 
@@ -116,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     const modalChannels = document.getElementsByClassName('modal-channels')[0];
-    const detail = tariff.getElementsByClassName('detail')[0];
+    const detail = tariff.getElementsByClassName('detail');
     if (detail) {
       detail.addEventListener('click', () => {
         modalChannels.classList.remove('d-none');
@@ -137,9 +143,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   })
 
-  Array.from(modals).map((modal) => {
-    const closeButton = document.getElementsByClassName('close-modal')[0];
-    const modalContent = document.getElementsByClassName('modal-content')[0];
+  Array.from(modals).map((modal, index) => {
+    const closeButton = document.getElementsByClassName('close-modal')[index];
+    const modalContent = document.getElementsByClassName('modal-content')[index];
     closeButton.addEventListener('click', () => {
       modal.classList.add('d-none');
     })

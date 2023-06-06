@@ -1,10 +1,13 @@
 .header {
   width:            100vw;
-  position:         sticky;
+  position:         fixed;
   top:              0;
   left:             0;
   z-index:          1000;
   background-color: #F2F8F8;
+  .active {
+    color: #03BF6A;
+  }
   .top {
     display: none;
   }
@@ -259,9 +262,6 @@
           }
           &:active {
             color: #029c56;
-          }
-          &.active {
-            color: #03BF6A;
           }
         }
       }

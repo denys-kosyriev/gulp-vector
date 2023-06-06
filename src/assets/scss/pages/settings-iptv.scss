@@ -1,5 +1,7 @@
 .settings-iptv {
-  padding: 44px 0 54px;
+  section {
+    padding: 44px 0 54px;
+  }
   .container {
     max-width: 1492px;
   }
@@ -28,7 +30,9 @@
 
 @media(min-width: 1200px) {
   .settings-iptv {
-    padding: 88px 0 81px;
+    section {
+      padding: 88px 0 81px;
+    }
     h2 {
       margin-bottom: 45px;
     }

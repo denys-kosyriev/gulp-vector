@@ -1,5 +1,7 @@
 .news {
-  padding: 42px 0;
+  section {
+    padding: 42px 0;
+  }
   .container {
     max-width: 1482px;
   }
@@ -86,11 +88,6 @@
       h3 {
         font-size: 24px;
       }
-      .bottom {
-        div {
-          font-size: 14px;
-        }
-      }
     }
   }
 }
@@ -130,10 +127,6 @@
         a {
           font-size: 16px;
         }
-        div {
-          font-size: 16px;
-          padding:   10px 29px;
-        }
       }
     }
   }
@@ -141,7 +134,9 @@
 
 @media(min-width: 1200px) {
   .news {
-    padding: 79px 0 100px;
+    section {
+      padding: 79px 0 100px;
+    }
   }
 }
 
