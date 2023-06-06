@@ -25,7 +25,7 @@
       h2 {
         font-weight: 700;
         font-size:   28px;
-        padding:     0 11px 44px;
+        margin:      0 11px 44px;
         line-height: 1.2;
         span {
           display: inline;
@@ -45,8 +45,8 @@
     }
   }
   .content {
-    padding:          34px 0 34px;
-    background-color: #03BF6A;
+    padding:    34px 0 34px;
+    background: linear-gradient(114.04deg, #03BF6A 24.98%, #6AE37E 101.83%);
   }
   .container {
     max-width: 1480px;
@@ -65,16 +65,17 @@
     padding-bottom: 21px;
     li {
       &:nth-of-type(1) {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
       }
       &:not(&:nth-of-type(1)) {
-        font-size:      16px;
-        font-weight:    400;
-        padding-bottom: 21px;
+        font-size:     16px;
+        font-weight:   400;
+        margin-bottom: 21px;
       }
       img {
-        width:      101px;
-        transition: .3s linear;
+        width:          101px;
+        mix-blend-mode: lighten;
+        transition:     .3s linear;
         &:hover {
           opacity: .7;
         }
@@ -134,6 +135,9 @@
       margin-bottom: 27px;
       display:       flex;
       align-items:   start;
+      &:first-of-type {
+        align-items: center;
+      }
       svg {
         transition: .2s linear;
         path {
@@ -248,7 +252,7 @@
     }
     .navigation {
       li:nth-of-type(1) {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
       }
     }
     .phone-numbers {
@@ -363,9 +367,9 @@
           transform: translateX(-580px);
         }
         h2 {
-          font-size:      59px;
-          padding-bottom: 42px;
-          line-height:    1.1;
+          font-size:     59px;
+          margin-bottom: 42px;
+          line-height:   1.1;
         }
       }
       .content {
@@ -381,15 +385,14 @@
       flex-wrap:      wrap;
       padding-top:    14px;
       li {
-        padding-bottom: 24px;
+        margin-bottom: 24px;
         &:nth-of-type(1) {
-          width:          100%;
-          padding-bottom: 46px;
+          width:         100%;
+          margin-bottom: 46px;
         }
         &:not(&:nth-of-type(1)) {
-          width:          47%;
-          padding-right:  15px;
-          padding-bottom: 24px;
+          width:  45%;
+          margin: 0 15px 24px 0;
         }
       }
     }
@@ -405,7 +408,7 @@
               margin-bottom: 18px;
             }
             h3 {
-              padding-bottom: 21px;
+              margin-bottom: 21px;
             }
           }
         }

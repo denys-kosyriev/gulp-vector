@@ -17,9 +17,6 @@
     color:       #03BF6A;
     font-weight: 1000;
   }
-  .swiper-slide:last-of-type .tariff-internet .info {
-    right: 50px;
-  }
   .tariff {
     height:         100%;
     background:     linear-gradient(181.69deg, #FFFFFF 1.43%, #F3F8F8 98.71%);
@@ -29,6 +26,11 @@
     display:        flex;
     flex-direction: column;
     text-align:     center;
+    position:       relative;
+    top:            0;
+    left:           0;
+    z-index:        0;
+    overflow:       hidden;
     h4 {
       font-size:   24px;
       font-weight: 700;
@@ -42,9 +44,9 @@
       }
     }
     .no-limited {
-      padding-bottom: 16px;
-      font-size:      12px;
-      color:          #6F8F81;
+      margin-bottom: 16px;
+      font-size:     12px;
+      color:         #6F8F81;
     }
     .network {
       display:         flex;
@@ -69,7 +71,7 @@
     .price {
       font-weight:     500;
       font-size:       14px;
-      padding-bottom:  25px;
+      margin-bottom:   25px;
       display:         flex;
       align-items:     flex-end;
       justify-content: center;
@@ -81,7 +83,6 @@
       }
     }
     button {
-      margin-bottom: 15px;
       &:hover {
         background-color: #324035;
         color:            #fff;
@@ -93,9 +94,11 @@
       }
     }
     .detail {
+      margin-top:  15px;
       font-weight: 500;
       font-size:   14px;
       color:       #03BF6A;
+      display:     block;
       &:hover {
         color: #006939;
       }
@@ -106,17 +109,40 @@
   }
   .tariff-internet {
     h4 {
-      padding-bottom: 25px;
+      margin-bottom: 25px;
+    }
+    .modal-net-info {
+      display:       flex;
+      align-items:   start;
+      background:    #F2F8F8;
+      border-radius: 20px;
+      padding:       10px 20px;
+      position:      absolute;
+      top:           0;
+      left:          0;
+      z-index:       2;
+      div {
+        width:           20px;
+        color:           #03BF6A;
+        border-radius:   50%;
+        border:          1px solid #03BF6A;
+        padding:         4px 13px;
+        margin-right:    19px;
+        font-size:       16px;
+        display:         flex;
+        justify-content: center;
+        align-items:     center;
+        line-height:     1;
+      }
     }
     .info {
+      width:      24px;
       position:   absolute;
       top:        35px;
-      right:      27px;
+      right:      19px;
       z-index:    1;
       transition: .2s linear;
-      img {
-        width: 24px;
-      }
+      cursor:     pointer;
       &:hover {
         opacity: .7;
       }
@@ -130,13 +156,14 @@
       }
     }
   }
-  .tariff-tv {
+  .tariff-tv, .tariff-all {
     h4 {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
     .desc {
-      padding-bottom: 15px;
-      color:          #03BF6A;
+      margin-bottom: 15px;
+      color:         #03BF6A;
+      font-size:     12px;
     }
     .company {
       font-size:      25px;
@@ -144,7 +171,7 @@
       padding-bottom: 10px;
     }
     .no-limited {
-      padding-bottom: 23px;
+      margin-bottom: 23px;
     }
     .header-network, .network {
       width:           100%;
@@ -196,7 +223,7 @@
         font-size: 16px;
       }
     }
-    .tariff-tv {
+    .tariff-tv, .tariff-all {
       .header-network {
         p {
           font-size: 14px;
@@ -211,7 +238,7 @@
     margin-bottom: 23px;
     .swiper-wrapper {
       padding: 0;
-      margin:  0 0 130px 0;
+      margin:  0 0 70px 0;
     }
     .swiper-slide {
       padding: 0 20px;
@@ -220,9 +247,13 @@
       }
       &:last-of-type {
         padding-right: 30px;
-        .tariff .info {
-          right: 53px;
-        }
+      }
+    }
+    .modal-net-info {
+      padding: 20px;
+      div {
+        font-size: 18px;
+        padding:   6px 15px;
       }
     }
     .tariff {
@@ -237,6 +268,9 @@
       h4 {
         font-size: 40px;
       }
+      .desc {
+        font-size: 20px;
+      }
       .speed {
         font-size:   24px;
         font-weight: 400;
@@ -247,8 +281,8 @@
         }
       }
       .no-limited {
-        padding-bottom: 28px;
-        font-size:      20px;
+        margin-bottom: 28px;
+        font-size:     20px;
       }
       .network {
         display:     flex;
@@ -267,33 +301,29 @@
         }
       }
       .price {
-        font-size:      24px;
-        padding-bottom: 48px;
-        display:        flex;
-        align-items:    flex-end;
+        font-size:     24px;
+        margin-bottom: 48px;
+        display:       flex;
+        align-items:   flex-end;
         span {
           font-size:   50px;
           line-height: .8;
         }
       }
-      button {
-        margin-bottom: 23px;
-      }
       .detail {
+        margin-top:  23px;
         font-weight: 500;
         font-size:   20px;
       }
     }
     .tariff-internet {
       .info {
+        width: 30px;
         top:   55px;
-        right: 43px;
-        img {
-          width: 30px;
-        }
+        right: 23px;
       }
       h4 {
-        padding-bottom: 24px;
+        margin-bottom: 24px;
       }
       .network {
         img {
@@ -301,7 +331,7 @@
         }
       }
     }
-    .tariff-tv {
+    .tariff-tv, .tariff-all {
       .header-network {
         p {
           font-size: 16px;
@@ -320,7 +350,7 @@
       }
     }
     .swiper-wrapper {
-      margin: 0 0 120px 0;
+      margin: 0 0 80px 0;
     }
     .swiper-button-prev,
     .swiper-button-next {

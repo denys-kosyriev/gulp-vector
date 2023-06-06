@@ -24,7 +24,7 @@
     background-color: #fff;
   }
   h2 {
-    padding: 0 30px 16px;
+    margin: 0 30px 16px;
   }
   .buttons {
     display:        flex;
@@ -51,7 +51,7 @@
   .title-channels {
     font-size:   16px;
     font-weight: 700;
-    padding:     0 0 17px 8px;
+    margin:      0 0 17px 8px;
     text-align:  start;
   }
   .table-row {
@@ -102,7 +102,7 @@
       &:nth-of-type(2n) {
         background-color: #f9f9f9;
         div:last-of-type {
-          background-color: rgba(#03BF6A, .7);
+          background-color: rgba(#E7ECEC, .7);
         }
       }
       &:last-of-type {
@@ -133,8 +133,7 @@
           justify-content:  center;
           font-size:        11px;
           font-weight:      500;
-          color:            #fff;
-          background-color: #03BF6A;
+          background-color: #E7ECEC;
           padding:          8px 0 7px;
         }
       }
@@ -221,7 +220,7 @@
     }
     .title-channels {
       font-size: 40px;
-      padding:   0 0 69px 8px;
+      margin:    0 0 39px 8px;
     }
     .table-header {
       padding-bottom: 10px;

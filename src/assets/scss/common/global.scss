@@ -203,7 +203,7 @@ button, .btn {
   background: linear-gradient(114.04deg, #03BF6A 24.98%, #6AE37E 101.83%);
 }
 
-.bg-cover {
+.bg-cover-absolute {
   height:     100%;
   position:   absolute;
   top:        0;
@@ -334,6 +334,10 @@ button, .btn {
   }
 }
 
+.d-none {
+  display: none !important;
+}
+
 @media(min-width: 567px) {
   h2 {
     font-size: 36px;
@@ -350,6 +354,7 @@ button, .btn {
     font-size: 18px;
   }
   .btn, button {
+    min-width: 0;
     padding:   19px 50px;
     font-size: 20px;
   }
@@ -361,6 +366,16 @@ button, .btn {
       img, svg {
         width: 18px;
       }
+    }
+  }
+  .close-modal {
+    &:active {
+      img {
+        width: 23px;
+      }
+    }
+    img {
+      width: 26px;
     }
   }
 }

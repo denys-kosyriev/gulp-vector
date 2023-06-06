@@ -1,5 +1,5 @@
 .home {
-  padding-top: 85px;
+  padding-top: 45px;
   .banners {
     padding: 0 0 34px;
     .container {
@@ -18,7 +18,7 @@
           z-index: 2;
         }
         h2 {
-          padding-bottom: 8px;
+          margin-bottom:  8px;
           color:          #fff;
           text-transform: uppercase;
           font-size:      30px;
@@ -54,8 +54,8 @@
       max-width: 1680px;
     }
     h2 {
-      padding-bottom: 24px;
-      text-align:     center;
+      margin-bottom: 24px;
+      text-align:    center;
     }
   }
   .show-all-tariffs {
@@ -73,7 +73,7 @@
       line-height:    1.5;
     }
     h2 {
-      padding-bottom: 24px;
+      margin-bottom: 24px;
     }
     a {
       margin-top: 35px;
@@ -89,14 +89,13 @@
       padding:  56px 0 28px;
     }
     .content {
-      padding:          211px 21px 43px;
-      border-radius:    20px;
-      display:          flex;
-      flex-direction:   column;
-      align-items:      center;
-      line-height:      1.5;
-      color:            #fff;
-      background-color: #03BF6A;
+      padding:        211px 21px 43px;
+      border-radius:  20px;
+      display:        flex;
+      flex-direction: column;
+      align-items:    center;
+      line-height:    1.5;
+      color:          #fff;
       img {
         height:     245px;
         max-width:  357px;
@@ -107,9 +106,9 @@
         object-fit: cover;
       }
       h2 {
-        color:          #fff;
-        padding-bottom: 24px;
-        text-align:     center;
+        color:         #fff;
+        margin-bottom: 24px;
+        text-align:    center;
       }
       a {
         margin-top: 27px;
@@ -184,18 +183,18 @@
     .banners {
       .swiper-banners {
         .swiper-wrapper {
-          margin-bottom: 50px;
+          margin-bottom: 35px;
         }
         .swiper-slide {
           min-height: 521px;
           padding:    88px 127px 87px;
           h2 {
-            padding-bottom: 26px;
-            font-size:      64px;
+            margin-bottom: 26px;
+            font-size:     64px;
           }
           p {
-            padding-bottom: 29px;
-            font-size:      24px;
+            margin-bottom: 29px;
+            font-size:     24px;
           }
           a {
             margin-top: 40px;
@@ -208,7 +207,7 @@
     .action {
       padding: 60px 0 0;
       h2 {
-        padding-bottom: 56px;
+        margin-bottom: 56px;
       }
     }
     .show-all-tariffs {
@@ -217,23 +216,35 @@
         font-size: 24px;
       }
       h2 {
-        font-size:      46px;
-        padding-bottom: 20px;
+        font-size:     46px;
+        margin-bottom: 20px;
       }
       a {
         margin-top: 28px;
       }
     }
     .about-internet {
-      margin-top: 105px;
+      margin-top: 65px;
       .wrapper {
         padding: 45px 11% 40px 0;
       }
       .content {
         border-radius: 40px;
         img {
-          max-width: 510px;
-          height:    30vh;
+          max-width: 481px;
+          height:    31vw;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1125px) {
+  .home {
+    .about-internet {
+      .content {
+        img {
+          height: 29vw;
         }
       }
     }
@@ -242,15 +253,15 @@
 
 @media(min-width: 1200px) {
   .home {
-    padding-top: 170px;
+    padding-top: 70px;
     .about-internet {
       .wrapper {
         padding: 45px 10% 40px 0;
       }
       .content {
         img {
-          max-width: 625px;
-          height:    36vh;
+          max-width: 619px;
+          height:    434px;
         }
       }
     }
@@ -259,25 +270,18 @@
 
 @media(min-width: 1440px) {
   .home {
-    padding-top: 227px;
-    .banners {
-      .swiper-banners {
-        .swiper-wrapper {
-          margin-bottom: 75px;
-        }
-      }
-    }
+    padding-top: 107px;
     .action {
-      padding: 142px 0 0;
+      padding: 80px 0 0;
       h2 {
-        padding: 0 99px 56px;
+        margin: 0 99px 56px;
       }
     }
     .show-all-tariffs {
-      padding: 70px 0 76px;
+      padding: 40px 0 36px;
     }
     .about-company {
-      padding: 76px 0 97px;
+      padding: 76px 0 77px;
     }
     .about-internet {
       .wrapper {
@@ -288,7 +292,7 @@
         font-size: 24px;
         img {
           max-width: 778px;
-          height:    46vh;
+          height:    554px;
         }
       }
     }

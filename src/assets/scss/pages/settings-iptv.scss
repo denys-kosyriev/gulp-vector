@@ -1,14 +1,14 @@
 .settings-iptv {
-  padding: 84px 0 54px;
+  padding: 44px 0 54px;
   .container {
     max-width: 1492px;
   }
   h2 {
-    padding-bottom: 34px;
+    margin-bottom: 34px;
   }
   p {
-    color:          #7A8781;
-    padding-bottom: 20px;
+    color:         #7A8781;
+    margin-bottom: 20px;
     a {
       color: #03BF6A;
       &:hover {
@@ -26,14 +26,14 @@
   }
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1200px) {
   .settings-iptv {
-    padding: 218px 0 121px;
+    padding: 88px 0 81px;
     h2 {
-      padding-bottom: 45px;
+      margin-bottom: 45px;
     }
     p {
-      padding-bottom: 24px;
+      margin-bottom: 24px;
     }
     img {
       margin: 82px 0 97px 50%;

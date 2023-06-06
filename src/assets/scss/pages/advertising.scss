@@ -1,12 +1,12 @@
 .advertising {
-  padding: 91px 0 0;
+  padding: 41px 0 0;
   .container {
     max-width: 1500px;
   }
   h2 {
-    padding-bottom: 19px;
-    text-align:     center;
-    line-height:    1.6;
+    margin-bottom: 19px;
+    text-align:    center;
+    line-height:   1.6;
     &.price-list-title {
       text-align: start;
     }
@@ -30,7 +30,7 @@
         span {
           line-height: 1.3;
           &:nth-of-type(2) {
-            padding-top: 6px;
+            margin-top: 6px;
           }
         }
         &:first-of-type {
@@ -52,19 +52,18 @@
           }
         }
         &:last-of-type {
-          background-color: #03BF6A;
+          background-color: #E7ECEC;
           padding:          18px;
           span {
             font-size:   16px;
             font-weight: 700;
-            color:       #F2F8F8;
           }
         }
       }
     }
   }
   .billboard {
-    padding:  0 0 81px;
+    padding:  0 0 41px;
     overflow: hidden;
     .content {
       padding:          35px 17px 0;
@@ -75,9 +74,9 @@
       padding-bottom: 10px;
     }
     h2 {
-      color:          #fff;
-      padding-bottom: 1px;
-      text-align:     start;
+      color:         #fff;
+      margin-bottom: 1px;
+      text-align:    start;
       span {
         text-transform: uppercase;
       }
@@ -85,25 +84,25 @@
     .subtitle {
       color: #fff;
       &:first-of-type {
-        padding-bottom: 17px;
+        margin-bottom: 17px;
       }
       &:last-of-type {
-        padding-bottom: 39px;
+        margin-bottom: 39px;
       }
     }
-    button {
+    a {
       margin-left:     50%;
       transform:       translateX(-50%);
       color:           #fff;
       background:      linear-gradient(93.94deg, rgba(255, 255, 255, 0.77) -21.9%, rgba(255, 255, 255, 0.33) 152.07%);
       backdrop-filter: blur(20px);
+      border:          2px solid transparent;
+      transition:      .3s linear;
       &:hover {
-        background: #fff;
-        color:      #03BF6A;
+        border-color: #fff;
       }
       &:active {
-        background: #006939;
-        color:      #fff;
+        border-color: #03BF6A;
       }
     }
     img {
@@ -139,7 +138,7 @@
     .billboard {
       .subtitle {
         &:last-of-type {
-          padding-bottom: 20px;
+          margin-bottom: 20px;
         }
       }
       img {
@@ -158,27 +157,27 @@
       padding: 0 20px 0 40px;
     }
     h2 {
-      text-align:     start;
-      padding-bottom: 49px;
-      line-height:    1.5;
+      text-align:    start;
+      margin-bottom: 40px;
+      line-height:   1.5;
       &.price-list-title {
         max-width: 75%;
       }
     }
     .table {
-      padding-bottom: 72px;
+      padding-bottom: 42px;
     }
     .table-header {
       display:        block;
       border-bottom:  1px solid #d9d9d9;
       padding-bottom: 12px;
-      margin-bottom:  54px;
+      margin-bottom:  20px;
       opacity:        .6;
       .table-row {
         padding: 0 8px 0 41px;
         div {
           span {
-            font-size:   24px;
+            font-size:   18px;
             font-weight: 400;
             color:       #6F8F81;
           }
@@ -198,7 +197,7 @@
         background-color: rgba(#f9f9f9, .7);
         div {
           &:last-of-type {
-            background-color: rgba(#03BF6A, .7);
+            background-color: rgba(#E7ECEC, .7);
           }
         }
       }
@@ -252,7 +251,7 @@
       .left {
         width: 50%;
       }
-      button {
+      a {
         min-width: 285px;
         margin:    0 0 19px 0;
         transform: translateX(0);
@@ -278,6 +277,15 @@
       div {
         &:last-of-type {
           min-width: 225px;
+        }
+      }
+    }
+    .table-header {
+      .table-row {
+        div {
+          span {
+            font-size: 24px;
+          }
         }
       }
     }
@@ -307,7 +315,7 @@
       }
     }
     .billboard {
-      padding: 129px 0 189px;
+      padding: 39px 0 109px;
       .container {
         padding: 0 20px;
       }
@@ -326,15 +334,15 @@
       .subtitle {
         line-height: 1.3;
         &:first-of-type {
-          font-size:      24px;
-          padding-bottom: 29px;
+          font-size:     24px;
+          margin-bottom: 29px;
         }
         &:nth-of-type(2) {
-          font-size:      18px;
-          padding-bottom: 65px;
+          font-size:     18px;
+          margin-bottom: 65px;
         }
       }
-      button {
+      a {
         min-width: 385px;
         margin:    0;
         transform: translateX(0);
@@ -349,7 +357,7 @@
 
 @media(min-width: 1200px) {
   .advertising {
-    padding: 234px 0 0;
+    padding: 84px 0 0;
     .billboard {
       .left {
         width: 40%;

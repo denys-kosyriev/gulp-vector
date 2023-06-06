@@ -1,64 +1,20 @@
 .tariffs-page {
-  padding: 81px 0 0;
+  padding: 41px 0 0;
   .top, div {
     .container {
       max-width: 1504px;
     }
   }
-  .top {
-    h2 {
-      padding-bottom: 26px;
-      text-align:     center;
-    }
-    .flex {
-      .container {
-        padding: 0;
-      }
-    }
-    .selected {
-      text-align:  center;
-      font-size:   14px;
-      font-weight: 400;
-      padding:     0 20px;
-      .select {
-        display:        flex;
-        flex-direction: column;
-        align-items:    start;
-      }
-      label {
-        max-width: 412px;
-      }
-      select {
-        margin: 13px 0 25px;
-      }
-    }
-    .buttons {
-      padding-bottom: 36px;
-      .container {
-        padding: 0;
-      }
-    }
-    ul {
-      display:  flex;
-      overflow: auto;
-      gap:      10px;
-    }
-    li {
-      &:first-child {
-        margin-left: 20px;
-      }
-      &:last-child {
-        margin-right: 20px;
-      }
-    }
-  }
   h3 {
-    padding-bottom: 25px;
-    text-align:     center;
-    font-weight:    700;
-    font-size:      19px;
+    margin-bottom: 25px;
+    text-align:    center;
+    font-weight:   700;
+    font-size:     19px;
   }
   &.internet {
+    .buttons {
+      padding-bottom: 46px;
+    }
     h3 {
       span {
         color:          #03BF6A;
@@ -96,175 +52,31 @@
       color:       #7A8781;
     }
     li {
-      padding-bottom: 15px;
-      line-height:    1.3;
-      color:          #7A8781;
-    }
-  }
-  .connection-internet {
-    padding:  14px 0 0;
-    overflow: hidden;
-    .container {
-      max-width: 1752px;
-    }
-    .left {
-      padding: 0 0 31px;
-    }
-    .content {
-      font-size:   14px;
-      line-height: 1.5;
-    }
-    h2 {
-      padding-bottom: 26px;
-      text-align:     center;
-    }
-    p {
-      padding-top: 11px;
-      line-height: 1.8;
-      color:       #000;
-      font-weight: 700;
-    }
-    button {
-      margin:    29px 0 0 50%;
-      transform: translateX(-50%);
-    }
-    .right {
-      padding: 20px 0 139px;
-      &::before {
-        content:          '';
-        width:            199px;
-        height:           199px;
-        background-color: #03BF6A;
-        position:         absolute;
-        left:             -90px;
-        bottom:           207px;
-        z-index:          -1;
-        border-radius:    50%;
-      }
-      &::after {
-        content:          '';
-        width:            29px;
-        height:           29px;
-        background-color: #6AE37E;
-        position:         absolute;
-        right:            -32px;
-        top:              0;
-        z-index:          -1;
-        border-radius:    50%;
-      }
-      .green-circle {
-        width:            110px;
-        height:           110px;
-        background-color: #6AE37E;
-        position:         absolute;
-        right:            -30px;
-        top:              28px;
-        z-index:          -1;
-        border-radius:    50%;
-      }
-      .references {
-        font-weight:      600;
-        font-size:        16px;
-        padding:          30px 41px;
-        border:           2px solid #03BF6A;
-        border-radius:    20px;
-        background-color: #fff;
-        text-align:       center;
-        z-index:          1;
-      }
-      ul {
-        display:        flex;
-        flex-direction: column;
-        align-items:    center;
-        padding:        15px 0 38px;
-        gap:            15px;
-      }
-      a {
-        padding: 9px;
-      }
-    }
-  }
-  .connection-tv {
-    padding:  8px 0 82px;
-    overflow: hidden;
-    .container {
-      max-width: 1670px;
-    }
-    .content {
-      display:        flex;
-      flex-direction: column;
-      align-items:    center;
-    }
-    img {
-      max-width:     400px;
-      margin-bottom: 16px;
-    }
-    h2 {
-      line-height:    1.4;
-      padding-bottom: 27px;
-      color:          #03BF6A;
-      span {
-        color: #03BF6A;
-      }
-    }
-    p {
-      padding-bottom: 20px;
-      span {
-        color: #7A8781;
-      }
-      &:last-of-type {
-        padding-bottom: 46px;
-      }
-    }
-    a {
-      margin-left: 50%;
-      transform:   translateX(-50%);
+      margin-bottom: 15px;
+      line-height:   1.3;
+      color:         #7A8781;
     }
   }
   &.all {
     .connection-tv {
-      padding: 0 0 82px;
+      padding: 0 0 52px;
     }
   }
 }
 
 @media(min-width: 567px) {
   .tariffs-page {
+    &.internet{
+      .buttons{
+        padding-bottom: 60px;
+      }
+    }
     h3 {
       font-size: 28px;
-    }
-    .connection-internet {
-      .right {
-        .references {
-          text-align: start;
-          ul {
-            flex-direction: row;
-            flex-wrap:      wrap;
-          }
-        }
-      }
     }
     .description {
       ul {
         font-size: 17px;
-      }
-    }
-    .connection-internet {
-      .content {
-        font-size: 17px;
-      }
-      button {
-        min-width: 0;
-      }
-      .right {
-        .references {
-          font-size: 21px;
-        }
-      }
-    }
-    .connection-tv {
-      a {
-        min-width: 0;
       }
     }
   }
@@ -273,41 +85,13 @@
 @media(min-width: 1024px) {
   .tariffs-page {
     &.internet {
+      h2 {
+        margin-bottom: 45px;
+      }
       .top {
         .buttons {
           padding-bottom: 106px;
         }
-      }
-    }
-    .top {
-      h2 {
-        padding-bottom: 41px;
-        text-align:     start;
-      }
-      .selected {
-        padding: 13px 20px 25px;
-        p {
-          padding-right: 24px;
-          white-space:   nowrap;
-        }
-        .select {
-          flex-direction: row;
-          align-items:    center;
-        }
-        label {
-          width: 412px;
-        }
-        select {
-          margin: 0;
-        }
-      }
-      ul {
-        gap: 20px;
-      }
-      a {
-        min-width: 195px;
-        font-size: 24px;
-        padding:   16px 42px;
       }
     }
     .description {
@@ -328,122 +112,23 @@
       }
     }
     h3 {
-      padding:    35px 0 40px;
+      margin:     35px 0 40px;
       font-size:  40px;
       text-align: start;
-    }
-    .connection-internet {
-      padding: 74px 0 64px;
-      .wrapper {
-        display: flex;
-      }
-      .left {
-        padding: 24px 0 0;
-        width:   80%;
-        .content {
-          font-size: 20px;
-        }
-        h2 {
-          text-align:     start;
-          padding-bottom: 32px;
-        }
-        p {
-          padding-top: 8px;
-          font-size:   24px;
-          line-height: 1.5;
-          &:first-of-type {
-            padding-top: 40px;
-          }
-        }
-        button {
-          margin:    60px 0 0;
-          transform: translateX(0);
-          padding:   26px 102px;
-        }
-      }
-      .right {
-        padding: 27px 0 139px;
-        margin:  0 14px 0 0;
-        .green-circle {
-          width:  189px;
-          height: 189px;
-          right:  8px;
-          top:    74px;
-        }
-        &::before {
-          width:  364px;
-          height: 364px;
-          bottom: 77px;
-          left:   0;
-        }
-        &::after {
-          width:  57px;
-          height: 57px;
-          right:  -3px;
-          top:    0;
-        }
-        .references {
-          width:         80%;
-          margin:        0 auto;
-          border-width:  4px;
-          border-radius: 40px;
-          font-size:     27px;
-          padding:       50px 63px 14px;
-          ul {
-            padding: 26px 0 28px;
-            gap:     22px;
-          }
-        }
-        a {
-          font-size: 20px;
-        }
-      }
-    }
-    .connection-tv {
-      padding: 50px 0 80px;
-      .content {
-        padding:         0 0 0 42px;
-        flex-direction:  row;
-        align-items:     start;
-        justify-content: space-between;
-        div {
-          width:   48%;
-          padding: 79px 0 0 0;
-        }
-      }
-      img {
-        max-width:     50%;
-        padding-right: 20px;
-      }
-      h2 {
-        padding-bottom: 26px;
-      }
-      p {
-        padding-bottom: 28px;
-        &:last-of-type {
-          padding-bottom: 66px;
-        }
-      }
-      a {
-        min-width: 272px;
-        margin:    0;
-        transform: translateX(0);
-        padding:   23px 10px;
-      }
     }
   }
 }
 
 @media(min-width: 1200px) {
   .tariffs-page {
-    padding: 184px 0 0;
+    padding: 100px 0 0;
   }
 }
 
 @media(min-width: 1440px) {
   .tariffs-page {
     h3 {
-      padding: 73px 0 89px;
+      margin: 40px 0 89px;
     }
     .top {
       .selected {
@@ -458,31 +143,12 @@
         display:         flex;
         flex-wrap:       wrap;
         justify-content: space-between;
-      }
-    }
-    .connection-internet {
-      .wrapper {
-        padding-left: 114px;
-      }
-      .left {
-        width:   54%;
-        padding: 24px 0 0 30px;
-      }
-    }
-    .connection-tv {
-      padding: 104px 0 169px;
-      img {
-        max-width: 700px;
-      }
-      .content {
-        div {
-          padding: 79px 126px 0 0;
-        }
+        align-items:     center;
       }
     }
     &.all {
       .connection-tv {
-        padding: 126px 0 130px;
+        padding: 40px 0 130px;
       }
     }
   }

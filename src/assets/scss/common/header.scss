@@ -1,6 +1,6 @@
 .header {
   width:            100vw;
-  position:         fixed;
+  position:         sticky;
   top:              0;
   left:             0;
   z-index:          1000;
@@ -18,7 +18,8 @@
     .logo {
       transition: .3s linear;
       img {
-        width: 58px;
+        width:   40px;
+        display: flex;
       }
       &:hover {
         opacity: .7;
@@ -75,7 +76,7 @@
       align-items: center;
       .container {
         max-width: 2500px;
-        padding:   0 0 0 62px;
+        padding:   0 0 0 38px;
       }
       .left {
         white-space: nowrap;
@@ -128,7 +129,7 @@
             color:      #03BF6A;
             transition: .2s linear;
             &:first-of-type {
-              padding-right: 7px;
+              margin-right: 7px;
             }
             &:hover {
               color: #006939;
@@ -146,6 +147,7 @@
           p {
             color:      #03BF6A;
             transition: .2s linear;
+            font-size:  18px;
           }
           svg {
             path {
@@ -238,7 +240,7 @@
       .logo {
         margin-right: 30px;
         img {
-          width: 112px;
+          width: 75px;
         }
       }
       ul {

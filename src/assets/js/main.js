@@ -73,4 +73,82 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
+  // Work accordion 'questionsList'
+  const questionsList = document.getElementsByClassName('questions-list')[0];
+  const questionsSelects = document.getElementsByClassName('questions-select');
+  const questionsAnswer = document.getElementsByClassName('questions-answer');
+  const questionsIconSelect = document.getElementsByClassName('icon-select');
+  const question = document.getElementsByClassName('question');
+
+  Array.from(questionsSelects).map((select, index) => {
+    document.addEventListener('click', (e) => {
+      const closeAnswer = e.composedPath().includes(questionsList);
+      const clickSQuestion = e.composedPath().includes(question[index]);
+      if (!closeAnswer) {
+        questionsAnswer[index].classList.add('d-none');
+        questionsIconSelect[index].classList.remove('open');
+      } else if (clickSQuestion) {
+        questionsAnswer[index].classList.toggle('d-none');
+        questionsIconSelect[index].classList.toggle('open');
+      }
+    })
+  })
+
+  // Work tariffs
+
+  const modals = document.getElementsByClassName('modal');
+  const tariffs = document.getElementsByClassName('tariff');
+  const modalForm = document.getElementsByClassName('modal-form')[0];
+
+  Array.from(tariffs).map((tariff) => {
+
+    const connectionButton = tariff.getElementsByClassName('btn')[0];
+    connectionButton.addEventListener('click', () => {
+      if (tariff.className.includes('tariff-internet')) {
+        modalForm.classList.remove('d-none');
+      } else if (tariff.className.includes('tariff-tv')) {
+        modalForm.classList.remove('d-none');
+        modalForm.classList.add('modal-tv');
+      } else if (tariff.className.includes('tariff-all')) {
+        modalForm.classList.remove('d-none');
+        modalForm.classList.add('modal-all');
+      }
+    })
+
+    const modalChannels = document.getElementsByClassName('modal-channels')[0];
+    const detail = tariff.getElementsByClassName('detail')[0];
+    if (detail) {
+      detail.addEventListener('click', () => {
+        modalChannels.classList.remove('d-none');
+      })
+    }
+    const infoBtn = tariff.getElementsByClassName('info')[0];
+    const modalInfo = tariff.getElementsByClassName('modal-net-info')[0];
+    infoBtn.addEventListener('click', () => {
+      modalInfo.classList.remove('d-none');
+      const timeShowModalInfo = setTimeout(() => {
+        modalInfo.classList.add('d-none');
+      }, 3000)
+      modalInfo.addEventListener('click', () => {
+        clearTimeout(timeShowModalInfo)
+        modalInfo.classList.add('d-none');
+      });
+    })
+
+  })
+
+  Array.from(modals).map((modal) => {
+    const closeButton = document.getElementsByClassName('close-modal')[0];
+    const modalContent = document.getElementsByClassName('modal-content')[0];
+    closeButton.addEventListener('click', () => {
+      modal.classList.add('d-none');
+    })
+    modal.addEventListener('click', (e) => {
+      const closeModal = e.composedPath().includes(modalContent);
+      if (!closeModal) {
+        modal.classList.add('d-none');
+      }
+    })
+  })
+
 });

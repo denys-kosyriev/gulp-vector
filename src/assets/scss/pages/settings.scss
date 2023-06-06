@@ -1,0 +1,83 @@
+.settings {
+  padding: 43px 0 10px;
+  .container {
+    max-width: 1466px;
+    padding:   0;
+  }
+  h2 {
+    text-align:    center;
+    margin-bottom: 27px;
+    line-height:   1.4;
+  }
+  .swiper-pagination.swiper-pagination-bullets {
+    bottom: 35px;
+  }
+  .swiper-slide {
+    height:  auto;
+    padding: 0 20px 80px;
+  }
+  .setting {
+    height:         100%;
+    border:         1px solid #03BF6A;
+    border-radius:  20px;
+    box-shadow:     0 46.233px 36.9864px rgba(3, 191, 106, 0.0519173),
+                    0 26.4535px 21.1628px rgba(3, 191, 106, 0.0438747),
+                    0 16.0571px 12.8457px rgba(3, 191, 106, 0.0377964),
+                    0 9.67509px 7.74008px rgba(3, 191, 106, 0.0322036),
+                    0 5.38772px 4.31018px rgba(3, 191, 106, 0.0261253),
+                    0 2.31722px 1.85378px rgba(3, 191, 106, 0.0180827);
+    padding:        37px 30px;
+    font-size:      12px;
+    color:          #6F8F81;
+    font-weight:    400;
+    text-align:     center;
+    display:        flex;
+    flex-direction: column;
+    align-items:    center;
+  }
+  img {
+    height:        80px;
+    margin-bottom: 16px;
+    object-fit:    contain;
+  }
+  h3 {
+    margin: 4px 0 16px;
+  }
+  a {
+    min-width:  0;
+    padding:    15px 48px;
+    margin-top: auto;
+  }
+}
+
+@media(min-width: 567px) {
+  .settings {
+    .setting {
+      font-size: 16px;
+    }
+  }
+}
+
+@media(min-width: 1200px) {
+  .settings {
+    padding: 93px 0 75px;
+    h2 {
+      margin-bottom: 76px;
+      text-align:    start;
+    }
+    .swiper-pagination.swiper-pagination-bullets {
+      bottom: 0;
+    }
+    .setting {
+      border-radius: 40px;
+      padding:       48px 49px;
+      font-size:     20px;
+    }
+    h3 {
+      margin: 18px 0 30px;
+    }
+    img {
+      height: 110px;
+    }
+  }
+}
