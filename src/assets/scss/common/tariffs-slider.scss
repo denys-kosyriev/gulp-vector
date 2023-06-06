@@ -55,10 +55,10 @@
       font-weight:     400;
       font-size:       16px;
       &.network1 {
-        padding: 0 0 10px;
+        margin: 0 0 10px;
       }
       &.network2 {
-        padding: 0 0 22px;
+        margin: 0 0 22px;
       }
       img {
         width: 15px;
@@ -290,10 +290,10 @@
         font-size:   24px;
         font-weight: 400;
         &:nth-of-type(1) {
-          padding: 0 0 14px;
+          margin: 0 0 14px;
         }
         &:nth-of-type(2) {
-          padding: 0 0 46px;
+          margin: 0 0 46px;
         }
         span {
           font-weight:  700;

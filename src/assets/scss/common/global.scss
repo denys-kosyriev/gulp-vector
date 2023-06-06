@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  min-height:     100%;
+  min-height:     100vh;
   display:        flex;
   flex-direction: column;
   font-family:    'MacPaw Fixel', sans-serif;
@@ -19,7 +19,8 @@ body {
 }
 
 main {
-  flex: 1 0 auto;
+  flex:        1 0 auto;
+  padding-top: 52px;
 }
 
 section {
@@ -288,13 +289,7 @@ button, .btn {
 }
 
 .shadow {
-  box-shadow: 0 100px 80px rgba(3, 191, 106, 0.07),
-              0 46.233px 36.9864px rgba(3, 191, 106, 0.0519173),
-              0 26.4535px 21.1628px rgba(3, 191, 106, 0.0438747),
-              0 16.0571px 12.8457px rgba(3, 191, 106, 0.0377964),
-              0 9.67509px 7.74008px rgba(3, 191, 106, 0.0322036),
-              0 5.38772px 4.31018px rgba(3, 191, 106, 0.0261253),
-              0 2.31722px 1.85378px rgba(3, 191, 106, 0.0180827);
+  box-shadow: 0 40px 80px rgba(3, 191, 106, .2);
 }
 
 .modal {
@@ -446,4 +441,10 @@ button, .btn {
     }
   }
 
+}
+
+@media(min-width: 1200px) {
+  main {
+    padding-top: 139px;
+  }
 }

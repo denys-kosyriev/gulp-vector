@@ -1,6 +1,8 @@
 .tariffs-page {
-  padding: 41px 0 0;
-  .top, div {
+  .top-radio-buttons {
+    padding: 41px 0 0;
+  }
+  .top-radio-buttons, div {
     .container {
       max-width: 1504px;
     }
@@ -66,8 +68,8 @@
 
 @media(min-width: 567px) {
   .tariffs-page {
-    &.internet{
-      .buttons{
+    &.internet {
+      .buttons {
         padding-bottom: 60px;
       }
     }
@@ -121,7 +123,9 @@
 
 @media(min-width: 1200px) {
   .tariffs-page {
-    padding: 100px 0 0;
+    .top-radio-buttons {
+      padding: 80px 0 0;
+    }
   }
 }
 
@@ -130,7 +134,7 @@
     h3 {
       margin: 40px 0 89px;
     }
-    .top {
+    .top-radio-buttons {
       .selected {
         padding: 0;
         p {

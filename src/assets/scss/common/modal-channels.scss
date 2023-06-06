@@ -1,11 +1,11 @@
 .modal-channels {
-  padding: 107px 0 0;
+  padding: 107px 0 10px;
   .channels {
     height:             100%;
     max-width:          1416px;
     width:              100%;
     background:         #FFFFFF;
-    border-radius:      20px 20px 0 0;
+    border-radius:      20px;
     overflow:           auto;
     /* Hide scrollbar for IE, Edge and Firefox */
     -ms-overflow-style: none; /* IE and Edge */
@@ -102,7 +102,7 @@
       &:nth-of-type(2n) {
         background-color: #f9f9f9;
         div:last-of-type {
-          background-color: rgba(#E7ECEC, .7);
+          background-color: rgba(#03BF6A, .5);
         }
       }
       &:last-of-type {
@@ -133,7 +133,7 @@
           justify-content:  center;
           font-size:        11px;
           font-weight:      500;
-          background-color: #E7ECEC;
+          background-color: rgba(#03BF6A, .8);
           padding:          8px 0 7px;
         }
       }
@@ -181,7 +181,7 @@
 
 @media(min-width: 1024px) {
   .modal-channels {
-    padding: 107px 80px 0;
+    padding: 107px 80px 20px;
     .close-modal {
       top:   90px;
       right: 22px;
@@ -196,7 +196,7 @@
       }
     }
     .channels {
-      border-radius: 60px 60px 0 0;
+      border-radius: 60px;
       padding:       0 50px 0;
     }
     .modal-channels-header {
@@ -278,6 +278,6 @@
 
 @media(min-width: 1440px) {
   .modal-channels {
-    padding: 160px 233px 0;
+    padding: 160px 233px 20px;
   }
 }

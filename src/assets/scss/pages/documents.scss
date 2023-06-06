@@ -1,5 +1,7 @@
 .documents {
-  padding: 30px 0 40px;
+  section {
+    padding: 30px 0 40px;
+  }
   .container {
     max-width: 1546px;
   }
@@ -15,11 +17,9 @@
   a {
     width:            100%;
     padding:          38px 23px 23px 29px;
-    color:            #7A8781;
     border:           1px solid #03BF6A;
     border-radius:    20px;
     background-color: #fff;
-    font-size:        14px;
     transition:       .3s linear;
     line-height:      1.5;
     div {
@@ -28,9 +28,11 @@
     }
     &:hover {
       background-color: #03BF6A;
-      color:            #F2F8F8;
       h3 {
         color: #fff;
+      }
+      p {
+        color: #F2F8F8;
       }
       .button {
         color: #F2F8F8;
@@ -51,8 +53,14 @@
     transition:    .3s linear;
     line-height:   1.2;
   }
+  p {
+    font-size:     14px;
+    color:         #7A8781;
+    transition:    .3s linear;
+    margin-bottom: 10px;
+  }
   .button {
-    margin:      44px 0 0 auto;
+    margin:      34px 0 0 auto;
     display:     inline-flex;
     align-items: center;
     color:       #03BF6A;
@@ -70,11 +78,11 @@
 
 @media(min-width: 567px) {
   .documents {
-    a {
-      font-size: 18px;
-    }
     h3 {
       font-size: 24px;
+    }
+    p {
+      font-size: 18px;
     }
     .button {
       font-size: 18px;
@@ -100,7 +108,9 @@
 
 @media(min-width: 1024px) {
   .documents {
-    padding: 80px 0 100px;
+    section {
+      padding: 80px 0;
+    }
     h2 {
       margin-bottom: 79px;
     }
@@ -111,8 +121,11 @@
     h3 {
       margin-bottom: 24px;
     }
+    p {
+      margin-bottom: 15px;
+    }
     .button {
-      margin: 39px 0 0 auto;
+      margin: 24px 0 0 auto;
     }
     svg {
       width:       26px;
@@ -127,11 +140,13 @@
       gap: 30px;
     }
     a {
-      width:     29%;
-      font-size: 24px;
+      width: 29%;
     }
     h3 {
       font-size: 32px;
+    }
+    p {
+      font-size: 24px;
     }
     .button {
       font-size: 24px;

@@ -1,5 +1,7 @@
 .advertising {
-  padding: 41px 0 0;
+  .advertising-services {
+    padding: 41px 0 0;
+  }
   .container {
     max-width: 1500px;
   }
@@ -52,7 +54,7 @@
           }
         }
         &:last-of-type {
-          background-color: #E7ECEC;
+          background-color: rgba(#03BF6A, .8);
           padding:          18px;
           span {
             font-size:   16px;
@@ -197,7 +199,7 @@
         background-color: rgba(#f9f9f9, .7);
         div {
           &:last-of-type {
-            background-color: rgba(#E7ECEC, .7);
+            background-color: rgba(#03BF6A, .5);
           }
         }
       }
@@ -357,7 +359,9 @@
 
 @media(min-width: 1200px) {
   .advertising {
-    padding: 84px 0 0;
+    .advertising-services {
+      padding: 84px 0 0;
+    }
     .billboard {
       .left {
         width: 40%;

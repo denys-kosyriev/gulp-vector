@@ -1,5 +1,7 @@
 .payment-description {
-  padding: 37px 0 69px;
+  section {
+    padding: 37px 0 69px;
+  }
   .container {
     max-width: 1307px;
   }
@@ -45,7 +47,9 @@
 
 @media(min-width: 1024px) {
   .payment-description {
-    padding: 86px 0 75px;
+    section {
+      padding: 86px 0 75px;
+    }
     h2 {
       line-height:   1;
       margin-bottom: 60px;

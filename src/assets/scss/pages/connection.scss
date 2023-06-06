@@ -1,6 +1,6 @@
 .connection {
-  padding: 15px 0 0;
   .top-radio-buttons {
+    padding: 15px 0 0;
     .container {
       max-width: 1500px;
     }
@@ -75,6 +75,8 @@
 
 @media(min-width: 1024px) {
   .connection {
-    padding: 57px 0 0;
+    .top-radio-buttons {
+      padding: 57px 0 0;
+    }
   }
 }
