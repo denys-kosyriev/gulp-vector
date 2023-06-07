@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  // Work accordion 'questionsList'
+  // Work accordion
   const questionsList = document.getElementsByClassName('questions-list')[0];
   const questionsSelects = document.getElementsByClassName('questions-select');
   const questionsAnswer = document.getElementsByClassName('questions-answer');
@@ -96,6 +96,11 @@ document.addEventListener('DOMContentLoaded', function () {
       } else if (clickSQuestion) {
         questionsAnswer[index].classList.toggle('d-none');
         questionsIconSelect[index].classList.toggle('open');
+      }
+      question[index].classList.remove('active');
+      console.log(!questionsAnswer[index].className.includes('d-none'))
+      if (!questionsAnswer[index].className.includes('d-none')) {
+        question[index].classList.add('active');
       }
     })
   })
